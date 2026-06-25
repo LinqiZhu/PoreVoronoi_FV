@@ -26,4 +26,4 @@ The package does not include large raw tomography volumes, private scratch direc
 
 ## Public-release check
 
-Before public GitHub release, choose a license and confirm that the intended raw-data references in the manuscript are visible to readers.
+For public release, the included compact data products are covered by `DATA_LICENSE.md`. Raw tomography images and external source datasets are not redistributed here; readers should use the original data sources cited in the manuscript.

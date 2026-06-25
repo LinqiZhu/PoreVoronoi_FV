@@ -104,8 +104,12 @@ Not included:
 
 ## Citation
 
-Citation metadata will be added after the associated manuscript record is finalised. Until then, cite the CMAME manuscript describing GeoVoronoi-FV and refer to this repository as the PoreVoronoi reproducibility package.
+Use the repository citation metadata in `CITATION.cff` and cite the associated CMAME manuscript describing GeoVoronoi-FV. Until the manuscript record is finalised, refer to this repository as the PoreVoronoi reproducibility package for GeoVoronoi-FV.
 
 ## License
 
-No public reuse license has been selected yet. Add the final author-approved license before making the GitHub repository public.
+Software source code and scripts are released under the Apache License 2.0; see `LICENSE`.
+
+Included figure source data, paper-ready tables, compact example data, and documentation are released under Creative Commons Attribution 4.0 International (CC BY 4.0), unless a file-specific notice says otherwise; see `DATA_LICENSE.md`.
+
+Large raw tomography images and third-party source datasets are not redistributed or re-licensed by this repository.

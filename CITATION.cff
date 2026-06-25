@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated GeoVoronoi-FV manuscript and this software package."
+title: "PoreVoronoi: reproducibility package for GeoVoronoi-FV"
+authors:
+  - family-names: Zhu
+    given-names: Linqi
+repository-code: "https://github.com/LinqiZhu/PoreVoronoi_FV"
+version: "0.1.0"
+date-released: "2026-06-25"
+license: "Apache-2.0"
+abstract: "Reference code, compact examples, figure source data, and paper-ready tables for the GeoVoronoi-FV prescribed-site conservative finite-volume manuscript."
