@@ -1,0 +1,15 @@
+{
+  "bridge_radius_px": 5,
+  "canvas": [
+    1600,
+    430
+  ],
+  "components": 1,
+  "font_path": "C:\\Windows\\Fonts\\arialbd.ttf",
+  "font_size": 245,
+  "kept_label": 1,
+  "kept_voxels": 109600,
+  "porosity_2d": 0.15930232558139534,
+  "seed": 20260625,
+  "word": "PoreVoronoi"
+}

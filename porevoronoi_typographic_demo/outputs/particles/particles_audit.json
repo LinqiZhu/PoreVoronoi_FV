@@ -1,0 +1,6 @@
+{
+  "particles": 360,
+  "rule": "stratified_from_connected_pore_voxels",
+  "seed": 20260656,
+  "x_bins": 42
+}
