@@ -69,6 +69,7 @@ python scripts/06_select_prescribed_sites.py
 python scripts/07_compute_graph_geodesic_ownership.py
 python scripts/08_extract_fv_cells_and_facelets.py
 python scripts/09_project_conservative_flux.py
+python scripts/09b_reconstruct_cell_velocity.py
 python scripts/10_render_final_figure.py
 python scripts/11_audit_porevoronoi_fv.py
 ```

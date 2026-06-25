@@ -74,6 +74,8 @@ def audit_stage2(root: str | Path) -> dict[str, object]:
         "facelets": root / "outputs" / "fv" / "facelets.npz",
         "fv_graph": root / "outputs" / "fv" / "fv_graph.npz",
         "flux": root / "outputs" / "flux" / "conservative_flux_projection.npz",
+        "cell_velocity": root / "outputs" / "velocity" / "cell_velocity.npz",
+        "cell_velocity_figure": root / "outputs" / "velocity" / "Figure_PoreVoronoi_FV_cell_velocity.png",
         "four_panel": root / "outputs" / "final_figures" / "Figure_PoreVoronoi_FV_four_panel.png",
         "hero_dark": root / "outputs" / "final_figures" / "Figure_PoreVoronoi_README_landing_hero_dark.png",
         "hero_light": root / "outputs" / "final_figures" / "Figure_PoreVoronoi_README_landing_hero_light.png",
@@ -88,6 +90,7 @@ def audit_stage2(root: str | Path) -> dict[str, object]:
         facelets = np.load(required["facelets"])
         graph = np.load(required["fv_graph"])
         flux = np.load(required["flux"])
+        velocity = np.load(required["cell_velocity"])
         pore = np.load(root / "outputs" / "masks" / "pore_mask_3d.npz")["mask"]
         div = flux["divergence_conservative"]
         details.update(
@@ -98,6 +101,9 @@ def audit_stage2(root: str | Path) -> dict[str, object]:
                 "cell_cell_facelets": int(len(facelets["owner"])),
                 "fv_graph_edges": int(len(graph["area"])),
                 "projection_edges": int(len(flux["q_target"])),
+                "velocity_cells_with_faces": int(np.sum(velocity["cell_area_weight"] > 0)),
+                "nonzero_velocity_cells": int(np.sum(velocity["cell_speed"] > 0)),
+                "max_cell_speed": float(np.max(velocity["cell_speed"])) if len(velocity["cell_speed"]) else 0.0,
                 "max_abs_cell_balance_after_projection": float(np.max(np.abs(div))) if len(div) else 0.0,
                 "l2_cell_balance_after_projection": float(np.linalg.norm(div)) if len(div) else 0.0,
             }
@@ -109,6 +115,9 @@ def audit_stage2(root: str | Path) -> dict[str, object]:
             and details["cell_cell_facelets"] > 0
             and details["fv_graph_edges"] > 0
             and details["projection_edges"] >= details["fv_graph_edges"]
+            and details["velocity_cells_with_faces"] > 0
+            and details["nonzero_velocity_cells"] > 0
+            and details["max_cell_speed"] > 0.0
             and details["max_abs_cell_balance_after_projection"] < 1.0e-4
         )
     report = {
