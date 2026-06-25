@@ -1,4 +1,4 @@
-﻿param(
+param(
     [switch]$SkipSimulations,
     [switch]$Compile
 )

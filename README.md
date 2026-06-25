@@ -1,4 +1,4 @@
-﻿# PoreVoronoi
+# PoreVoronoi
 
 PoreVoronoi is the reproducibility and reference-code package for the CMAME manuscript on **GeoVoronoi-FV**, a prescribed-site conservative finite-volume construction for obstructed voxel domains.
 

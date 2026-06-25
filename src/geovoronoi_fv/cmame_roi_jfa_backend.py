@@ -1,4 +1,4 @@
-﻿# Auto-exported optional ROI-JFA backend for the CMAME work package.
+# Auto-exported optional ROI-JFA backend for the CMAME work package.
 # Source: partition_block_pubready_v12_tieaware_standalone.ipynb, ROI-JFA definition cell.
 # Generated so flow-side notebooks can import ROI-JFA functions without re-running the partition notebook.
 # Do not edit by hand; regenerate from the source notebook if needed.

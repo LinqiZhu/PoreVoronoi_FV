@@ -1,4 +1,4 @@
-﻿{
+{
     "case_name":  "bentheimer_dry_crop",
     "source_path":  "External Bentheimer segmented dry-scan volume; raw full image is not redistributed in this package.",
     "source_shape_zyx":  [

@@ -1,4 +1,4 @@
-﻿# Data and reproducibility notes
+# Data and reproducibility notes
 
 PoreVoronoi stores compact data products that support the GeoVoronoi-FV manuscript. The data layout separates final figure source data, paper-ready table data, and compact example inputs.
 

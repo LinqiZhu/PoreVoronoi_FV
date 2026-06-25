@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Draw Figure 07: sampled-state projection onto a conservative face-flux field.
 
 This version is a full redraw.  It avoids the previous dashboard/card language

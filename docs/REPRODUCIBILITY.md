@@ -1,4 +1,4 @@
-﻿# Reproducibility workflow
+# Reproducibility workflow
 
 This note gives a practical route through the PoreVoronoi package.
 

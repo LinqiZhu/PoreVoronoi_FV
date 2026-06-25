@@ -1,4 +1,4 @@
-﻿# Package contents
+# Package contents
 
 Generated staging manifest for the GeoVoronoi-FV GitHub package.
 
