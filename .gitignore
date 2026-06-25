@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.log
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.spl
+.DS_Store
+.ipynb_checkpoints/
+outputs/
+large_outputs/
+external/
+*.part

@@ -1,0 +1,85 @@
+{
+  "source": "public Berea raw volume, Figshare file id 3216671",
+  "archive_md5": "f3909e9dcabf23cc0f46c0963992cf93",
+  "selection": "irregular_same_slice",
+  "subvolume_origin_zyx": [
+    44,
+    60,
+    140
+  ],
+  "subvolume_shape_zyx": [
+    24,
+    64,
+    64
+  ],
+  "porosity_subvolume": 0.2572224934895833,
+  "stencil": "26-neighbour graph with monotone face-neighbour clearance rule",
+  "sites_local_zyx": [
+    [
+      11,
+      27,
+      6
+    ],
+    [
+      11,
+      50,
+      25
+    ]
+  ],
+  "sites_raw_zyx": [
+    [
+      55,
+      87,
+      146
+    ],
+    [
+      55,
+      110,
+      165
+    ]
+  ],
+  "candidate_score": 270.4118363865597,
+  "candidate_stats": {
+    "total": 35,
+    "turns": 24,
+    "tortuosity": 1.3664625560228307,
+    "largest": 30,
+    "balance": 0.7428571428571429
+  },
+  "candidate_obstacle_touch": 17,
+  "candidate_chord_solid_samples": 93,
+  "inter_label_facelets_3d": 637,
+  "inter_label_facelets_on_display_slice": 35,
+  "selected_facelet": {
+    "cell_i_zyx": [
+      11,
+      23,
+      34
+    ],
+    "cell_j_zyx": [
+      11,
+      24,
+      34
+    ],
+    "axis": 1,
+    "center_zyx": [
+      11.5,
+      24.0,
+      34.5
+    ],
+    "D_i_to_cell_i": 29.65685424949238,
+    "D_j_to_cell_j": 29.727922061357862,
+    "D_i_plus_D_j": 59.38477631085024
+  },
+  "path_lengths_voxel_steps": [
+    28,
+    26
+  ],
+  "path_unique_z_i": [
+    11
+  ],
+  "path_unique_z_j": [
+    11
+  ],
+  "data_file": "figure4_real_berea_3d_geodesic_face_operator_irregular_same_slice.npz"
+}

@@ -1,0 +1,5 @@
+case,paper_case,shape_zyx,stride_zyx,N_fl,S,N_cv,N_split,C_comp,distance_connectivity,dist_error_voxels,dist_error_rate_percent,max_dist_error,exact_wall_s,reading
+orthogonal_duct,Orthogonal duct,24x24x64,"(4, 4, 4)",36864,576,576,0,64.0,26,0,0.0,0.0,0.08169250003993511,distance-exact under the audited graph metric
+skewed_duct,Skewed duct,24x24x64,"(4, 4, 4)",36369,564,567,3,64.14285714285714,26,0,0.0,4.76837158203125e-07,0.04183660005219281,distance-exact under the audited graph metric
+A_thin_wall,Thin-wall synthetic,24x24x64,"(4, 4, 4)",35392,576,576,0,61.44444444444444,26,0,0.0,0.0,0.026419399888254702,distance-exact under the audited graph metric
+B_narrow_throat,Narrow-throat synthetic,24x24x64,"(4, 4, 4)",36337,576,576,0,63.08506944444444,26,0,0.0,0.0,0.01988599996548146,distance-exact under the audited graph metric

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="183.0mm" height="76.0mm" viewBox="0 0 183.0 76.0" version="1.1">
+<defs><style><![CDATA[text { font-family: Helvetica, Arial, Liberation Sans, sans-serif; } .panel-letter { font-weight:700; } .panel-title { font-weight:600; }]]></style>
+<linearGradient id="grad-ownership" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#28B391"/><stop offset="45%" stop-color="#009E73"/><stop offset="100%" stop-color="#007A59"/></linearGradient>
+<linearGradient id="grad-closure" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2A87BF"/><stop offset="45%" stop-color="#0072B2"/><stop offset="100%" stop-color="#00557F"/></linearGradient>
+<linearGradient id="grad-geometry" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#EAB13A"/><stop offset="45%" stop-color="#D79A13"/><stop offset="100%" stop-color="#B87900"/></linearGradient>
+</defs>
+<rect class="background" x="0.000" y="0.000" width="183.000" height="76.000" fill="#FFFFFF" stroke="none"/>
+<text class="panel-letter" x="6.500" y="6.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.8222;font-weight:700;fill:#222222;">a</text>
+<text class="panel-title" x="12.700" y="6.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.4694;font-weight:600;fill:#222222;">Exact agreement and ownership speedup</text>
+<text class="panel-letter" x="91.500" y="6.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.8222;font-weight:700;fill:#222222;">b</text>
+<text class="panel-title" x="97.700" y="6.000" text-anchor="start" dominant-baseline="alphabetic" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.4694;font-weight:600;fill:#222222;">Post-setup build-time decomposition</text>
+<line class="gridline panel-a-grid" x1="46.710" y1="18.200" x2="46.710" y2="59.700" stroke="#D8D8D8" stroke-width="0.120" stroke-linecap="butt"/>
+<line class="gridline panel-a-grid" x1="65.419" y1="18.200" x2="65.419" y2="59.700" stroke="#D8D8D8" stroke-width="0.120" stroke-linecap="butt"/>
+<line class="gridline panel-a-grid" x1="84.129" y1="18.200" x2="84.129" y2="59.700" stroke="#D8D8D8" stroke-width="0.120" stroke-linecap="butt"/>
+<line class="axis y-axis panel-a-axis" x1="28.000" y1="18.200" x2="28.000" y2="59.700" stroke="#3A3A3A" stroke-width="0.180" stroke-linecap="butt"/>
+<line class="axis panel-a-axis" x1="28.000" y1="59.700" x2="86.000" y2="59.700" stroke="#3A3A3A" stroke-width="0.180" stroke-linecap="butt"/>
+<line class="tick panel-a-tick" x1="28.000" y1="59.700" x2="28.000" y2="60.800" stroke="#3A3A3A" stroke-width="0.160" stroke-linecap="butt"/>
+<text class="tick-label panel-a-tick-label" x="28.000" y="63.400" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#3A3A3A;">0</text>
+<line class="tick panel-a-tick" x1="46.710" y1="59.700" x2="46.710" y2="60.800" stroke="#3A3A3A" stroke-width="0.160" stroke-linecap="butt"/>
+<text class="tick-label panel-a-tick-label" x="46.710" y="63.400" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#3A3A3A;">4</text>
+<line class="tick panel-a-tick" x1="65.419" y1="59.700" x2="65.419" y2="60.800" stroke="#3A3A3A" stroke-width="0.160" stroke-linecap="butt"/>
+<text class="tick-label panel-a-tick-label" x="65.419" y="63.400" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#3A3A3A;">8</text>
+<line class="tick panel-a-tick" x1="84.129" y1="59.700" x2="84.129" y2="60.800" stroke="#3A3A3A" stroke-width="0.160" stroke-linecap="butt"/>
+<text class="tick-label panel-a-tick-label" x="84.129" y="63.400" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#3A3A3A;">12</text>
+<text class="case-label panel-a-case" x="25.600" y="22.350" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Orthogonal</text>
+<rect class="speedup-bar" x="28.000" y="20.607" width="52.855" height="3.486" fill="url(#grad-ownership)" stroke="none"/>
+<text class="endpoint-label speedup-label" x="79.955" y="22.350" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#FFFFFF;">11.3×</text>
+<text class="case-label panel-a-case" x="25.600" y="30.650" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Skewed</text>
+<rect class="speedup-bar" x="28.000" y="28.907" width="43.500" height="3.486" fill="url(#grad-ownership)" stroke="none"/>
+<text class="endpoint-label speedup-label" x="70.600" y="30.650" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#FFFFFF;">9.3×</text>
+<text class="case-label panel-a-case" x="25.600" y="38.950" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Thin wall</text>
+<rect class="speedup-bar" x="28.000" y="37.207" width="48.645" height="3.486" fill="url(#grad-ownership)" stroke="none"/>
+<text class="endpoint-label speedup-label" x="75.745" y="38.950" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#FFFFFF;">10.4×</text>
+<text class="case-label panel-a-case" x="25.600" y="47.250" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Narrow throat</text>
+<rect class="speedup-bar" x="28.000" y="45.507" width="43.032" height="3.486" fill="url(#grad-ownership)" stroke="none"/>
+<text class="endpoint-label speedup-label" x="70.132" y="47.250" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#FFFFFF;">9.2×</text>
+<text class="case-label panel-a-case" x="25.600" y="55.550" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Maze</text>
+<rect class="speedup-bar" x="28.000" y="53.807" width="42.565" height="3.486" fill="url(#grad-ownership)" stroke="none"/>
+<text class="endpoint-label speedup-label" x="69.665" y="55.550" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#FFFFFF;">9.1×</text>
+<line class="reference-line" x1="32.677" y1="18.200" x2="32.677" y2="59.700" stroke="#D62728" stroke-width="0.240" stroke-linecap="butt" stroke-dasharray="1.15,1.0"/>
+<text class="reference-label" x="32.677" y="16.850" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#D62728;">1×</text>
+<text class="axis-label panel-a-axis-label" x="57.000" y="71.300" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.1167;font-weight:400;fill:#222222;">Ownership speedup (exact-frontier / ROI-JFA)</text>
+<rect class="legend-swatch" x="110.500" y="12.000" width="2.000" height="2.000" fill="url(#grad-ownership)" stroke="none"/>
+<text class="legend-label" x="113.400" y="13.000" text-anchor="start" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#222222;">Ownership</text>
+<rect class="legend-swatch" x="128.000" y="12.000" width="2.000" height="2.000" fill="url(#grad-closure)" stroke="none"/>
+<text class="legend-label" x="130.900" y="13.000" text-anchor="start" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#222222;">Closure</text>
+<rect class="legend-swatch" x="142.200" y="12.000" width="2.000" height="2.000" fill="url(#grad-geometry)" stroke="none"/>
+<text class="legend-label" x="145.100" y="13.000" text-anchor="start" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#222222;">Moments + facelets</text>
+<line class="gridline panel-b-grid" x1="126.604" y1="18.200" x2="126.604" y2="59.700" stroke="#D8D8D8" stroke-width="0.120" stroke-linecap="butt"/>
+<line class="gridline panel-b-grid" x1="142.708" y1="18.200" x2="142.708" y2="59.700" stroke="#D8D8D8" stroke-width="0.120" stroke-linecap="butt"/>
+<line class="gridline panel-b-grid" x1="158.812" y1="18.200" x2="158.812" y2="59.700" stroke="#D8D8D8" stroke-width="0.120" stroke-linecap="butt"/>
+<line class="axis y-axis panel-b-axis" x1="110.500" y1="18.200" x2="110.500" y2="59.700" stroke="#3A3A3A" stroke-width="0.180" stroke-linecap="butt"/>
+<line class="axis panel-b-axis" x1="110.500" y1="59.700" x2="172.500" y2="59.700" stroke="#3A3A3A" stroke-width="0.180" stroke-linecap="butt"/>
+<line class="tick panel-b-tick" x1="110.500" y1="59.700" x2="110.500" y2="60.800" stroke="#3A3A3A" stroke-width="0.160" stroke-linecap="butt"/>
+<text class="tick-label panel-b-tick-label" x="110.500" y="63.400" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#3A3A3A;">0</text>
+<line class="tick panel-b-tick" x1="126.604" y1="59.700" x2="126.604" y2="60.800" stroke="#3A3A3A" stroke-width="0.160" stroke-linecap="butt"/>
+<text class="tick-label panel-b-tick-label" x="126.604" y="63.400" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#3A3A3A;">4</text>
+<line class="tick panel-b-tick" x1="142.708" y1="59.700" x2="142.708" y2="60.800" stroke="#3A3A3A" stroke-width="0.160" stroke-linecap="butt"/>
+<text class="tick-label panel-b-tick-label" x="142.708" y="63.400" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#3A3A3A;">8</text>
+<line class="tick panel-b-tick" x1="158.812" y1="59.700" x2="158.812" y2="60.800" stroke="#3A3A3A" stroke-width="0.160" stroke-linecap="butt"/>
+<text class="tick-label panel-b-tick-label" x="158.812" y="63.400" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9050;font-weight:400;fill:#3A3A3A;">12</text>
+<text class="axis-label panel-b-axis-label" x="141.500" y="71.300" text-anchor="middle" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.1167;font-weight:400;fill:#222222;">Post-setup build time (ms)</text>
+<text class="case-label panel-b-case" x="108.100" y="22.350" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Orthogonal</text>
+<rect class="bar-ownership_ms" x="110.500" y="20.607" width="3.095" height="3.486" fill="url(#grad-ownership)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-closure_ms" x="113.595" y="20.607" width="14.128" height="3.486" fill="url(#grad-closure)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-geometry_ms" x="127.722" y="20.607" width="32.968" height="3.486" fill="url(#grad-geometry)" stroke="#FFFFFF" stroke-width="0.160"/>
+<text class="total-label" x="161.491" y="22.350" text-anchor="start" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#222222;">12.47</text>
+<text class="case-label panel-b-case" x="108.100" y="30.650" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Skewed</text>
+<rect class="bar-ownership_ms" x="110.500" y="28.907" width="1.731" height="3.486" fill="url(#grad-ownership)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-closure_ms" x="112.231" y="28.907" width="7.434" height="3.486" fill="url(#grad-closure)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-geometry_ms" x="119.665" y="28.907" width="30.423" height="3.486" fill="url(#grad-geometry)" stroke="#FFFFFF" stroke-width="0.160"/>
+<text class="total-label" x="150.888" y="30.650" text-anchor="start" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#222222;">9.83</text>
+<text class="case-label panel-b-case" x="108.100" y="38.950" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Thin wall</text>
+<rect class="bar-ownership_ms" x="110.500" y="37.207" width="1.745" height="3.486" fill="url(#grad-ownership)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-closure_ms" x="112.245" y="37.207" width="7.532" height="3.486" fill="url(#grad-closure)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-geometry_ms" x="119.777" y="37.207" width="31.897" height="3.486" fill="url(#grad-geometry)" stroke="#FFFFFF" stroke-width="0.160"/>
+<text class="total-label" x="152.473" y="38.950" text-anchor="start" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#222222;">10.23</text>
+<text class="case-label panel-b-case" x="108.100" y="47.250" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Narrow throat</text>
+<rect class="bar-ownership_ms" x="110.500" y="45.507" width="2.080" height="3.486" fill="url(#grad-ownership)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-closure_ms" x="112.580" y="45.507" width="9.773" height="3.486" fill="url(#grad-closure)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-geometry_ms" x="122.353" y="45.507" width="29.653" height="3.486" fill="url(#grad-geometry)" stroke="#FFFFFF" stroke-width="0.160"/>
+<text class="total-label" x="152.806" y="47.250" text-anchor="start" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#222222;">10.31</text>
+<text class="case-label panel-b-case" x="108.100" y="55.550" text-anchor="end" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:2.0461;font-weight:400;fill:#222222;">Maze</text>
+<rect class="bar-ownership_ms" x="110.500" y="53.807" width="2.548" height="3.486" fill="url(#grad-ownership)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-closure_ms" x="113.048" y="53.807" width="8.276" height="3.486" fill="url(#grad-closure)" stroke="#FFFFFF" stroke-width="0.160"/>
+<rect class="bar-geometry_ms" x="121.324" y="53.807" width="47.038" height="3.486" fill="url(#grad-geometry)" stroke="#FFFFFF" stroke-width="0.160"/>
+<text class="total-label" x="169.162" y="55.550" text-anchor="start" dominant-baseline="middle" style="font-family:Helvetica, Arial, Liberation Sans, sans-serif;font-size:1.9403;font-weight:400;fill:#222222;">14.37</text>
+</svg>

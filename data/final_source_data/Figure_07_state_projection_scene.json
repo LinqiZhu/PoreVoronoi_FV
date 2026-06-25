@@ -1,0 +1,101 @@
+{
+  "canvas_mm": [
+    183.0,
+    59.0
+  ],
+  "panels": {
+    "a": {
+      "x": 6.0,
+      "w": 53.666666666666664
+    },
+    "b": {
+      "x": 64.66666666666666,
+      "w": 53.666666666666664
+    },
+    "c": {
+      "x": 123.33333333333333,
+      "w": 53.666666666666664
+    }
+  },
+  "vertical_zones_mm": {
+    "body_y": 19.0,
+    "body_h": 36.0
+  },
+  "flux_edges": [
+    {
+      "edge_id": "e1",
+      "u": "A",
+      "v": "B",
+      "target": 0.66,
+      "projected": 0.25,
+      "target_label": "above",
+      "projected_label": "above"
+    },
+    {
+      "edge_id": "e2",
+      "u": "B",
+      "v": "C",
+      "target": -0.52,
+      "projected": -0.2,
+      "target_label": "above",
+      "projected_label": "above"
+    },
+    {
+      "edge_id": "e3",
+      "u": "A",
+      "v": "D",
+      "target": 0.59,
+      "projected": -0.25,
+      "target_label": "left",
+      "projected_label": "left"
+    },
+    {
+      "edge_id": "e4",
+      "u": "B",
+      "v": "E",
+      "target": 0.11,
+      "projected": 0.45,
+      "target_label": "right_high",
+      "projected_label": "right_high"
+    },
+    {
+      "edge_id": "e5",
+      "u": "D",
+      "v": "E",
+      "target": -0.11,
+      "projected": -0.25,
+      "target_label": "below",
+      "projected_label": "below"
+    },
+    {
+      "edge_id": "e6",
+      "u": "E",
+      "v": "F",
+      "target": 0.14,
+      "projected": 0.2,
+      "target_label": "below_right_far",
+      "projected_label": "below_right_far"
+    },
+    {
+      "edge_id": "e7",
+      "u": "C",
+      "v": "F",
+      "target": -0.11,
+      "projected": -0.2,
+      "target_label": "right_lower",
+      "projected_label": "right_low"
+    }
+  ],
+  "symbols": {
+    "cell_graph": "G_f",
+    "cell_face_set": "F_ij",
+    "facelet": "gamma",
+    "target_facelet_flux": "phi_gamma^{t,loc}",
+    "target_edge_flux": "phi_e^t",
+    "projected_flux": "phi^{proj}",
+    "projection_residual": "r^{proj}",
+    "incidence": "B",
+    "weight": "W",
+    "node_state": "u_i"
+  }
+}

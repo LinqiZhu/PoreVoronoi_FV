@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-12T14:45:20",
+  "source_csv": "outputs\\berea_support_ladder_current_method_20260612\\berea_support_ladder_current_method_compact_summary.csv",
+  "reference_time_s": 818.51,
+  "retained_support": 1000,
+  "retained_task_speedup": 397.6,
+  "face_operator": "geodesic_face",
+  "berea_rows_csv": "paper_ready_data_package_2026-06-06\\protocol_refinement_berea_rerun_rows.csv",
+  "tex_snippet": "paper_ready_data_package_2026-06-06\\tex_snippets\\table_protocol_refinement_berea_rows.tex",
+  "figures": [
+    "cmame_artifacts\\figures\\Figure_12_protocol_refinement.png",
+    "cmame_artifacts\\figures\\Figure_12_protocol_refinement.pdf"
+  ]
+}

@@ -1,0 +1,51 @@
+\begin{table}[!htbp]
+\centering
+\caption{Bentheimer stride-\((2,4,4)\) fixed-beta offset-ensemble selector audit. Self-consistency scores are computed before the voxel-reference comparison from coarse consistency and compactness records. The selected offset \((0,1,2)\) is rank 3 by the combined self-consistency score and rank 2 by the subsequently measured fixed-beta permeability error. The table audits the declared site protocol used before the locked wall-resolution closure is applied and records the selector transparency available before the final flow row.}
+\label{tab:si-bentheimer-offset-ensemble}
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{2.4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Offset & \(N_s\) & \(N_c\) & Combined score & Consistency score & \(e_K\) (\%) & \(e_u^{\mathrm{wall}}\) (\%) & \(e_u^{\mathrm{flux}}\) (\%) \\
+\midrule
+(0, 0, 0) & 1319 & 1325 & 0.1948 & 0.1192 & 3.95 & 34.51 & 44.71 \\
+(0, 0, 1) & 1321 & 1324 & 0.08145 & 0.05249 & 1.57 & 28.64 & 37.71 \\
+(0, 0, 2) & 1316 & 1321 & 0.1004 & 0.05833 & 10.37 & 31.22 & 51.27 \\
+(0, 0, 3) & 1316 & 1323 & 0.1195 & 0.07421 & 5.88 & 41.03 & 46.81 \\
+(0, 1, 0) & 1326 & 1330 & 0.3348 & 0.2445 & 31.92 & 36.84 & 57.87 \\
+(0, 1, 1) & 1326 & 1335 & 35.63 & 24.73 & 97.03 & 611.15 & 686.20 \\
+(0, 1, 2) & 1324 & 1327 & 0.0663 & 0.04244 & 0.67 & 25.32 & 25.52 \\
+(0, 1, 3) & 1335 & 1339 & 0.29 & 0.2006 & 47.44 & 193.56 & 250.04 \\
+(0, 2, 0) & 1344 & 1348 & 0.1473 & 0.1079 & 26.49 & 43.94 & 57.70 \\
+(0, 2, 1) & 1345 & 1351 & 0.2304 & 0.167 & 6.54 & 35.28 & 42.09 \\
+(0, 2, 2) & 1350 & 1358 & 0.09378 & 0.06577 & 15.52 & 32.53 & 37.32 \\
+(0, 2, 3) & 1349 & 1355 & 0.0821 & 0.05868 & 14.18 & 34.70 & 81.07 \\
+(0, 3, 0) & 1366 & 1368 & 0.08088 & 0.0587 & 2.81 & 31.07 & 59.07 \\
+(0, 3, 1) & 1350 & 1356 & 0.09121 & 0.06627 & 1.12 & 25.43 & 27.26 \\
+(0, 3, 2) & 1345 & 1351 & 0.1522 & 0.1132 & 2.90 & 28.34 & 36.97 \\
+(0, 3, 3) & 1369 & 1373 & 0.03583 & 0.02554 & 17.32 & 79.25 & 273.78 \\
+(1, 0, 0) & 1302 & 1307 & 0.2091 & 0.1354 & 17.13 & 34.87 & 60.76 \\
+(1, 0, 1) & 1290 & 1294 & 0.2894 & 0.187 & 17.15 & 34.13 & 84.02 \\
+(1, 0, 2) & 1319 & 1332 & 0.1175 & 0.07283 & 10.37 & 59.25 & 81.69 \\
+(1, 0, 3) & 1314 & 1324 & 0.207 & 0.1221 & 14.91 & 35.07 & 40.00 \\
+(1, 1, 0) & 1324 & 1331 & 1.95 & 1.309 & 198.36 & 1623.41 & 13702.67 \\
+(1, 1, 1) & 1329 & 1336 & 0.07706 & 0.05429 & 108.15 & 137.25 & 171.90 \\
+(1, 1, 2) & 1341 & 1348 & 0.09835 & 0.06779 & 70.76 & 80.34 & 98.81 \\
+(1, 1, 3) & 1324 & 1330 & 0.1381 & 0.09058 & 51.19 & 143.99 & 315.56 \\
+(1, 2, 0) & 1335 & 1339 & 0.5934 & 0.4289 & 99.26 & 54.42 & 83.46 \\
+(1, 2, 1) & 1340 & 1349 & 0.1279 & 0.09354 & 10.88 & 49.39 & 81.08 \\
+(1, 2, 2) & 1346 & 1357 & 0.06042 & 0.04272 & 8.50 & 36.32 & 53.24 \\
+(1, 2, 3) & 1350 & 1357 & 0.1083 & 0.07717 & 17.01 & 53.62 & 79.68 \\
+(1, 3, 0) & 1355 & 1355 & 0.5667 & 0.4187 & 72.29 & 32.92 & 63.48 \\
+(1, 3, 1) & 1357 & 1364 & 0.2275 & 0.1755 & 20.26 & 47.51 & 113.58 \\
+(1, 3, 2) & 1364 & 1371 & 0.5244 & 0.3961 & 64.85 & 77.29 & 128.79 \\
+(1, 3, 3) & 1373 & 1377 & 0.09372 & 0.06648 & 0.63 & 38.94 & 45.57 \\
+\bottomrule
+\end{tabular}
+}
+\endgroup
+\end{table}
+
+\noindent In this fixed-beta selector audit, the selected offset \((0,1,2)\) gives \(e_K=0.67\%\), \(e_u^{\mathrm{wall}}=25.32\%\), and \(e_u^{\mathrm{flux}}=25.52\%\). After the retained wall-resolution closure and geodesic face operator are applied, the same selected site rule gives the final reported row \(e_K=0.62\%\) and \(e_\phi=19.78\%\) in Table~\ref{tab:si-bentheimer-density}. Thus this table documents selector transparency and offset sensitivity before the final scalar-permeability row.

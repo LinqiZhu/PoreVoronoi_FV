@@ -1,0 +1,2 @@
+case,paper_case,stride_zyx,wall_beta,K_eff_x,K_ref_x,e_K_percent,mass_inf_per_volume,t_total_s,speedup_vs_ref,recommended_use
+bentheimer_sandstone_crop,Bentheimer segmented sandstone crop,"(2, 6, 6)",2.0,0.0559116833475315,0.05225707669002652,6.993515307377452,6.452442882299084e-16,0.29182329995092005,944.04496366933,SI sensitivity; good permeability match but rock-specific beta

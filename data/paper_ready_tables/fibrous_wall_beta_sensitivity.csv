@@ -1,0 +1,7 @@
+case,beta,K_eff_x,e_K_percent,mass_inf_per_volume,recommended_use
+fibrous_filter_proxy,1.25,0.24635881271152538,79.3546,9.401591376072271e-17,SI wall-closure sensitivity only
+fibrous_filter_proxy,1.5,0.203983336121771,48.5043,9.401538671799998e-17,SI wall-closure sensitivity only
+fibrous_filter_proxy,2.0,0.150559358983608,9.6105,7.397308134961256e-17,SI wall-closure sensitivity only
+fibrous_filter_proxy,2.5,0.11849594782949707,13.7323,1.384382178662956e-16,SI wall-closure sensitivity only
+fibrous_filter_proxy,3.0,0.09725747356542162,29.1944,2.0478927324004033e-17,SI wall-closure sensitivity only
+fibrous_filter_proxy,4.0,0.071067185413252,48.2615,4.6599348186605885e-17,SI wall-closure sensitivity only

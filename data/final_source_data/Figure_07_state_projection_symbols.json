@@ -1,0 +1,12 @@
+{
+  "cell_graph": "G_f",
+  "cell_face_set": "F_ij",
+  "facelet": "gamma",
+  "target_facelet_flux": "phi_gamma^{t,loc}",
+  "target_edge_flux": "phi_e^t",
+  "projected_flux": "phi^{proj}",
+  "projection_residual": "r^{proj}",
+  "incidence": "B",
+  "weight": "W",
+  "node_state": "u_i"
+}

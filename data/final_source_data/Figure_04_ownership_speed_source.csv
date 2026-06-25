@@ -1,0 +1,6 @@
+case,speedup_vs_exact_gpu_labels,label_mismatch
+Orthogonal,11.3,0
+Skewed,9.3,0
+Thin wall,10.4,0
+Narrow throat,9.2,0
+Maze,9.1,0

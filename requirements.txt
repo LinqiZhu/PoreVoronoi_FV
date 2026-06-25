@@ -1,0 +1,6 @@
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+pandas>=2.0
+cupy-cuda12x>=13.0; platform_system == "Windows"
+Pillow>=10.0

@@ -1,0 +1,35 @@
+﻿{
+    "case_name":  "bentheimer_dry_crop",
+    "source_path":  "External Bentheimer segmented dry-scan volume; raw full image is not redistributed in this package.",
+    "source_shape_zyx":  [
+                             2714,
+                             1000,
+                             1000
+                         ],
+    "origin_zyx":  [
+                       1562,
+                       59,
+                       349
+                   ],
+    "shape_zyx":  [
+                      16,
+                      96,
+                      96
+                  ],
+    "pore_value":  0,
+    "mask_dtype":  "bool",
+    "raw_N_fl":  43904,
+    "raw_porosity":  0.2977430555555556,
+    "keep_largest_component":  true,
+    "N_fl":  42764,
+    "porosity":  0.2900119357638889,
+    "connectivity":  {
+                         "n_components":  1,
+                         "largest_component_voxels":  42764,
+                         "largest_component_fraction":  1.0,
+                         "span_z":  true,
+                         "span_y":  true,
+                         "span_x":  true
+                     },
+    "interpretation":  "Segmented Bentheimer dry-scan crop; voxels equal to pore_value are used as traversable pore space. For permeability production, only the largest face-connected pore component is retained. The selected component spans the x, y, and z directions."
+}

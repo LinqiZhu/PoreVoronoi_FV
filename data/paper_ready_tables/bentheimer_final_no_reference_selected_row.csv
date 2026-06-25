@@ -1,0 +1,2 @@
+case,rule,selection_basis,S,N_cv,C_comp,K_eff_x,K_ref_x,e_K_percent,e_phi_percent,e_u_percent,mass_inf_per_volume,t_total_s,t_ref_total_s,speedup_vs_ref,face_operator,operator_tproj
+bentheimer_sandstone_crop,"stride (2,4,4), internally selected offset (0,1,2)",no-reference coarse internal consistency,1324,1327,32.22607385079126,0.05193284852891284,0.05225707669002652,0.6204483328390259,19.776190527227293,24.299640437043593,1.8829881230641998e-16,0.663323600019794,242.67442080006003,365.84620356160775,geodesic_weights,existing_face_transmissibility

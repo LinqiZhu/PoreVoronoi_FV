@@ -1,0 +1,8 @@
+edge_id,u,v,target,projected,target_label,projected_label
+e1,A,B,0.66,0.25,above,above
+e2,B,C,-0.52,-0.2,above,above
+e3,A,D,0.59,-0.25,left,left
+e4,B,E,0.11,0.45,right_high,right_high
+e5,D,E,-0.11,-0.25,below,below
+e6,E,F,0.14,0.2,below_right_far,below_right_far
+e7,C,F,-0.11,-0.2,right_lower,right_low

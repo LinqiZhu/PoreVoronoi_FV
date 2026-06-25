@@ -1,0 +1,11 @@
+panel,case,speedup_exact_frontier_over_roi_jfa,roi_jfa_cuda_ms_table_value,exact_gpu_ms_from_displayed_ratio,setup_ms,ownership_ms,cell_closure_ms,geometry_assembly_ms,post_setup_build_ms,source
+a,Orthogonal,11.3,0.1,1.1300000000000001,,,,,,geovoronoi_fv_cmame_text_master_submission_audit_final.tex Table~\ref{tab:roi-jfa-cpu-reference}
+a,Skewed,9.3,0.124,1.1532,,,,,,geovoronoi_fv_cmame_text_master_submission_audit_final.tex Table~\ref{tab:roi-jfa-cpu-reference}
+a,Thin wall,10.4,0.105,1.092,,,,,,geovoronoi_fv_cmame_text_master_submission_audit_final.tex Table~\ref{tab:roi-jfa-cpu-reference}
+a,Narrow throat,9.2,0.123,1.1316,,,,,,geovoronoi_fv_cmame_text_master_submission_audit_final.tex Table~\ref{tab:roi-jfa-cpu-reference}
+a,Maze,9.1,0.123,1.1193,,,,,,geovoronoi_fv_cmame_text_master_submission_audit_final.tex Table~\ref{tab:roi-jfa-cpu-reference}
+b,Orthogonal,,,,0.07711999863386154,0.7686999961151741,3.509099995426368,8.188899999368005,12.466699990909547,cmame_artifacts/figure_source_data/roi_jfa_construction_timing_current_path_gpu_split_with_maze_2026-06-24.csv
+b,Skewed,,,,0.05116799846291542,0.4298999920138158,1.8464999957359396,7.5567000021692365,9.833099989918992,cmame_artifacts/figure_source_data/roi_jfa_construction_timing_current_path_gpu_split_with_maze_2026-06-24.csv
+b,Thin wall,,,,0.03776000067591667,0.43339999683666974,1.8707999988691881,7.922700002382044,10.226899998087902,cmame_artifacts/figure_source_data/roi_jfa_construction_timing_current_path_gpu_split_with_maze_2026-06-24.csv
+b,Narrow throat,,,,0.04102399945259094,0.5165999973542057,2.4275999967358075,7.365299999946728,10.309499994036742,cmame_artifacts/figure_source_data/roi_jfa_construction_timing_current_path_gpu_split_with_maze_2026-06-24.csv
+b,Maze,,,,0.06406400352716446,0.632800001767464,2.055699995253235,11.683699995046481,14.37219999206718,cmame_artifacts/figure_source_data/roi_jfa_construction_timing_current_path_gpu_split_with_maze_2026-06-24.csv

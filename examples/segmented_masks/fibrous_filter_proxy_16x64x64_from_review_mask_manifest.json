@@ -1,0 +1,30 @@
+﻿{
+    "case_name":  "fibrous_filter_proxy",
+    "source_path":  "Derived from the review-dataset fibrous-filter mask; raw source path is not redistributed in this package.",
+    "source_key":  "fibrous_filter_mask",
+    "source_interpretation":  "`fibrous_filter_mask` is treated as the solid/fiber pattern; its logical complement is the traversable pore phase.",
+    "source_shape_yx":  [
+                            96,
+                            96
+                        ],
+    "shape_zyx":  [
+                      16,
+                      64,
+                      64
+                  ],
+    "resize":  "nearest-neighbor",
+    "raw_N_fl":  41248,
+    "raw_porosity":  0.62939453125,
+    "keep_largest_component":  true,
+    "N_fl":  38912,
+    "porosity":  0.59375,
+    "connectivity":  {
+                         "n_components":  1,
+                         "largest_component_voxels":  38912,
+                         "largest_component_fraction":  1.0,
+                         "span_z":  true,
+                         "span_y":  true,
+                         "span_x":  true
+                     },
+    "interpretation":  "Fibrous-filter proxy derived from the review-dataset pattern. The largest face-connected pore component is retained for permeability production. This is a complex porous-material proxy, not a real-rock image case."
+}

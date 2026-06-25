@@ -1,0 +1,6 @@
+case,ownership_ms,components_ms,moments_facelets_ms,build_excl_setup_ms
+Orthogonal,0.76,3.51,8.19,12.47
+Skewed,0.43,1.85,7.56,9.83
+Thin wall,0.43,1.87,7.92,10.23
+Narrow throat,0.51,2.43,7.37,10.31
+Maze,0.63,2.06,11.68,14.37
