@@ -1,0 +1,9 @@
+{
+  "cell_cell_facelets": 38681,
+  "fv_graph_edges": 1361,
+  "inlet_boundary_faces": 70,
+  "max_edge_area": 143.0,
+  "mean_edge_area": 28.4210147857666,
+  "outlet_boundary_faces": 70,
+  "wall_facelets": 64066
+}

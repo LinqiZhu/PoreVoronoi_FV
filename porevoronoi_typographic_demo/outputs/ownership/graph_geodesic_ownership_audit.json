@@ -1,0 +1,9 @@
+{
+  "assigned_voxels": 102486,
+  "directed_edge_tests": 550850,
+  "max_graph_distance": 25,
+  "ownership_rule": "multi-source 6-neighbour graph-geodesic BFS with lexicographic site-id tie break",
+  "rho_D": 0,
+  "sites": 360,
+  "unassigned_voxels": 0
+}

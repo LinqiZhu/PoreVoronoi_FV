@@ -1,0 +1,9 @@
+{
+  "duplicates_removed": 0,
+  "input_particles": 360,
+  "pressure_max": 0.9627281427383423,
+  "pressure_min": 0.017939133569598198,
+  "sample_sites": 360,
+  "site_rule": "sampled particles snapped to nearest pore voxel",
+  "speed_mean": 0.0015628384426236153
+}
