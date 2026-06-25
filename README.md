@@ -1,11 +1,11 @@
-# PoreVoronoi
+﻿# PoreVoronoi
 
 PoreVoronoi is the reproducibility and reference-code package for the CMAME manuscript on **GeoVoronoi-FV**, a prescribed-site conservative finite-volume construction for obstructed voxel domains.
 
 The repository is intentionally organised around the manuscript evidence chain: graph-geodesic ownership, positive-area facelet exchange, finite-volume operator assembly, conservative state-to-flux projection, and the compact synthetic and segmented-mask examples used in the paper.
 
 <p align="center">
-  <img src="porevoronoi_typographic_demo/outputs/figures/Figure_PoreVoronoi_stage1_README_hero_dark.png" alt="PoreVoronoi typographic pore-space hero: pressure-driven flow and sampled states inside a readable letter-shaped pore domain" width="100%">
+  <img src="porevoronoi_typographic_demo/outputs/final_figures/Figure_PoreVoronoi_README_landing_hero_dark.png" alt="PoreVoronoi typographic pore-space hero: sampled states, graph-geodesic PoreVoronoi-FV cells, facelets, and conservative flux inside a readable letter-shaped pore domain" width="100%">
 </p>
 
 ## What this repository contains
@@ -65,6 +65,12 @@ python scripts/02_solve_pressure_flow.py
 python scripts/03_trace_streamlines_and_particles.py
 python scripts/04_render_preview.py
 python scripts/05_audit_outputs.py
+python scripts/06_select_prescribed_sites.py
+python scripts/07_compute_graph_geodesic_ownership.py
+python scripts/08_extract_fv_cells_and_facelets.py
+python scripts/09_project_conservative_flux.py
+python scripts/10_render_final_figure.py
+python scripts/11_audit_porevoronoi_fv.py
 ```
 
 To regenerate selected manuscript figure products from packaged source data:

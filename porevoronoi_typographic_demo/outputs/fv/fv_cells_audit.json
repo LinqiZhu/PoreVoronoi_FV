@@ -1,0 +1,9 @@
+{
+  "disconnected_site_labels": 0,
+  "face_connected_splits": 0,
+  "finite_volume_cells": 360,
+  "max_cell_voxels": 1022,
+  "median_cell_voxels": 261.5,
+  "min_cell_voxels": 22,
+  "sites_with_cells": 360
+}

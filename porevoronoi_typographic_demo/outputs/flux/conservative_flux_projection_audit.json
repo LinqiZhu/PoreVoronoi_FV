@@ -1,0 +1,12 @@
+{
+  "cells": 360,
+  "conservative_l2_divergence": 8.874046552628641e-10,
+  "conservative_max_abs_divergence": 9.929146393972133e-11,
+  "inlet_edges": 3,
+  "internal_edges": 1361,
+  "outlet_edges": 5,
+  "projection_edges": 1369,
+  "projection_rule": "Euclidean closest edge field subject to zero cell balance on the FV graph",
+  "target_l2_divergence": 2.3138046937612415,
+  "target_max_abs_divergence": 1.8052994396898414
+}

@@ -4,9 +4,10 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.stage2_guard import guard
+from src.final_rendering import render_final_outputs
 
 
 if __name__ == "__main__":
-    guard("render final four-panel paper figure and README landing hero")
-
+    audit = render_final_outputs()
+    print("final figures saved")
+    print(audit)
