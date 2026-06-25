@@ -1,0 +1,11 @@
+{
+  "cg_info": 0,
+  "inlet_voxels": 70,
+  "outlet_voxels": 70,
+  "pressure_max": 1.0,
+  "pressure_min": 0.0,
+  "solver": "cg",
+  "speed_mean": 0.001408300595358014,
+  "speed_p95": 0.0037935692816972733,
+  "unknowns": 102346
+}

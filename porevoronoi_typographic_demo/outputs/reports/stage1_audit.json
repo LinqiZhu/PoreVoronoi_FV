@@ -1,0 +1,18 @@
+{
+  "details": {
+    "mask2d_components_4conn": 1,
+    "mask3d_components_6conn": 1,
+    "mask3d_shape_zyx": [
+      30,
+      82,
+      260
+    ],
+    "missing": [],
+    "particles": 360,
+    "pore_voxels": 102486,
+    "pressure_finite_fraction": 1.0,
+    "streamline_points": 89898
+  },
+  "passed": true,
+  "stage": "stage1_typographic_pore_demo"
+}

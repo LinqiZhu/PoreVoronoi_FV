@@ -1,0 +1,20 @@
+{
+  "components": 1,
+  "faces": 128228,
+  "kept_label": 1,
+  "kept_voxels": 102486,
+  "pore_voxels": 102486,
+  "porosity_3d": 0.160234521575985,
+  "shape_zyx": [
+    30,
+    82,
+    260
+  ],
+  "shear_voxels": 15,
+  "spacing_zyx": [
+    0.034482758620689655,
+    0.012345679012345678,
+    0.016216216216216217
+  ],
+  "vertices": 64078
+}

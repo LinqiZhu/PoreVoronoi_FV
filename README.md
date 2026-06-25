@@ -4,6 +4,10 @@ PoreVoronoi is the reproducibility and reference-code package for the CMAME manu
 
 The repository is intentionally organised around the manuscript evidence chain: graph-geodesic ownership, positive-area facelet exchange, finite-volume operator assembly, conservative state-to-flux projection, and the compact synthetic and segmented-mask examples used in the paper.
 
+<p align="center">
+  <img src="porevoronoi_typographic_demo/outputs/figures/Figure_PoreVoronoi_stage1_README_hero_dark.png" alt="PoreVoronoi typographic pore-space hero: pressure-driven flow and sampled states inside a readable letter-shaped pore domain" width="100%">
+</p>
+
 ## What this repository contains
 
 ```text
@@ -15,6 +19,7 @@ data/paper_ready_tables/    Paper-ready CSV tables and TeX snippets
 examples/                   Compact redistributable example inputs
 manuscript/figures/         Final figure PDFs and available editable SVG sources
 docs/                       Data, reproducibility, and package-manifest notes
+porevoronoi_typographic_demo/ README hero/audit demo: text-shaped 3D pore flow
 ```
 
 The package includes small reference datasets and final table/figure source data so that readers can inspect the numerical evidence without downloading the full raw tomography volumes.
@@ -50,7 +55,19 @@ From the repository root:
 python -B -c "import ast, pathlib; [ast.parse(p.read_text(encoding='utf-8-sig'), filename=str(p)) for p in pathlib.Path('.').rglob('*.py')]; print('AST_OK')"
 ```
 
-To regenerate selected figure products from packaged source data:
+To regenerate the README typographic pore hero demo:
+
+```bash
+cd porevoronoi_typographic_demo
+python scripts/00_make_word_mask_2d.py
+python scripts/01_make_typographic_pore_3d.py
+python scripts/02_solve_pressure_flow.py
+python scripts/03_trace_streamlines_and_particles.py
+python scripts/04_render_preview.py
+python scripts/05_audit_outputs.py
+```
+
+To regenerate selected manuscript figure products from packaged source data:
 
 ```bash
 python repro/figures/make_figure_04_ownership_speed_audit.py
