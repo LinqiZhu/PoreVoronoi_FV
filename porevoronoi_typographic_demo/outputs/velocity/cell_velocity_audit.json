@@ -1,0 +1,11 @@
+{
+  "cells": 360,
+  "component_order": "zyx",
+  "max_cell_speed": 0.011572964183684925,
+  "mean_cell_speed": 0.0005544045700951044,
+  "nonzero_velocity_cells": 360,
+  "velocity_cells_with_faces": 360,
+  "velocity_definition": "area-weighted cell velocity reconstructed from conservative FV graph fluxes distributed over positive-area facelets and inlet/outlet boundary faces",
+  "velocity_figure": "C:\\Users\\44536\\Documents\\Codex\\2026-06-09\\files-mentioned-by-the-user-txt\\work\\PoreVoronoi\\porevoronoi_typographic_demo\\outputs\\velocity\\Figure_PoreVoronoi_FV_cell_velocity.png",
+  "velocity_figure_svg": "C:\\Users\\44536\\Documents\\Codex\\2026-06-09\\files-mentioned-by-the-user-txt\\work\\PoreVoronoi\\porevoronoi_typographic_demo\\outputs\\velocity\\Figure_PoreVoronoi_FV_cell_velocity.svg"
+}

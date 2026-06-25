@@ -1,4 +1,4 @@
-﻿# PoreVoronoi typographic pore demo
+# PoreVoronoi typographic pore demo
 
 This directory builds a compact, reproducible visual demo for the PoreVoronoi
 repository.  The demo deliberately separates an auditable numerical pipeline
@@ -52,6 +52,7 @@ python scripts/06_select_prescribed_sites.py
 python scripts/07_compute_graph_geodesic_ownership.py
 python scripts/08_extract_fv_cells_and_facelets.py
 python scripts/09_project_conservative_flux.py
+python scripts/09b_reconstruct_cell_velocity.py
 python scripts/10_render_final_figure.py
 python scripts/11_audit_porevoronoi_fv.py
 ```
@@ -63,10 +64,12 @@ outputs/final_figures/Figure_PoreVoronoi_README_landing_hero.png
 outputs/final_figures/Figure_PoreVoronoi_README_landing_hero_dark.png
 outputs/final_figures/Figure_PoreVoronoi_README_landing_hero_light.png
 outputs/final_figures/Figure_PoreVoronoi_FV_four_panel.png
+outputs/velocity/cell_velocity.npz
+outputs/velocity/Figure_PoreVoronoi_FV_cell_velocity.png
 outputs/reports/stage2_audit.json
 ```
 
-The Stage 2 scripts now execute the PoreVoronoi-FV demo chain on the same typographic pore space: sampled particles are snapped to fixed sites, graph-geodesic ownership assigns all pore voxels, face-connected cells and positive-area facelets are extracted, and sampled site states are projected onto a conservative FV-graph flux field.
+The Stage 2 scripts now execute the PoreVoronoi-FV demo chain on the same typographic pore space: sampled particles are snapped to fixed sites, graph-geodesic ownership assigns all pore voxels, face-connected cells and positive-area facelets are extracted, sampled site states are projected onto a conservative FV-graph flux field, and a cell-level velocity field is reconstructed from the conservative face fluxes.
 
 ## Visual target
 

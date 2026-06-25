@@ -6,9 +6,12 @@
     "fv_graph_edges": 1361,
     "l2_cell_balance_after_projection": 8.874046497631127e-10,
     "max_abs_cell_balance_after_projection": 9.929146393972133e-11,
+    "max_cell_speed": 0.011572964489459991,
     "missing": [],
+    "nonzero_velocity_cells": 360,
     "projection_edges": 1369,
-    "sample_sites": 360
+    "sample_sites": 360,
+    "velocity_cells_with_faces": 360
   },
   "passed": true,
   "stage": "stage2_porevoronoi_fv_typographic_demo"
