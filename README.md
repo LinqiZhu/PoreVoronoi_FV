@@ -1,7 +1,8 @@
-﻿<p align="center">
-  <img src="assets/PoreVoronoi_cell_velocity_field_with_colorbar_preview_revised_no_overlap.png" alt="PoreVoronoi velocity-field logo" width="900">
+<p align="center">
+  <img src="assets/PoreVoronoi_cell_velocity_field_with_colorbar_preview_revised_no_overlap.png" alt="PoreVoronoi cell-velocity field logo" width="950">
 </p>
 
+﻿
 ﻿# PoreVoronoi
 
 <p align="center">
@@ -142,4 +143,3 @@ Software source code and scripts are released under the Apache License 2.0; see 
 Included figure source data, paper-ready tables, compact example data, and documentation are released under Creative Commons Attribution 4.0 International (CC BY 4.0), unless a file-specific notice says otherwise; see `DATA_LICENSE.md`.
 
 Large raw tomography images and third-party source datasets are not redistributed or re-licensed by this repository.
-
