@@ -1,9 +1,4 @@
-<p align="center">
-  <img src="assets/PoreVoronoi_cell_velocity_field_with_colorbar_preview_revised_no_overlap.png" alt="PoreVoronoi cell-velocity field logo" width="950">
-</p>
-
-﻿
-﻿# PoreVoronoi
+# PoreVoronoi
 
 <p align="center">
   <img src="assets/porevoronoi_logo.png" alt="PoreVoronoi-FV logo" width="900">
