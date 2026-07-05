@@ -1,3 +1,7 @@
+﻿<p align="center">
+  <img src="assets/PoreVoronoi_cell_velocity_field_with_colorbar_preview_revised_no_overlap.png" alt="PoreVoronoi velocity-field logo" width="900">
+</p>
+
 ﻿# PoreVoronoi
 
 <p align="center">
@@ -6,10 +10,7 @@
 
 PoreVoronoi is the reproducibility and reference-code package for the CMAME manuscript on **GeoVoronoi-FV**, a prescribed-site conservative finite-volume construction for obstructed voxel domains.
 
-The repository is intentionally organised around the manuscript evidence chain: graph-geodesic ownership, positive-area facelet exchange, finite-volume operator assembly, conservative state-to-flux projection, and the compact synthetic and segmented-mask examples used in the paper.
-
 <p align="center">
-  <img src="porevoronoi_typographic_demo/outputs/final_figures/Figure_PoreVoronoi_README_landing_hero_dark.png" alt="PoreVoronoi typographic pore-space hero: sampled states, graph-geodesic PoreVoronoi-FV cells, facelets, and conservative flux inside a readable letter-shaped pore domain" width="100%">
 </p>
 
 ## What this repository contains
@@ -141,5 +142,4 @@ Software source code and scripts are released under the Apache License 2.0; see 
 Included figure source data, paper-ready tables, compact example data, and documentation are released under Creative Commons Attribution 4.0 International (CC BY 4.0), unless a file-specific notice says otherwise; see `DATA_LICENSE.md`.
 
 Large raw tomography images and third-party source datasets are not redistributed or re-licensed by this repository.
-
 
