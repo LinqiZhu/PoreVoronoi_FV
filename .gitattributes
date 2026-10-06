@@ -1,15 +1,8 @@
-* text=auto eol=lf
-*.py text eol=lf
-*.ps1 text eol=lf
-*.md text eol=lf
-*.csv text eol=lf
-*.tex text eol=lf
-*.svg text eol=lf
-*.json text eol=lf
-*.pdf binary
+# Files are stored byte for byte; SHA256SUMS.txt lists their checksums and the case loader checks the input
+# files against their run manifests, so git must not convert line endings.
+* -text
 *.npz binary
+*.npy binary
+*.gz binary
 *.png binary
-*.jpg binary
-*.jpeg binary
-*.tif binary
-*.tiff binary
+*.pdf binary

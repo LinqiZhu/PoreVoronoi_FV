@@ -1,0 +1,10 @@
+PoreVoronoi-FV
+Copyright 2026 Linqi Zhu
+
+This product is licensed under the Apache License, Version 2.0 (see the file LICENSE).
+
+The data files of this repository are covered by separate terms; see DATA_LICENSE.md.
+
+This repository includes a 64^3 voxel block derived from "Berea Sandstone" by the Imperial College
+Consortium on Pore-scale Imaging and Modelling (figshare, version 2, doi:10.6084/m9.figshare.1153794.v2),
+which is licensed under the Creative Commons Attribution 4.0 International licence.

@@ -1,0 +1,107 @@
+{
+  "code_sha256": {
+    "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
+    "ptv_ownership_gpu6.py": "8a98f0741e04ed197be2480ef05520708744845cf99179ed0c3b0ee7e5fd4243",
+    "verify_ptv_ownership_gpu6.py": "d112772448428c74d8d2a8e3097b2c3c625087e9d952899279ddcdfbe1849225"
+  },
+  "environment": {
+    "cupy": "14.1.1",
+    "numpy": "2.1.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "protocol": {
+    "at_least_one_site_per_six_connected_component": true,
+    "diagonal_moves": false,
+    "gpu_backends": [
+      "exact six-neighbour GPU propagation",
+      "ROI-JFA"
+    ],
+    "graph_connectivity": 6,
+    "random_cases": 100,
+    "random_mask_shape": [
+      7,
+      8,
+      9
+    ],
+    "random_pore_probability": 0.6,
+    "random_seed": 20260717,
+    "reference": "independent CPU heap Dijkstra on the unit six-neighbour pore graph",
+    "tie_rule": "minimum prescribed-site id at equal distance"
+  },
+  "result": {
+    "exact_gpu_propagation_distance_mismatches": 0,
+    "exact_gpu_propagation_label_mismatches": 0,
+    "maximum_roi_fraction": 0.8019169329073482,
+    "passed": true,
+    "ptv_cases": [
+      {
+        "exact_gpu_propagation_distance_mismatches": 0,
+        "exact_gpu_propagation_label_mismatches": 0,
+        "particle_ids": "0:9",
+        "particle_rows_selected": 1000,
+        "particle_site_count": 45,
+        "pore_voxels": 51113,
+        "roi_jfa_distance_mismatches": 0,
+        "roi_jfa_fixed_point_residuals": 0,
+        "roi_jfa_label_mismatches": 0,
+        "roi_jfa_voxels": 13788,
+        "source_record": "reproduce/table_02/records/ptv10_ownership_backend_audit_gpu6.json"
+      },
+      {
+        "exact_gpu_propagation_distance_mismatches": 0,
+        "exact_gpu_propagation_label_mismatches": 0,
+        "particle_ids": "0:49",
+        "particle_rows_selected": 5000,
+        "particle_site_count": 379,
+        "pore_voxels": 51113,
+        "roi_jfa_distance_mismatches": 0,
+        "roi_jfa_fixed_point_residuals": 0,
+        "roi_jfa_label_mismatches": 0,
+        "roi_jfa_voxels": 5583,
+        "source_record": "reproduce/table_02/records/ptv50_ownership_backend_audit_gpu6.json"
+      },
+      {
+        "exact_gpu_propagation_distance_mismatches": 0,
+        "exact_gpu_propagation_label_mismatches": 0,
+        "particle_ids": "0:99",
+        "particle_rows_selected": 10000,
+        "particle_site_count": 900,
+        "pore_voxels": 51113,
+        "roi_jfa_distance_mismatches": 0,
+        "roi_jfa_fixed_point_residuals": 0,
+        "roi_jfa_label_mismatches": 0,
+        "roi_jfa_voxels": 3056,
+        "source_record": "reproduce/table_02/records/ptv100_ownership_backend_audit_gpu6.json"
+      },
+      {
+        "exact_gpu_propagation_distance_mismatches": 0,
+        "exact_gpu_propagation_label_mismatches": 0,
+        "particle_ids": "0:199",
+        "particle_rows_selected": 20000,
+        "particle_site_count": 1831,
+        "pore_voxels": 51113,
+        "roi_jfa_distance_mismatches": 0,
+        "roi_jfa_fixed_point_residuals": 0,
+        "roi_jfa_label_mismatches": 0,
+        "roi_jfa_voxels": 1311,
+        "source_record": "reproduce/table_02/records/ptv200_ownership_backend_audit_gpu6.json"
+      },
+      {
+        "exact_gpu_propagation_distance_mismatches": 0,
+        "exact_gpu_propagation_label_mismatches": 0,
+        "particle_ids": "0:499",
+        "particle_rows_selected": 50000,
+        "particle_site_count": 4452,
+        "pore_voxels": 51113,
+        "roi_jfa_distance_mismatches": 0,
+        "roi_jfa_fixed_point_residuals": 0,
+        "roi_jfa_label_mismatches": 0,
+        "roi_jfa_voxels": 307,
+        "source_record": "reproduce/table_02/records/ptv500_ownership_backend_audit_gpu6.json"
+      }
+    ],
+    "roi_jfa_distance_mismatches": 0,
+    "roi_jfa_label_mismatches": 0
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "K_eff_moved_percent": 0.3375109824980354,
+    "K_eff_x_archived": 4.11416514469534,
+    "K_eff_x_continued": 4.128050903896793,
+    "archived_reference": "data/controlled_cases/skewed_duct/reference_flow.npz",
+    "archived_reference_sha256": "90fef612807dafa8c2ca1b6af6e66f8e0f6b9421b9de4052b26d10590c375510",
+    "case": "skewed_duct",
+    "continuation_dt": 5.0,
+    "continuation_steady_tol": 1e-07,
+    "continuation_steps_completed": 500,
+    "continuation_steps_requested": 500,
+    "continued_reference": "reproduce/supplementary/s3_verification/skewed_duct__reference_continued.npz",
+    "continued_reference_sha256": "3ed46056b3ad0e6ad14750d4884f30854ba5f8355a2f813a00098c8c118d490f",
+    "mass_inf_per_volume": 5.699572758199878e-13,
+    "protocol_id": "pvfv_reference_continuation",
+    "reference_moved_percent": 0.6194785998561463,
+    "solver": "run_velocity_pressure_projection_gpu, warm started from the archived U",
+    "steady_converged": false,
+    "steady_momentum_inf": 0.000289205861100622,
+    "wall_seconds": 503.15699449996464
+  }
+]

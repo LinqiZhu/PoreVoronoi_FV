@@ -1,0 +1,3521 @@
+{
+  "host": "gpu-node",
+  "rows": [
+    {
+      "n": 16,
+      "m": 4,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 64,
+      "N_facelets": 2304,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 3.0765952538280666e-09,
+            "max_abs": 4.780758844358246e-10,
+            "relative_linf": 3.489538833704596e-09,
+            "reference_l2": 3.9417990592239702,
+            "entries": 192,
+            "fraction_of_smallest_reported_discrete_error": 6.6839787226438405e-09
+          },
+          "cell_pressure": {
+            "relative_l2": 5.486211820301359e-09,
+            "max_abs": 3.1572136016677632e-09,
+            "relative_linf": 5.486211737512355e-09,
+            "reference_l2": 16.74589534426894,
+            "entries": 64,
+            "fraction_of_smallest_reported_discrete_error": 7.117205296157247e-08
+          },
+          "cell_force": {
+            "relative_l2": 5.475099050206975e-09,
+            "max_abs": 1.3352284278234094e-09,
+            "relative_linf": 5.287732387679396e-09,
+            "reference_l2": 11.127435740711062,
+            "entries": 192
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 3.8492062215238865e-08,
+            "max_abs": 4.1222176605515415e-07,
+            "relative_linf": 2.701609952325403e-08,
+            "reference_l2": 101.40810008958955,
+            "entries": 576
+          },
+          "facelet_flux": {
+            "relative_l2": 2.580684780133945e-09,
+            "max_abs": 4.963092159471216e-10,
+            "relative_linf": 2.731295408169919e-09,
+            "reference_l2": 2.3349617343697053,
+            "entries": 2304
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.454157105192753e-09,
+            "max_abs": 6.478667824438844e-09,
+            "relative_linf": 2.6591378853883803e-09,
+            "reference_l2": 8.50904973912375,
+            "entries": 144,
+            "fraction_of_smallest_reported_discrete_error": 7.848508686425902e-09
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 1.6182735536622995e-08,
+            "max_abs": 9.674743228771376e-09,
+            "relative_linf": 7.3975468748735086e-09,
+            "reference_l2": 17.943615217653342,
+            "entries": 6912
+          },
+          "voxel_u": {
+            "relative_l2": 3.272016625285198e-09,
+            "max_abs": 6.776872951697044e-10,
+            "relative_linf": 3.6338536788220684e-09,
+            "reference_l2": 4.662213626124973,
+            "entries": 12288
+          },
+          "voxel_p": {
+            "relative_l2": 5.486212022530241e-09,
+            "max_abs": 5.0770555537482664e-09,
+            "relative_linf": 5.486212065028354e-09,
+            "reference_l2": 22.194863943085945,
+            "entries": 4096
+          },
+          "voxel_f": {
+            "relative_l2": 5.477669781293375e-09,
+            "max_abs": 2.093224538146643e-09,
+            "relative_linf": 5.337049468041404e-09,
+            "reference_l2": 15.151095817901483,
+            "entries": 12288
+          },
+          "voxel_fx": {
+            "relative_l2": 6.386746476031734e-09,
+            "max_abs": 3.0135995032765095e-08,
+            "relative_linf": 5.227991422587298e-09,
+            "reference_l2": 240.6508631066238,
+            "entries": 36864
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 5.388919660097371e-13,
+            "max_abs": 8.376632720796806e-14,
+            "relative_linf": 6.11421452671597e-13,
+            "reference_l2": 3.9417990592239702,
+            "entries": 192,
+            "fraction_of_smallest_reported_discrete_error": 1.1707560265299956e-12
+          },
+          "cell_pressure": {
+            "relative_l2": 9.600890606155356e-13,
+            "max_abs": 5.524469770534779e-13,
+            "relative_linf": 9.599734044801406e-13,
+            "reference_l2": 16.74589534426894,
+            "entries": 64,
+            "fraction_of_smallest_reported_discrete_error": 1.2455135111097808e-11
+          },
+          "cell_force": {
+            "relative_l2": 9.57873857532318e-13,
+            "max_abs": 2.3342439092743916e-13,
+            "relative_linf": 9.244004143870708e-13,
+            "reference_l2": 11.127435740711062,
+            "entries": 192
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 9.269140085904426e-12,
+            "max_abs": 9.9253938401489e-11,
+            "relative_linf": 6.504882805171381e-12,
+            "reference_l2": 101.40810008958955,
+            "entries": 576
+          },
+          "facelet_flux": {
+            "relative_l2": 4.5165947502681033e-13,
+            "max_abs": 8.690270725253413e-14,
+            "relative_linf": 4.782441221113048e-13,
+            "reference_l2": 2.3349617343697053,
+            "entries": 2304
+          },
+          "aggregate_flux": {
+            "relative_l2": 4.2950598084256706e-13,
+            "max_abs": 1.13464793116691e-12,
+            "relative_linf": 4.65710757535993e-13,
+            "reference_l2": 8.50904973912375,
+            "entries": 144,
+            "fraction_of_smallest_reported_discrete_error": 1.3735801242642951e-12
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 3.926229497269567e-12,
+            "max_abs": 2.335631688055173e-12,
+            "relative_linf": 1.785881494347655e-12,
+            "reference_l2": 17.943615217653342,
+            "entries": 6912
+          },
+          "voxel_u": {
+            "relative_l2": 5.727046335810699e-13,
+            "max_abs": 1.1876610805927612e-13,
+            "relative_linf": 6.368404155820941e-13,
+            "reference_l2": 4.662213626124973,
+            "entries": 12288
+          },
+          "voxel_p": {
+            "relative_l2": 9.600567789775422e-13,
+            "max_abs": 8.90065798841988e-13,
+            "relative_linf": 9.61795606248773e-13,
+            "reference_l2": 22.194863943085945,
+            "entries": 4096
+          },
+          "voxel_f": {
+            "relative_l2": 9.58417250464659e-13,
+            "max_abs": 3.6654013157999543e-13,
+            "relative_linf": 9.34559469667269e-13,
+            "reference_l2": 15.151095817901483,
+            "entries": 12288
+          },
+          "voxel_fx": {
+            "relative_l2": 1.2182389408211538e-12,
+            "max_abs": 5.633715716157894e-12,
+            "relative_linf": 9.773368163004471e-13,
+            "reference_l2": 240.6508631066238,
+            "entries": 36864
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 3.9541069610322722e-16,
+            "max_abs": 8.326672684688674e-17,
+            "relative_linf": 6.07774803848506e-16,
+            "reference_l2": 3.9417990592239702,
+            "entries": 192,
+            "fraction_of_smallest_reported_discrete_error": 8.59039445039545e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 4.53643469263484e-16,
+            "max_abs": 2.7755575615628914e-16,
+            "relative_linf": 4.823017506431575e-16,
+            "reference_l2": 16.74589534426894,
+            "entries": 64,
+            "fraction_of_smallest_reported_discrete_error": 5.8850693479637916e-15
+          },
+          "cell_force": {
+            "relative_l2": 4.208879715480929e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 8.793345202255133e-16,
+            "reference_l2": 11.127435740711062,
+            "entries": 192
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 5.296173639171332e-15,
+            "max_abs": 1.4210854715202004e-13,
+            "relative_linf": 9.313478736710701e-15,
+            "reference_l2": 101.40810008958955,
+            "entries": 576
+          },
+          "facelet_flux": {
+            "relative_l2": 3.518081879627959e-16,
+            "max_abs": 1.1102230246251565e-16,
+            "relative_linf": 6.109793958624143e-16,
+            "reference_l2": 2.3349617343697053,
+            "entries": 2304
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.450276468958445e-16,
+            "max_abs": 1.1102230246251565e-15,
+            "relative_linf": 4.556856727358052e-16,
+            "reference_l2": 8.50904973912375,
+            "entries": 144,
+            "fraction_of_smallest_reported_discrete_error": 1.103414479044298e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.4776272656551183e-15,
+            "max_abs": 2.9698465908722937e-15,
+            "relative_linf": 2.270817824066537e-15,
+            "reference_l2": 17.943615217653342,
+            "entries": 6912
+          },
+          "voxel_u": {
+            "relative_l2": 7.5718046393528e-16,
+            "max_abs": 3.0531133177191805e-16,
+            "relative_linf": 1.6371218909565403e-15,
+            "reference_l2": 4.662213626124973,
+            "entries": 12288
+          },
+          "voxel_p": {
+            "relative_l2": 7.796451139373474e-16,
+            "max_abs": 1.5543122344752192e-15,
+            "relative_linf": 1.6795732178474272e-15,
+            "reference_l2": 22.194863943085945,
+            "entries": 4096
+          },
+          "voxel_f": {
+            "relative_l2": 7.559706080491084e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 1.698427023475273e-15,
+            "reference_l2": 15.151095817901483,
+            "entries": 12288
+          },
+          "voxel_fx": {
+            "relative_l2": 7.688906240770476e-16,
+            "max_abs": 9.325873406851315e-15,
+            "relative_linf": 1.617852210492621e-15,
+            "reference_l2": 240.6508631066238,
+            "entries": 36864
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.9776277282650467e-16,
+            "max_abs": 8.326672684688674e-17,
+            "relative_linf": 6.07774803848506e-16,
+            "reference_l2": 3.9417990592239702,
+            "entries": 192,
+            "fraction_of_smallest_reported_discrete_error": 6.468969343599631e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 3.4378918548687116e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 3.8584140051452596e-16,
+            "reference_l2": 16.74589534426894,
+            "entries": 64,
+            "fraction_of_smallest_reported_discrete_error": 4.4599411977759576e-15
+          },
+          "cell_force": {
+            "relative_l2": 4.057601805091092e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 8.793345202255133e-16,
+            "reference_l2": 11.127435740711062,
+            "entries": 192
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 5.664615023036015e-15,
+            "max_abs": 1.7053025658242404e-13,
+            "relative_linf": 1.1176174484052843e-14,
+            "reference_l2": 101.40810008958955,
+            "entries": 576
+          },
+          "facelet_flux": {
+            "relative_l2": 2.979925457477168e-16,
+            "max_abs": 1.1102230246251565e-16,
+            "relative_linf": 6.109793958624143e-16,
+            "reference_l2": 2.3349617343697053,
+            "entries": 2304
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.248734029310385e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 1.822742690943221e-16,
+            "reference_l2": 8.50904973912375,
+            "entries": 144,
+            "fraction_of_smallest_reported_discrete_error": 7.19155612538419e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.862824296650609e-15,
+            "max_abs": 3.552713678800501e-15,
+            "relative_linf": 2.7164923502852033e-15,
+            "reference_l2": 17.943615217653342,
+            "entries": 6912
+          },
+          "voxel_u": {
+            "relative_l2": 7.299865943544969e-16,
+            "max_abs": 3.608224830031759e-16,
+            "relative_linf": 1.934780416585002e-15,
+            "reference_l2": 4.662213626124973,
+            "entries": 12288
+          },
+          "voxel_p": {
+            "relative_l2": 8.090615304687272e-16,
+            "max_abs": 1.5543122344752192e-15,
+            "relative_linf": 1.6795732178474272e-15,
+            "reference_l2": 22.194863943085945,
+            "entries": 4096
+          },
+          "voxel_f": {
+            "relative_l2": 7.927109921788358e-16,
+            "max_abs": 7.216449660063518e-16,
+            "relative_linf": 1.8399626087648792e-15,
+            "reference_l2": 15.151095817901483,
+            "entries": 12288
+          },
+          "voxel_fx": {
+            "relative_l2": 7.542578036164031e-16,
+            "max_abs": 9.325873406851315e-15,
+            "relative_linf": 1.617852210492621e-15,
+            "reference_l2": 240.6508631066238,
+            "entries": 36864
+          }
+        }
+      },
+      "tabulated_rows": [
+        "coupled/N016_m04_linear",
+        "coupled/N016_m04_mean"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 2.0007548639550805
+    },
+    {
+      "n": 24,
+      "m": 6,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 216,
+      "N_facelets": 8640,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 2.802404825335669e-10,
+            "max_abs": 3.499356360237016e-11,
+            "relative_linf": 3.136973308310202e-10,
+            "reference_l2": 5.326660838893107,
+            "entries": 648,
+            "fraction_of_smallest_reported_discrete_error": 7.533738295984592e-10
+          },
+          "cell_pressure": {
+            "relative_l2": 4.802380644000479e-10,
+            "max_abs": 3.768796386083295e-10,
+            "relative_linf": 4.802387438764873e-10,
+            "reference_l2": 35.96081149521264,
+            "entries": 216,
+            "fraction_of_smallest_reported_discrete_error": 1.0238367913654942e-08
+          },
+          "cell_force": {
+            "relative_l2": 4.800721350839256e-10,
+            "max_abs": 1.0122669369394544e-10,
+            "relative_linf": 4.735157912930589e-10,
+            "reference_l2": 16.30035965410464,
+            "entries": 648
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 8.543238367457319e-09,
+            "max_abs": 4.792992314150979e-08,
+            "relative_linf": 6.237296476176142e-09,
+            "reference_l2": 94.56498557353005,
+            "entries": 1944
+          },
+          "facelet_flux": {
+            "relative_l2": 2.2617076432496626e-10,
+            "max_abs": 3.0312502508067496e-11,
+            "relative_linf": 2.3966107683900185e-10,
+            "reference_l2": 2.8745834560093098,
+            "entries": 8640
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.2211169737578605e-10,
+            "max_abs": 4.323796876093411e-10,
+            "relative_linf": 2.36887747729526e-10,
+            "reference_l2": 10.982468016300858,
+            "entries": 540,
+            "fraction_of_smallest_reported_discrete_error": 9.393229564113474e-10
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 1.529540137768631e-09,
+            "max_abs": 7.83108022872625e-10,
+            "relative_linf": 7.951847307947707e-10,
+            "reference_l2": 27.87391908744148,
+            "entries": 25920
+          },
+          "voxel_u": {
+            "relative_l2": 2.8693609064975606e-10,
+            "max_abs": 4.084407811966173e-11,
+            "relative_linf": 3.192427378693509e-10,
+            "reference_l2": 5.7440745238779956,
+            "entries": 41472
+          },
+          "voxel_p": {
+            "relative_l2": 4.802377608132442e-10,
+            "max_abs": 4.640239303910221e-10,
+            "relative_linf": 4.802391554135136e-10,
+            "reference_l2": 41.21440005157528,
+            "entries": 13824
+          },
+          "voxel_f": {
+            "relative_l2": 4.800906318722748e-10,
+            "max_abs": 1.2383549741201705e-10,
+            "relative_linf": 4.744752861638643e-10,
+            "reference_l2": 18.70198154387624,
+            "entries": 41472
+          },
+          "voxel_fx": {
+            "relative_l2": 5.596617565653784e-10,
+            "max_abs": 2.76030753809664e-09,
+            "relative_linf": 4.5983898452088847e-10,
+            "reference_l2": 445.85883553573063,
+            "entries": 124416
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 2.2149637217772608e-14,
+            "max_abs": 2.6922908347160046e-15,
+            "relative_linf": 2.4134851147712962e-14,
+            "reference_l2": 5.326660838893107,
+            "entries": 648,
+            "fraction_of_smallest_reported_discrete_error": 5.954513375122798e-14
+          },
+          "cell_pressure": {
+            "relative_l2": 3.770638577301511e-14,
+            "max_abs": 2.9531932455029164e-14,
+            "relative_linf": 3.7631054303751995e-14,
+            "reference_l2": 35.96081149521264,
+            "entries": 216,
+            "fraction_of_smallest_reported_discrete_error": 8.038759916305681e-13
+          },
+          "cell_force": {
+            "relative_l2": 3.777057457355927e-14,
+            "max_abs": 8.021361352916756e-15,
+            "relative_linf": 3.752213106710527e-14,
+            "reference_l2": 16.30035965410464,
+            "entries": 648
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 8.963799357378889e-13,
+            "max_abs": 5.009326287108706e-12,
+            "relative_linf": 6.518819799971715e-13,
+            "reference_l2": 94.56498557353005,
+            "entries": 1944
+          },
+          "facelet_flux": {
+            "relative_l2": 1.7880099669536653e-14,
+            "max_abs": 2.3869795029440866e-15,
+            "relative_linf": 1.887228142631751e-14,
+            "reference_l2": 2.8745834560093098,
+            "entries": 8640
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.755168084724252e-14,
+            "max_abs": 3.397282455352979e-14,
+            "relative_linf": 1.8612682610028674e-14,
+            "reference_l2": 10.982468016300858,
+            "entries": 540,
+            "fraction_of_smallest_reported_discrete_error": 7.422705304676852e-14
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 1.6328639471641627e-13,
+            "max_abs": 8.201772594418344e-14,
+            "relative_linf": 8.328256309529968e-14,
+            "reference_l2": 27.87391908744148,
+            "entries": 25920
+          },
+          "voxel_u": {
+            "relative_l2": 2.2764594413652742e-14,
+            "max_abs": 3.3861802251067274e-15,
+            "relative_linf": 2.646683425722229e-14,
+            "reference_l2": 5.7440745238779956,
+            "entries": 41472
+          },
+          "voxel_p": {
+            "relative_l2": 3.7824388156827626e-14,
+            "max_abs": 3.5638159090467525e-14,
+            "relative_linf": 3.688352755358174e-14,
+            "reference_l2": 41.21440005157528,
+            "entries": 13824
+          },
+          "voxel_f": {
+            "relative_l2": 3.7810632579493976e-14,
+            "max_abs": 9.992007221626409e-15,
+            "relative_linf": 3.828434160569314e-14,
+            "reference_l2": 18.70198154387624,
+            "entries": 41472
+          },
+          "voxel_fx": {
+            "relative_l2": 4.783375940568555e-14,
+            "max_abs": 2.2470914018413168e-13,
+            "relative_linf": 3.743424289095117e-14,
+            "reference_l2": 445.85883553573063,
+            "entries": 124416
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 3.1445835996423e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 6.220322460750764e-16,
+            "reference_l2": 5.326660838893107,
+            "entries": 648,
+            "fraction_of_smallest_reported_discrete_error": 8.453621573647075e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 3.8926764807956003e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 8.48820773768842e-16,
+            "reference_l2": 35.96081149521264,
+            "entries": 216,
+            "fraction_of_smallest_reported_discrete_error": 8.298936909344443e-15
+          },
+          "cell_force": {
+            "relative_l2": 3.2046413889810063e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 7.790061813239848e-16,
+            "reference_l2": 16.30035965410464,
+            "entries": 648
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.1838317336309753e-14,
+            "max_abs": 2.2737367544323206e-13,
+            "relative_linf": 2.9588969304836155e-14,
+            "reference_l2": 94.56498557353005,
+            "entries": 1944
+          },
+          "facelet_flux": {
+            "relative_l2": 3.478710578495882e-16,
+            "max_abs": 1.1102230246251565e-16,
+            "relative_linf": 8.777805314566283e-16,
+            "reference_l2": 2.8745834560093098,
+            "entries": 8640
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.085130217975374e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 3.6495456098095436e-16,
+            "reference_l2": 10.982468016300858,
+            "entries": 540,
+            "fraction_of_smallest_reported_discrete_error": 8.818133866842383e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 3.654700622493399e-15,
+            "max_abs": 5.329070518200751e-15,
+            "relative_linf": 5.4112528305575424e-15,
+            "reference_l2": 27.87391908744148,
+            "entries": 25920
+          },
+          "voxel_u": {
+            "relative_l2": 6.584830896509246e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 1.7355301152276913e-15,
+            "reference_l2": 5.7440745238779956,
+            "entries": 41472
+          },
+          "voxel_p": {
+            "relative_l2": 7.085399432130467e-16,
+            "max_abs": 1.887379141862766e-15,
+            "relative_linf": 1.9533332349248893e-15,
+            "reference_l2": 41.21440005157528,
+            "entries": 13824
+          },
+          "voxel_f": {
+            "relative_l2": 6.678690179326869e-16,
+            "max_abs": 4.163336342344337e-16,
+            "relative_linf": 1.595180900237214e-15,
+            "reference_l2": 18.70198154387624,
+            "entries": 41472
+          },
+          "voxel_fx": {
+            "relative_l2": 6.670064865064637e-16,
+            "max_abs": 1.1546319456101628e-14,
+            "relative_linf": 1.923498646570614e-15,
+            "reference_l2": 445.85883553573063,
+            "entries": 124416
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.736677676231876e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 4.976257968600611e-16,
+            "reference_l2": 5.326660838893107,
+            "entries": 648,
+            "fraction_of_smallest_reported_discrete_error": 7.357043217596042e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 4.314989750009734e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 8.48820773768842e-16,
+            "reference_l2": 35.96081149521264,
+            "entries": 216,
+            "fraction_of_smallest_reported_discrete_error": 9.199281747780844e-15
+          },
+          "cell_force": {
+            "relative_l2": 2.870202593956883e-16,
+            "max_abs": 8.326672684688674e-17,
+            "relative_linf": 3.895030906619924e-16,
+            "reference_l2": 16.30035965410464,
+            "entries": 648
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.1258366648880134e-14,
+            "max_abs": 1.7053025658242404e-13,
+            "relative_linf": 2.2191726978627117e-14,
+            "reference_l2": 94.56498557353005,
+            "entries": 1944
+          },
+          "facelet_flux": {
+            "relative_l2": 3.0822699055159835e-16,
+            "max_abs": 8.326672684688674e-17,
+            "relative_linf": 6.583353985924713e-16,
+            "reference_l2": 2.8745834560093098,
+            "entries": 8640
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.2147399616908621e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 3.6495456098095436e-16,
+            "reference_l2": 10.982468016300858,
+            "entries": 540,
+            "fraction_of_smallest_reported_discrete_error": 9.366260818664154e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 3.3662724741256243e-15,
+            "max_abs": 3.948230631323213e-15,
+            "relative_linf": 4.0091183080563046e-15,
+            "reference_l2": 27.87391908744148,
+            "entries": 25920
+          },
+          "voxel_u": {
+            "relative_l2": 6.969129125654378e-16,
+            "max_abs": 1.942890293094024e-16,
+            "relative_linf": 1.5185888508242298e-15,
+            "reference_l2": 5.7440745238779956,
+            "entries": 41472
+          },
+          "voxel_p": {
+            "relative_l2": 8.448369100119684e-16,
+            "max_abs": 2.55351295663786e-15,
+            "relative_linf": 2.64274496489838e-15,
+            "reference_l2": 41.21440005157528,
+            "entries": 13824
+          },
+          "voxel_f": {
+            "relative_l2": 7.069752130578258e-16,
+            "max_abs": 4.996003610813204e-16,
+            "relative_linf": 1.914217080284657e-15,
+            "reference_l2": 18.70198154387624,
+            "entries": 41472
+          },
+          "voxel_fx": {
+            "relative_l2": 7.109984620014953e-16,
+            "max_abs": 1.3322676295501878e-14,
+            "relative_linf": 2.219421515273785e-15,
+            "reference_l2": 445.85883553573063,
+            "entries": 124416
+          }
+        }
+      },
+      "tabulated_rows": [
+        "coupled/N024_m06_linear",
+        "coupled/N024_m06_mean"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 6.400786976329982
+    },
+    {
+      "n": 32,
+      "m": 8,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 512,
+      "N_facelets": 21504,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 5.040512474113396e-11,
+            "max_abs": 5.04987718308314e-12,
+            "relative_linf": 5.62796419797343e-11,
+            "reference_l2": 6.372119243576402,
+            "entries": 1536,
+            "fraction_of_smallest_reported_discrete_error": 1.820857986081028e-10
+          },
+          "cell_pressure": {
+            "relative_l2": 8.538478954228772e-11,
+            "max_abs": 7.454836747911031e-11,
+            "relative_linf": 8.538409796085127e-11,
+            "reference_l2": 58.95345189896357,
+            "entries": 512,
+            "fraction_of_smallest_reported_discrete_error": 3.284915991385957e-09
+          },
+          "cell_force": {
+            "relative_l2": 8.537613786605874e-11,
+            "max_abs": 1.4823586802492628e-11,
+            "relative_linf": 8.47538246534398e-11,
+            "reference_l2": 20.06848439519817,
+            "entries": 1536
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.842656982608986e-09,
+            "max_abs": 1.1287166756801525e-08,
+            "relative_linf": 2.0071616128964935e-09,
+            "reference_l2": 84.45748244193081,
+            "entries": 4608
+          },
+          "facelet_flux": {
+            "relative_l2": 4.022932363162766e-11,
+            "max_abs": 4.1068259903909166e-12,
+            "relative_linf": 4.2646952519898215e-11,
+            "reference_l2": 3.324981345455841,
+            "entries": 21504
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.988623222132114e-11,
+            "max_abs": 6.160805199328934e-11,
+            "relative_linf": 4.2370983095751064e-11,
+            "reference_l2": 12.941845067619939,
+            "entries": 1344,
+            "fraction_of_smallest_reported_discrete_error": 2.23938758016423e-10
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.724876991945019e-10,
+            "max_abs": 1.134772276145668e-10,
+            "relative_linf": 1.4909373567718456e-10,
+            "reference_l2": 35.67144973961059,
+            "entries": 64512
+          },
+          "voxel_u": {
+            "relative_l2": 5.104877978307606e-11,
+            "max_abs": 5.508302147738675e-12,
+            "relative_linf": 5.683314571931028e-11,
+            "reference_l2": 6.646507769027143,
+            "entries": 98304
+          },
+          "voxel_p": {
+            "relative_l2": 8.538492997861363e-11,
+            "max_abs": 8.375311555397502e-11,
+            "relative_linf": 8.538537002878448e-11,
+            "reference_l2": 63.69221816888415,
+            "entries": 32768
+          },
+          "voxel_f": {
+            "relative_l2": 8.537669351833508e-11,
+            "max_abs": 1.6612045072861292e-11,
+            "relative_linf": 8.481472059923026e-11,
+            "reference_l2": 21.665794943155007,
+            "entries": 98304
+          },
+          "voxel_fx": {
+            "relative_l2": 9.952811439724531e-11,
+            "max_abs": 5.04269515033684e-10,
+            "relative_linf": 8.267841407740603e-11,
+            "reference_l2": 688.7967007574689,
+            "entries": 294912
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 2.8747119508618015e-15,
+            "max_abs": 3.0531133177191805e-16,
+            "relative_linf": 3.402619870051705e-15,
+            "reference_l2": 6.372119243576402,
+            "entries": 1536,
+            "fraction_of_smallest_reported_discrete_error": 1.0384742107656422e-14
+          },
+          "cell_pressure": {
+            "relative_l2": 4.178032001595744e-15,
+            "max_abs": 3.4416913763379853e-15,
+            "relative_linf": 3.94194700119497e-15,
+            "reference_l2": 58.95345189896357,
+            "entries": 512,
+            "fraction_of_smallest_reported_discrete_error": 1.6073687372347441e-13
+          },
+          "cell_force": {
+            "relative_l2": 4.180645984453516e-15,
+            "max_abs": 8.604228440844963e-16,
+            "relative_linf": 4.9194657019911664e-15,
+            "reference_l2": 20.06848439519817,
+            "entries": 1536
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.6826527041169508e-13,
+            "max_abs": 6.679101716144942e-13,
+            "relative_linf": 1.1877237983747237e-13,
+            "reference_l2": 84.45748244193081,
+            "entries": 4608
+          },
+          "facelet_flux": {
+            "relative_l2": 2.1129592812881965e-15,
+            "max_abs": 2.636779683484747e-16,
+            "relative_linf": 2.738139337535029e-15,
+            "reference_l2": 3.324981345455841,
+            "entries": 21504
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.1200245928580545e-15,
+            "max_abs": 3.552713678800501e-15,
+            "relative_linf": 2.4433814470370905e-15,
+            "reference_l2": 12.941845067619939,
+            "entries": 1344,
+            "fraction_of_smallest_reported_discrete_error": 1.1902745580344022e-14
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 1.7309672286887207e-14,
+            "max_abs": 1.199040866595169e-14,
+            "relative_linf": 1.57537759591277e-14,
+            "reference_l2": 35.67144973961059,
+            "entries": 64512
+          },
+          "voxel_u": {
+            "relative_l2": 2.832353999318181e-15,
+            "max_abs": 4.996003610813204e-16,
+            "relative_linf": 5.154739039580691e-15,
+            "reference_l2": 6.646507769027143,
+            "entries": 98304
+          },
+          "voxel_p": {
+            "relative_l2": 4.299118080820279e-15,
+            "max_abs": 5.218048215738236e-15,
+            "relative_linf": 5.31974213474739e-15,
+            "reference_l2": 63.69221816888415,
+            "entries": 32768
+          },
+          "voxel_f": {
+            "relative_l2": 4.26246359831825e-15,
+            "max_abs": 1.1379786002407855e-15,
+            "relative_linf": 5.810081576590679e-15,
+            "reference_l2": 21.665794943155007,
+            "entries": 98304
+          },
+          "voxel_fx": {
+            "relative_l2": 5.193577925995221e-15,
+            "max_abs": 3.197442310920451e-14,
+            "relative_linf": 5.242423971499456e-15,
+            "reference_l2": 688.7967007574689,
+            "entries": 294912
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 3.010159100079535e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 6.186581581912192e-16,
+            "reference_l2": 6.372119243576402,
+            "entries": 1536,
+            "fraction_of_smallest_reported_discrete_error": 1.087403763983026e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 2.0613344552477895e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 2.5431916136741747e-16,
+            "reference_l2": 58.95345189896357,
+            "entries": 512,
+            "fraction_of_smallest_reported_discrete_error": 7.930347491557336e-15
+          },
+          "cell_force": {
+            "relative_l2": 3.28867137117123e-16,
+            "max_abs": 1.3877787807814457e-16,
+            "relative_linf": 7.934622099985752e-16,
+            "reference_l2": 20.06848439519817,
+            "entries": 1536
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.9930690714953283e-14,
+            "max_abs": 2.2737367544323206e-13,
+            "relative_linf": 4.043315058296932e-14,
+            "reference_l2": 84.45748244193081,
+            "entries": 4608
+          },
+          "facelet_flux": {
+            "relative_l2": 3.0300717801389454e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 7.205629835618497e-16,
+            "reference_l2": 3.324981345455841,
+            "entries": 21504
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.0121951313722417e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 3.054226808796363e-16,
+            "reference_l2": 12.941845067619939,
+            "entries": 1344,
+            "fraction_of_smallest_reported_discrete_error": 1.129734380790474e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 4.041785342954512e-15,
+            "max_abs": 4.3298697960381105e-15,
+            "relative_linf": 5.688863540796114e-15,
+            "reference_l2": 35.67144973961059,
+            "entries": 64512
+          },
+          "voxel_u": {
+            "relative_l2": 7.00785759317712e-16,
+            "max_abs": 1.942890293094024e-16,
+            "relative_linf": 2.0046207376147135e-15,
+            "reference_l2": 6.646507769027143,
+            "entries": 98304
+          },
+          "voxel_p": {
+            "relative_l2": 6.545532238203617e-16,
+            "max_abs": 1.3322676295501878e-15,
+            "relative_linf": 1.3582320344035888e-15,
+            "reference_l2": 63.69221816888415,
+            "entries": 32768
+          },
+          "voxel_f": {
+            "relative_l2": 6.957547713559916e-16,
+            "max_abs": 4.163336342344337e-16,
+            "relative_linf": 2.125639601191712e-15,
+            "reference_l2": 21.665794943155007,
+            "entries": 98304
+          },
+          "voxel_fx": {
+            "relative_l2": 6.738267855710194e-16,
+            "max_abs": 1.3322676295501878e-14,
+            "relative_linf": 2.184343321458107e-15,
+            "reference_l2": 688.7967007574689,
+            "entries": 294912
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.1364437729876556e-16,
+            "max_abs": 4.163336342344337e-17,
+            "relative_linf": 4.639936186434144e-16,
+            "reference_l2": 6.372119243576402,
+            "entries": 1536,
+            "fraction_of_smallest_reported_discrete_error": 7.717788073804773e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 2.1617072916806267e-16,
+            "max_abs": 3.3306690738754696e-16,
+            "relative_linf": 3.814787420511262e-16,
+            "reference_l2": 58.95345189896357,
+            "entries": 512,
+            "fraction_of_smallest_reported_discrete_error": 8.316500970726711e-15
+          },
+          "cell_force": {
+            "relative_l2": 3.313328545937089e-16,
+            "max_abs": 1.3877787807814457e-16,
+            "relative_linf": 7.934622099985752e-16,
+            "reference_l2": 20.06848439519817,
+            "entries": 1536
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.157572891561176e-14,
+            "max_abs": 2.2737367544323206e-13,
+            "relative_linf": 4.043315058296932e-14,
+            "reference_l2": 84.45748244193081,
+            "entries": 4608
+          },
+          "facelet_flux": {
+            "relative_l2": 3.1019022035206653e-16,
+            "max_abs": 8.326672684688674e-17,
+            "relative_linf": 8.646755802742197e-16,
+            "reference_l2": 3.324981345455841,
+            "entries": 21504
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.856555297321461e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 3.054226808796363e-16,
+            "reference_l2": 12.941845067619939,
+            "entries": 1344,
+            "fraction_of_smallest_reported_discrete_error": 1.0423513686728668e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 4.572240720607473e-15,
+            "max_abs": 6.827871601444713e-15,
+            "relative_linf": 8.970900198947717e-15,
+            "reference_l2": 35.67144973961059,
+            "entries": 64512
+          },
+          "voxel_u": {
+            "relative_l2": 7.575135824209916e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 2.2909951287025297e-15,
+            "reference_l2": 6.646507769027143,
+            "entries": 98304
+          },
+          "voxel_p": {
+            "relative_l2": 7.307465498435306e-16,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_linf": 2.0373480516053834e-15,
+            "reference_l2": 63.69221816888415,
+            "entries": 32768
+          },
+          "voxel_f": {
+            "relative_l2": 7.657168650411236e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 2.267348907937826e-15,
+            "reference_l2": 21.665794943155007,
+            "entries": 98304
+          },
+          "voxel_fx": {
+            "relative_l2": 7.101607495792157e-16,
+            "max_abs": 1.1546319456101628e-14,
+            "relative_linf": 1.8930975452636925e-15,
+            "reference_l2": 688.7967007574689,
+            "entries": 294912
+          }
+        }
+      },
+      "tabulated_rows": [
+        "coupled/N032_m08_linear",
+        "coupled/N032_m08_mean"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 15.474899242632091
+    },
+    {
+      "n": 48,
+      "m": 4,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 64,
+      "N_facelets": 20736,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 4.245032993513082e-12,
+            "max_abs": 1.573463581650003e-13,
+            "relative_linf": 4.58129602134773e-12,
+            "reference_l2": 6.878224920568945,
+            "entries": 192,
+            "fraction_of_smallest_reported_discrete_error": 3.0187355187024405e-12
+          },
+          "cell_pressure": {
+            "relative_l2": 7.490680493464113e-12,
+            "max_abs": 2.7288726833774035e-12,
+            "relative_linf": 7.488553687840752e-12,
+            "reference_l2": 85.94731682497836,
+            "entries": 64,
+            "fraction_of_smallest_reported_discrete_error": 6.759586411311948e-11
+          },
+          "cell_force": {
+            "relative_l2": 7.489458748978307e-12,
+            "max_abs": 3.621894451022456e-13,
+            "relative_linf": 7.446077378161501e-12,
+            "reference_l2": 19.426968532563343,
+            "entries": 192
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 6.106079562721003e-11,
+            "max_abs": 8.594042810727842e-09,
+            "relative_linf": 5.238581585965467e-11,
+            "reference_l2": 2344.3380159651783,
+            "entries": 576
+          },
+          "facelet_flux": {
+            "relative_l2": 3.5303964364322935e-12,
+            "max_abs": 2.429445533635999e-13,
+            "relative_linf": 3.7438741467164705e-12,
+            "reference_l2": 2.3539382158646007,
+            "entries": 20736
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.4033640631659677e-12,
+            "max_abs": 2.0474288930927287e-11,
+            "relative_linf": 3.5366305416603844e-12,
+            "reference_l2": 24.743799633038062,
+            "entries": 144,
+            "fraction_of_smallest_reported_discrete_error": 3.8995933915043295e-12
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.2303995269806243e-11,
+            "max_abs": 1.015693779082838e-11,
+            "relative_linf": 7.470010981446812e-12,
+            "reference_l2": 54.106142137860736,
+            "entries": 62208
+          },
+          "voxel_u": {
+            "relative_l2": 4.4806100758817175e-12,
+            "max_abs": 3.247679902784739e-13,
+            "relative_linf": 4.990517933077397e-12,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.490789859249288e-12,
+            "max_abs": 7.427281012439835e-12,
+            "relative_linf": 7.491223296443367e-12,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.490684549044418e-12,
+            "max_abs": 9.763301278553627e-13,
+            "relative_linf": 7.46939783785992e-12,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 8.732488420983243e-12,
+            "max_abs": 4.531397479468069e-11,
+            "relative_linf": 7.333758043660696e-12,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 6.24249539503491e-16,
+            "max_abs": 3.469446951953614e-17,
+            "relative_linf": 1.0101640548041385e-15,
+            "reference_l2": 6.878224920568945,
+            "entries": 192,
+            "fraction_of_smallest_reported_discrete_error": 4.4391745843023754e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 9.82284838490405e-16,
+            "max_abs": 4.996003610813204e-16,
+            "relative_linf": 1.3709998818236086e-15,
+            "reference_l2": 85.94731682497836,
+            "entries": 64,
+            "fraction_of_smallest_reported_discrete_error": 8.864133575168492e-15
+          },
+          "cell_force": {
+            "relative_l2": 7.426009054114614e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 1.426533589700845e-15,
+            "reference_l2": 19.426968532563343,
+            "entries": 192
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 6.5995690489374464e-15,
+            "max_abs": 3.637978807091713e-12,
+            "relative_linf": 2.217565028320964e-14,
+            "reference_l2": 2344.3380159651783,
+            "entries": 576
+          },
+          "facelet_flux": {
+            "relative_l2": 4.90878543035369e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 1.069311706476771e-15,
+            "reference_l2": 2.3539382158646007,
+            "entries": 20736
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.9263349176894622e-16,
+            "max_abs": 2.6645352591003757e-15,
+            "relative_linf": 4.602590501900552e-16,
+            "reference_l2": 24.743799633038062,
+            "entries": 144,
+            "fraction_of_smallest_reported_discrete_error": 4.49881629284509e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.4044826123987697e-15,
+            "max_abs": 2.248201624865942e-15,
+            "relative_linf": 1.6534600459421991e-15,
+            "reference_l2": 54.106142137860736,
+            "entries": 62208
+          },
+          "voxel_u": {
+            "relative_l2": 8.342173558202563e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 2.5590212459161086e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 9.24558072008363e-16,
+            "max_abs": 2.4424906541753444e-15,
+            "relative_linf": 2.463518326458603e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 9.075494516408932e-16,
+            "max_abs": 3.191891195797325e-16,
+            "relative_linf": 2.441951192159116e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 9.20358557916413e-16,
+            "max_abs": 1.509903313490213e-14,
+            "relative_linf": 2.44367562559501e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 3.007145562479275e-16,
+            "max_abs": 2.0816681711721685e-17,
+            "relative_linf": 6.060984328824832e-16,
+            "reference_l2": 6.878224920568945,
+            "entries": 192,
+            "fraction_of_smallest_reported_discrete_error": 2.1384467760878526e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 3.0094028181790004e-16,
+            "max_abs": 2.7755575615628914e-16,
+            "relative_linf": 7.616666010131159e-16,
+            "reference_l2": 85.94731682497836,
+            "entries": 64,
+            "fraction_of_smallest_reported_discrete_error": 2.7156836303024876e-15
+          },
+          "cell_force": {
+            "relative_l2": 2.9507293702469335e-16,
+            "max_abs": 3.469446951953614e-17,
+            "relative_linf": 7.132667948504225e-16,
+            "reference_l2": 19.426968532563343,
+            "entries": 192
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 5.711583907257434e-15,
+            "max_abs": 2.2737367544323206e-12,
+            "relative_linf": 1.3859781427006024e-14,
+            "reference_l2": 2344.3380159651783,
+            "entries": 576
+          },
+          "facelet_flux": {
+            "relative_l2": 2.8640803495377636e-16,
+            "max_abs": 4.163336342344337e-17,
+            "relative_linf": 6.415870238860625e-16,
+            "reference_l2": 2.3539382158646007,
+            "entries": 20736
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.8422154648012833e-16,
+            "max_abs": 1.7763568394002505e-15,
+            "relative_linf": 3.068393667933702e-16,
+            "reference_l2": 24.743799633038062,
+            "entries": 144,
+            "fraction_of_smallest_reported_discrete_error": 2.1108206818119162e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.0873417362075277e-15,
+            "max_abs": 1.790234627208065e-15,
+            "relative_linf": 1.3166441106576772e-15,
+            "reference_l2": 54.106142137860736,
+            "entries": 62208
+          },
+          "voxel_u": {
+            "relative_l2": 6.508204622832766e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.919265934437081e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 6.84715891792429e-16,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_linf": 2.0156059034661298e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 6.852454520619769e-16,
+            "max_abs": 3.0531133177191805e-16,
+            "relative_linf": 2.3357794011956764e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 6.815923928300962e-16,
+            "max_abs": 1.4210854715202004e-14,
+            "relative_linf": 2.2999300005600095e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.4449425088677006e-16,
+            "max_abs": 2.0816681711721685e-17,
+            "relative_linf": 6.060984328824832e-16,
+            "reference_l2": 6.878224920568945,
+            "entries": 192,
+            "fraction_of_smallest_reported_discrete_error": 1.73865192661232e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 2.8400035060944536e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 6.093332808104927e-16,
+            "reference_l2": 85.94731682497836,
+            "entries": 64,
+            "fraction_of_smallest_reported_discrete_error": 2.56281777398257e-15
+          },
+          "cell_force": {
+            "relative_l2": 2.8284821197357007e-16,
+            "max_abs": 2.42861286636753e-17,
+            "relative_linf": 4.992867563952958e-16,
+            "reference_l2": 19.426968532563343,
+            "entries": 192
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 5.8985795529378645e-15,
+            "max_abs": 2.2737367544323206e-12,
+            "relative_linf": 1.3859781427006024e-14,
+            "reference_l2": 2344.3380159651783,
+            "entries": 576
+          },
+          "facelet_flux": {
+            "relative_l2": 3.049872917348639e-16,
+            "max_abs": 4.163336342344337e-17,
+            "relative_linf": 6.415870238860625e-16,
+            "reference_l2": 2.3539382158646007,
+            "entries": 20736
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.0404178152652899e-16,
+            "max_abs": 1.3322676295501878e-15,
+            "relative_linf": 2.301295250950276e-16,
+            "reference_l2": 24.743799633038062,
+            "entries": 144,
+            "fraction_of_smallest_reported_discrete_error": 2.337922032623933e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.2361713317016155e-15,
+            "max_abs": 1.942890293094024e-15,
+            "relative_linf": 1.428916089085851e-15,
+            "reference_l2": 54.106142137860736,
+            "entries": 62208
+          },
+          "voxel_u": {
+            "relative_l2": 6.936047399115156e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 2.3457694754230996e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.235396678675599e-16,
+            "max_abs": 2.220446049250313e-15,
+            "relative_linf": 2.2395621149623663e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.187071070960444e-16,
+            "max_abs": 2.914335439641036e-16,
+            "relative_linf": 2.2296076102322367e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 7.255267626224358e-16,
+            "max_abs": 1.3322676295501878e-14,
+            "relative_linf": 2.156184375525009e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        }
+      },
+      "tabulated_rows": [
+        "fixed_h/N048_m04_linear"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 55.38291571382433
+    },
+    {
+      "n": 48,
+      "m": 6,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 216,
+      "N_facelets": 34560,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 4.3768531437980975e-12,
+            "max_abs": 2.65523714126914e-13,
+            "relative_linf": 4.837987485094527e-12,
+            "reference_l2": 7.557183519055411,
+            "entries": 648,
+            "fraction_of_smallest_reported_discrete_error": 5.719424252942026e-12
+          },
+          "cell_pressure": {
+            "relative_l2": 7.490665655759437e-12,
+            "max_abs": 6.357359083608571e-12,
+            "relative_linf": 7.491294970986874e-12,
+            "reference_l2": 102.21152624714765,
+            "entries": 216,
+            "fraction_of_smallest_reported_discrete_error": 1.3588167719391787e-10
+          },
+          "cell_force": {
+            "relative_l2": 7.490332220614161e-12,
+            "max_abs": 7.795847301039771e-13,
+            "relative_linf": 7.467071398271733e-12,
+            "reference_l2": 23.168985029176856,
+            "entries": 648
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.4765415260857885e-10,
+            "max_abs": 6.241464234335581e-09,
+            "relative_linf": 1.3849901773379573e-10,
+            "reference_l2": 674.8712823456347,
+            "entries": 1944
+          },
+          "facelet_flux": {
+            "relative_l2": 3.5303983386114608e-12,
+            "max_abs": 2.429445533635999e-13,
+            "relative_linf": 3.7438741467164705e-12,
+            "reference_l2": 2.882979618795978,
+            "entries": 34560
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.47423534671827e-12,
+            "max_abs": 1.3630430117927972e-11,
+            "relative_linf": 3.667733037943675e-12,
+            "reference_l2": 21.781132338589355,
+            "entries": 540,
+            "fraction_of_smallest_reported_discrete_error": 6.420871216187722e-12
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.3736925026679304e-11,
+            "max_abs": 1.081436329375407e-11,
+            "relative_linf": 1.1275507724773239e-11,
+            "reference_l2": 56.134184035387854,
+            "entries": 103680
+          },
+          "voxel_u": {
+            "relative_l2": 4.4806100758817175e-12,
+            "max_abs": 3.247679902784739e-13,
+            "relative_linf": 4.990517933077397e-12,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.490789859249288e-12,
+            "max_abs": 7.427281012439835e-12,
+            "relative_linf": 7.491223296443367e-12,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.490684549044418e-12,
+            "max_abs": 9.763301278553627e-13,
+            "relative_linf": 7.46939783785992e-12,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 8.732488420983243e-12,
+            "max_abs": 4.531397479468069e-11,
+            "relative_linf": 7.333758043660696e-12,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 6.273639951498905e-16,
+            "max_abs": 6.245004513516506e-17,
+            "relative_linf": 1.1378740230452815e-15,
+            "reference_l2": 7.557183519055411,
+            "entries": 648,
+            "fraction_of_smallest_reported_discrete_error": 8.198038022745248e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 7.979753159462043e-16,
+            "max_abs": 9.992007221626409e-16,
+            "relative_linf": 1.1774240288303212e-15,
+            "reference_l2": 102.21152624714765,
+            "entries": 216,
+            "fraction_of_smallest_reported_discrete_error": 1.447537899475552e-14
+          },
+          "cell_force": {
+            "relative_l2": 7.064241584180536e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 1.4621768648151145e-15,
+            "reference_l2": 23.168985029176856,
+            "entries": 648
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.5303958002929425e-14,
+            "max_abs": 2.0463630789890885e-12,
+            "relative_linf": 4.54091004491457e-14,
+            "reference_l2": 674.8712823456347,
+            "entries": 1944
+          },
+          "facelet_flux": {
+            "relative_l2": 4.92590830247412e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 1.069311706476771e-15,
+            "reference_l2": 2.882979618795978,
+            "entries": 34560
+          },
+          "aggregate_flux": {
+            "relative_l2": 4.404926440398091e-16,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_linf": 5.377382031976847e-16,
+            "reference_l2": 21.781132338589355,
+            "entries": 540,
+            "fraction_of_smallest_reported_discrete_error": 8.140918092176064e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 3.7344497948192055e-15,
+            "max_abs": 4.829470157119431e-15,
+            "relative_linf": 5.035407687349729e-15,
+            "reference_l2": 56.134184035387854,
+            "entries": 103680
+          },
+          "voxel_u": {
+            "relative_l2": 8.342173558202563e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 2.5590212459161086e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 9.24558072008363e-16,
+            "max_abs": 2.4424906541753444e-15,
+            "relative_linf": 2.463518326458603e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 9.075494516408932e-16,
+            "max_abs": 3.191891195797325e-16,
+            "relative_linf": 2.441951192159116e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 9.20358557916413e-16,
+            "max_abs": 1.509903313490213e-14,
+            "relative_linf": 2.44367562559501e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 2.658710189021939e-16,
+            "max_abs": 2.0816681711721685e-17,
+            "relative_linf": 3.7929134101509384e-16,
+            "reference_l2": 7.557183519055411,
+            "entries": 648,
+            "fraction_of_smallest_reported_discrete_error": 3.4742521709194486e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 2.9608889244014103e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 5.232995683690317e-16,
+            "reference_l2": 102.21152624714765,
+            "entries": 216,
+            "fraction_of_smallest_reported_discrete_error": 5.3710921234778975e-15
+          },
+          "cell_force": {
+            "relative_l2": 2.654426466425716e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 5.317006781145871e-16,
+            "reference_l2": 23.168985029176856,
+            "entries": 648
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.1825706894848618e-14,
+            "max_abs": 1.5916157281026244e-12,
+            "relative_linf": 3.531818923822443e-14,
+            "reference_l2": 674.8712823456347,
+            "entries": 1944
+          },
+          "facelet_flux": {
+            "relative_l2": 2.927589665009225e-16,
+            "max_abs": 4.163336342344337e-17,
+            "relative_linf": 6.415870238860625e-16,
+            "reference_l2": 2.882979618795978,
+            "entries": 34560
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.929914601899242e-16,
+            "max_abs": 8.881784197001252e-16,
+            "relative_linf": 2.3899475697674875e-16,
+            "reference_l2": 21.781132338589355,
+            "entries": 540,
+            "fraction_of_smallest_reported_discrete_error": 3.5667512072089023e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 3.0087412259134984e-15,
+            "max_abs": 4.6629367034256575e-15,
+            "relative_linf": 4.861772939510082e-15,
+            "reference_l2": 56.134184035387854,
+            "entries": 103680
+          },
+          "voxel_u": {
+            "relative_l2": 6.508204622832766e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.919265934437081e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 6.84715891792429e-16,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_linf": 2.0156059034661298e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 6.852454520619769e-16,
+            "max_abs": 3.0531133177191805e-16,
+            "relative_linf": 2.3357794011956764e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 6.815923928300962e-16,
+            "max_abs": 1.4210854715202004e-14,
+            "relative_linf": 2.2999300005600095e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.214494518041176e-16,
+            "max_abs": 1.734723475976807e-17,
+            "relative_linf": 3.160761175125782e-16,
+            "reference_l2": 7.557183519055411,
+            "entries": 648,
+            "fraction_of_smallest_reported_discrete_error": 2.8937762447978825e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 2.930793551790788e-16,
+            "max_abs": 5.551115123125783e-16,
+            "relative_linf": 6.541244604612896e-16,
+            "reference_l2": 102.21152624714765,
+            "entries": 216,
+            "fraction_of_smallest_reported_discrete_error": 5.316498714907286e-15
+          },
+          "cell_force": {
+            "relative_l2": 2.8215848569382807e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 5.317006781145871e-16,
+            "reference_l2": 23.168985029176856,
+            "entries": 648
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.284177113416746e-14,
+            "max_abs": 1.5916157281026244e-12,
+            "relative_linf": 3.531818923822443e-14,
+            "reference_l2": 674.8712823456347,
+            "entries": 1944
+          },
+          "facelet_flux": {
+            "relative_l2": 3.1309432683317764e-16,
+            "max_abs": 4.163336342344337e-17,
+            "relative_linf": 6.415870238860625e-16,
+            "reference_l2": 2.882979618795978,
+            "entries": 34560
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.1110706225724655e-16,
+            "max_abs": 1.3322676295501878e-15,
+            "relative_linf": 3.5849213546512313e-16,
+            "reference_l2": 21.781132338589355,
+            "entries": 540,
+            "fraction_of_smallest_reported_discrete_error": 3.901552785886794e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 3.1672639831445477e-15,
+            "max_abs": 3.774758283725532e-15,
+            "relative_linf": 3.935720951031972e-15,
+            "reference_l2": 56.134184035387854,
+            "entries": 103680
+          },
+          "voxel_u": {
+            "relative_l2": 6.936047399115156e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 2.3457694754230996e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.235396678675599e-16,
+            "max_abs": 2.220446049250313e-15,
+            "relative_linf": 2.2395621149623663e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.187071070960444e-16,
+            "max_abs": 2.914335439641036e-16,
+            "relative_linf": 2.2296076102322367e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 7.255267626224358e-16,
+            "max_abs": 1.3322676295501878e-14,
+            "relative_linf": 2.156184375525009e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        }
+      },
+      "tabulated_rows": [
+        "fixed_h/N048_m06_linear"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 56.46956150699407
+    },
+    {
+      "n": 48,
+      "m": 8,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 512,
+      "N_facelets": 48384,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 4.423946274086351e-12,
+            "max_abs": 2.587305369949888e-13,
+            "relative_linf": 4.863535952478584e-12,
+            "reference_l2": 7.820409067133955,
+            "entries": 1536,
+            "fraction_of_smallest_reported_discrete_error": 1.0899932708580373e-11
+          },
+          "cell_pressure": {
+            "relative_l2": 7.490552621322993e-12,
+            "max_abs": 5.467293284766583e-12,
+            "relative_linf": 7.49181439026068e-12,
+            "reference_l2": 108.80683740291344,
+            "entries": 512,
+            "fraction_of_smallest_reported_discrete_error": 2.9598298142961055e-10
+          },
+          "cell_force": {
+            "relative_l2": 7.49041036410352e-12,
+            "max_abs": 7.213951658258111e-13,
+            "relative_linf": 7.461990286808357e-12,
+            "reference_l2": 24.670363944884006,
+            "entries": 1536
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.809940800745946e-10,
+            "max_abs": 2.328789605599013e-09,
+            "relative_linf": 2.810541696678558e-10,
+            "reference_l2": 249.18694630901797,
+            "entries": 4608
+          },
+          "facelet_flux": {
+            "relative_l2": 3.5303924013543156e-12,
+            "max_abs": 2.4398538744918596e-13,
+            "relative_linf": 3.743830530327414e-12,
+            "reference_l2": 3.328991654111005,
+            "entries": 48384
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.500934041880681e-12,
+            "max_abs": 7.417622072125596e-12,
+            "relative_linf": 3.680124775637871e-12,
+            "reference_l2": 19.31884364002483,
+            "entries": 1344,
+            "fraction_of_smallest_reported_discrete_error": 1.1883631824896603e-11
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.3850117084619443e-11,
+            "max_abs": 8.936518192115273e-12,
+            "relative_linf": 1.1517730367442618e-11,
+            "reference_l2": 53.66238894831697,
+            "entries": 145152
+          },
+          "voxel_u": {
+            "relative_l2": 4.4806100758817175e-12,
+            "max_abs": 3.247679902784739e-13,
+            "relative_linf": 4.990517933077397e-12,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.490789859249288e-12,
+            "max_abs": 7.427281012439835e-12,
+            "relative_linf": 7.491223296443367e-12,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.490684549044418e-12,
+            "max_abs": 9.763301278553627e-13,
+            "relative_linf": 7.46939783785992e-12,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 8.732488420983243e-12,
+            "max_abs": 4.531397479468069e-11,
+            "relative_linf": 7.333758043660696e-12,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 6.555826202534782e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 1.3043516379645946e-15,
+            "reference_l2": 7.820409067133955,
+            "entries": 1536,
+            "fraction_of_smallest_reported_discrete_error": 1.6152561543377898e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 7.49597386767491e-16,
+            "max_abs": 9.992007221626409e-16,
+            "relative_linf": 1.369201533401282e-15,
+            "reference_l2": 108.80683740291344,
+            "entries": 512,
+            "fraction_of_smallest_reported_discrete_error": 2.9619719748808094e-14
+          },
+          "cell_force": {
+            "relative_l2": 6.845011433911301e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.29194553078518e-15,
+            "reference_l2": 24.670363944884006,
+            "entries": 1536
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.5841184134974453e-14,
+            "max_abs": 1.0231815394945443e-12,
+            "relative_linf": 1.234845077076633e-13,
+            "reference_l2": 249.18694630901797,
+            "entries": 4608
+          },
+          "facelet_flux": {
+            "relative_l2": 5.000130575557444e-16,
+            "max_abs": 6.245004513516506e-17,
+            "relative_linf": 9.58263886381512e-16,
+            "reference_l2": 3.328991654111005,
+            "entries": 48384
+          },
+          "aggregate_flux": {
+            "relative_l2": 4.564892969778812e-16,
+            "max_abs": 1.3322676295501878e-15,
+            "relative_linf": 6.609815199014316e-16,
+            "reference_l2": 19.31884364002483,
+            "entries": 1344,
+            "fraction_of_smallest_reported_discrete_error": 1.5495152643255403e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 4.374115729230161e-15,
+            "max_abs": 4.884981308350689e-15,
+            "relative_linf": 6.2959528923940615e-15,
+            "reference_l2": 53.66238894831697,
+            "entries": 145152
+          },
+          "voxel_u": {
+            "relative_l2": 8.342173558202563e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 2.5590212459161086e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 9.24558072008363e-16,
+            "max_abs": 2.4424906541753444e-15,
+            "relative_linf": 2.463518326458603e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 9.075494516408932e-16,
+            "max_abs": 3.191891195797325e-16,
+            "relative_linf": 2.441951192159116e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 9.20358557916413e-16,
+            "max_abs": 1.509903313490213e-14,
+            "relative_linf": 2.44367562559501e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 2.9209814590689737e-16,
+            "max_abs": 3.469446951953614e-17,
+            "relative_linf": 6.521758189822973e-16,
+            "reference_l2": 7.820409067133955,
+            "entries": 1536,
+            "fraction_of_smallest_reported_discrete_error": 7.196855335554031e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 2.8029770836535523e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 6.085340148450142e-16,
+            "reference_l2": 108.80683740291344,
+            "entries": 512,
+            "fraction_of_smallest_reported_discrete_error": 1.1075731738897018e-14
+          },
+          "cell_force": {
+            "relative_l2": 3.2018444261990045e-16,
+            "max_abs": 8.326672684688674e-17,
+            "relative_linf": 8.612970205234533e-16,
+            "reference_l2": 24.670363944884006,
+            "entries": 1536
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.3060233405746426e-14,
+            "max_abs": 7.958078640513122e-13,
+            "relative_linf": 9.604350599484924e-14,
+            "reference_l2": 249.18694630901797,
+            "entries": 4608
+          },
+          "facelet_flux": {
+            "relative_l2": 2.9640992167723936e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.517901212280107e-16,
+            "reference_l2": 3.328991654111005,
+            "entries": 48384
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.9762157763289536e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 3.304907599507158e-16,
+            "reference_l2": 19.31884364002483,
+            "entries": 1344,
+            "fraction_of_smallest_reported_discrete_error": 6.708101441359832e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 4.0566235782249e-15,
+            "max_abs": 4.211908599671688e-15,
+            "relative_linf": 5.428470746709084e-15,
+            "reference_l2": 53.66238894831697,
+            "entries": 145152
+          },
+          "voxel_u": {
+            "relative_l2": 6.508204622832766e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.919265934437081e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 6.84715891792429e-16,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_linf": 2.0156059034661298e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 6.852454520619769e-16,
+            "max_abs": 3.0531133177191805e-16,
+            "relative_linf": 2.3357794011956764e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 6.815923928300962e-16,
+            "max_abs": 1.4210854715202004e-14,
+            "relative_linf": 2.2999300005600095e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.802535840648402e-16,
+            "max_abs": 3.469446951953614e-17,
+            "relative_linf": 6.521758189822973e-16,
+            "reference_l2": 7.820409067133955,
+            "entries": 1536,
+            "fraction_of_smallest_reported_discrete_error": 6.905023294560936e-16
+          },
+          "cell_pressure": {
+            "relative_l2": 2.804214749902324e-16,
+            "max_abs": 5.551115123125783e-16,
+            "relative_linf": 7.606675185562677e-16,
+            "reference_l2": 108.80683740291344,
+            "entries": 512,
+            "fraction_of_smallest_reported_discrete_error": 1.1080622274546996e-14
+          },
+          "cell_force": {
+            "relative_l2": 2.9126081310932284e-16,
+            "max_abs": 9.71445146547012e-17,
+            "relative_linf": 1.0048465239440288e-15,
+            "reference_l2": 24.670363944884006,
+            "entries": 1536
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.3517120118461887e-14,
+            "max_abs": 7.958078640513122e-13,
+            "relative_linf": 9.604350599484924e-14,
+            "reference_l2": 249.18694630901797,
+            "entries": 4608
+          },
+          "facelet_flux": {
+            "relative_l2": 3.086117052743826e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.517901212280107e-16,
+            "reference_l2": 3.328991654111005,
+            "entries": 48384
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.8616781463611735e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 3.304907599507158e-16,
+            "reference_l2": 19.31884364002483,
+            "entries": 1344,
+            "fraction_of_smallest_reported_discrete_error": 6.319312904257843e-16
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 3.989271487560098e-15,
+            "max_abs": 5.259681579161679e-15,
+            "relative_linf": 6.778881097208378e-15,
+            "reference_l2": 53.66238894831697,
+            "entries": 145152
+          },
+          "voxel_u": {
+            "relative_l2": 6.936047399115156e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 2.3457694754230996e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.235396678675599e-16,
+            "max_abs": 2.220446049250313e-15,
+            "relative_linf": 2.2395621149623663e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.187071070960444e-16,
+            "max_abs": 2.914335439641036e-16,
+            "relative_linf": 2.2296076102322367e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 7.255267626224358e-16,
+            "max_abs": 1.3322676295501878e-14,
+            "relative_linf": 2.156184375525009e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        }
+      },
+      "tabulated_rows": [
+        "fixed_h/N048_m08_linear"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 57.78530685976148
+    },
+    {
+      "n": 48,
+      "m": 12,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 1728,
+      "N_facelets": 76032,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 4.45606750871542e-12,
+            "max_abs": 3.124445147051347e-13,
+            "relative_linf": 4.9685346254447266e-12,
+            "reference_l2": 8.00292521958387,
+            "entries": 5184,
+            "fraction_of_smallest_reported_discrete_error": 2.843236131277158e-11
+          },
+          "cell_pressure": {
+            "relative_l2": 7.490787487726409e-12,
+            "max_abs": 7.0532468754436195e-12,
+            "relative_linf": 7.490323499392383e-12,
+            "reference_l2": 113.40242017623221,
+            "entries": 1728,
+            "fraction_of_smallest_reported_discrete_error": 8.255129744503755e-10
+          },
+          "cell_force": {
+            "relative_l2": 7.490682265702293e-12,
+            "max_abs": 9.278827706182824e-13,
+            "relative_linf": 7.467862741267805e-12,
+            "reference_l2": 25.724794764689207,
+            "entries": 5184
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 5.905752513912986e-10,
+            "max_abs": 1.250553438580937e-09,
+            "relative_linf": 4.0925222404869405e-10,
+            "reference_l2": 69.21024150341891,
+            "entries": 15552
+          },
+          "facelet_flux": {
+            "relative_l2": 3.5303953163825282e-12,
+            "max_abs": 2.429445533635999e-13,
+            "relative_linf": 3.7438741467164705e-12,
+            "reference_l2": 4.077157166120598,
+            "entries": 76032
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.5206077270187127e-12,
+            "max_abs": 3.7772007743797076e-12,
+            "relative_linf": 3.732820462464613e-12,
+            "reference_l2": 16.100805076828827,
+            "entries": 4752,
+            "fraction_of_smallest_reported_discrete_error": 3.263484710002755e-11
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.3648927225073487e-11,
+            "max_abs": 7.277733971022826e-12,
+            "relative_linf": 1.408336003299874e-11,
+            "reference_l2": 47.554603912116974,
+            "entries": 228096
+          },
+          "voxel_u": {
+            "relative_l2": 4.4806100758817175e-12,
+            "max_abs": 3.247679902784739e-13,
+            "relative_linf": 4.990517933077397e-12,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.490789859249288e-12,
+            "max_abs": 7.427281012439835e-12,
+            "relative_linf": 7.491223296443367e-12,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.490684549044418e-12,
+            "max_abs": 9.763301278553627e-13,
+            "relative_linf": 7.46939783785992e-12,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 8.732488420983243e-12,
+            "max_abs": 4.531397479468069e-11,
+            "relative_linf": 7.333758043660696e-12,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 6.524740085653097e-16,
+            "max_abs": 7.632783294297951e-17,
+            "relative_linf": 1.2137754481631873e-15,
+            "reference_l2": 8.00292521958387,
+            "entries": 5184,
+            "fraction_of_smallest_reported_discrete_error": 4.163172286424635e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 7.584846357053046e-16,
+            "max_abs": 1.5543122344752192e-15,
+            "relative_linf": 1.650630080143135e-15,
+            "reference_l2": 113.40242017623221,
+            "entries": 1728,
+            "fraction_of_smallest_reported_discrete_error": 8.358786158623759e-14
+          },
+          "cell_force": {
+            "relative_l2": 7.147856501759517e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 1.2286159368532604e-15,
+            "reference_l2": 25.724794764689207,
+            "entries": 5184
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 5.3533685045552974e-14,
+            "max_abs": 3.410605131648481e-13,
+            "relative_linf": 1.11614401465555e-13,
+            "reference_l2": 69.21024150341891,
+            "entries": 15552
+          },
+          "facelet_flux": {
+            "relative_l2": 4.965150365265658e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 1.069311706476771e-15,
+            "reference_l2": 4.077157166120598,
+            "entries": 76032
+          },
+          "aggregate_flux": {
+            "relative_l2": 4.662017787297674e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 6.583070593964986e-16,
+            "reference_l2": 16.100805076828827,
+            "entries": 4752,
+            "fraction_of_smallest_reported_discrete_error": 4.321533367618484e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 6.3826866291165004e-15,
+            "max_abs": 6.0385724198752655e-15,
+            "relative_linf": 1.1685421562954938e-14,
+            "reference_l2": 47.554603912116974,
+            "entries": 228096
+          },
+          "voxel_u": {
+            "relative_l2": 8.342173558202563e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 2.5590212459161086e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 9.24558072008363e-16,
+            "max_abs": 2.4424906541753444e-15,
+            "relative_linf": 2.463518326458603e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 9.075494516408932e-16,
+            "max_abs": 3.191891195797325e-16,
+            "relative_linf": 2.441951192159116e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 9.20358557916413e-16,
+            "max_abs": 1.509903313490213e-14,
+            "relative_linf": 2.44367562559501e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 2.998844451882367e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.82745780482318e-16,
+            "reference_l2": 8.00292521958387,
+            "entries": 5184,
+            "fraction_of_smallest_reported_discrete_error": 1.9134411408704082e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 3.2892264622273755e-16,
+            "max_abs": 5.551115123125783e-16,
+            "relative_linf": 5.895107429082625e-16,
+            "reference_l2": 113.40242017623221,
+            "entries": 1728,
+            "fraction_of_smallest_reported_discrete_error": 3.6248513589835527e-14
+          },
+          "cell_force": {
+            "relative_l2": 3.2095202882454765e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 1.3403082947490115e-15,
+            "reference_l2": 25.724794764689207,
+            "entries": 5184
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 4.620566597079209e-14,
+            "max_abs": 3.979039320256561e-13,
+            "relative_linf": 1.3021680170981418e-13,
+            "reference_l2": 69.21024150341891,
+            "entries": 15552
+          },
+          "facelet_flux": {
+            "relative_l2": 2.9078239856958335e-16,
+            "max_abs": 4.85722573273506e-17,
+            "relative_linf": 7.485181945337396e-16,
+            "reference_l2": 4.077157166120598,
+            "entries": 76032
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.919995323376033e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 4.388713729309991e-16,
+            "reference_l2": 16.100805076828827,
+            "entries": 4752,
+            "fraction_of_smallest_reported_discrete_error": 1.779770956311707e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 5.8201205985195135e-15,
+            "max_abs": 7.827072323607354e-15,
+            "relative_linf": 1.51464010606299e-14,
+            "reference_l2": 47.554603912116974,
+            "entries": 228096
+          },
+          "voxel_u": {
+            "relative_l2": 6.508204622832766e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.919265934437081e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 6.84715891792429e-16,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_linf": 2.0156059034661298e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 6.852454520619769e-16,
+            "max_abs": 3.0531133177191805e-16,
+            "relative_linf": 2.3357794011956764e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 6.815923928300962e-16,
+            "max_abs": 1.4210854715202004e-14,
+            "relative_linf": 2.2999300005600095e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.788883689937187e-16,
+            "max_abs": 6.245004513516506e-17,
+            "relative_linf": 9.930890030426078e-16,
+            "reference_l2": 8.00292521958387,
+            "entries": 5184,
+            "fraction_of_smallest_reported_discrete_error": 1.7794736856320312e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 2.9056166044528815e-16,
+            "max_abs": 7.771561172376096e-16,
+            "relative_linf": 8.253150400715675e-16,
+            "reference_l2": 113.40242017623221,
+            "entries": 1728,
+            "fraction_of_smallest_reported_discrete_error": 3.202098857676077e-14
+          },
+          "cell_force": {
+            "relative_l2": 3.057907922286154e-16,
+            "max_abs": 1.3877787807814457e-16,
+            "relative_linf": 1.1169235789575094e-15,
+            "reference_l2": 25.724794764689207,
+            "entries": 5184
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 4.779854948211761e-14,
+            "max_abs": 3.410605131648481e-13,
+            "relative_linf": 1.11614401465555e-13,
+            "reference_l2": 69.21024150341891,
+            "entries": 15552
+          },
+          "facelet_flux": {
+            "relative_l2": 3.093559413244019e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.554493651814168e-16,
+            "reference_l2": 4.077157166120598,
+            "entries": 76032
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.9887736364303514e-16,
+            "max_abs": 5.551115123125783e-16,
+            "relative_linf": 5.485892161637489e-16,
+            "reference_l2": 16.100805076828827,
+            "entries": 4752,
+            "fraction_of_smallest_reported_discrete_error": 1.8435261345185737e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 5.953939370986406e-15,
+            "max_abs": 5.717648576819556e-15,
+            "relative_linf": 1.1064392264148082e-14,
+            "reference_l2": 47.554603912116974,
+            "entries": 228096
+          },
+          "voxel_u": {
+            "relative_l2": 6.936047399115156e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 2.3457694754230996e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.235396678675599e-16,
+            "max_abs": 2.220446049250313e-15,
+            "relative_linf": 2.2395621149623663e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.187071070960444e-16,
+            "max_abs": 2.914335439641036e-16,
+            "relative_linf": 2.2296076102322367e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 7.255267626224358e-16,
+            "max_abs": 1.3322676295501878e-14,
+            "relative_linf": 2.156184375525009e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        }
+      },
+      "tabulated_rows": [
+        "coupled/N048_m12_linear",
+        "coupled/N048_m12_mean",
+        "fixed_h/N048_m12_linear"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 59.54646062804386
+    },
+    {
+      "n": 48,
+      "m": 16,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 4096,
+      "N_facelets": 103680,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 4.467655148755344e-12,
+            "max_abs": 3.0846852849819584e-13,
+            "relative_linf": 4.962153658804962e-12,
+            "reference_l2": 8.075190876188406,
+            "entries": 12288,
+            "fraction_of_smallest_reported_discrete_error": 7.277282978296446e-11
+          },
+          "cell_pressure": {
+            "relative_l2": 7.490794315111032e-12,
+            "max_abs": 6.9324546103644025e-12,
+            "relative_linf": 7.491136490630641e-12,
+            "reference_l2": 115.32789604950995,
+            "entries": 4096,
+            "fraction_of_smallest_reported_discrete_error": 1.8266214177227453e-09
+          },
+          "cell_force": {
+            "relative_l2": 7.490673099569136e-12,
+            "max_abs": 9.124645483638005e-13,
+            "relative_linf": 7.466745914342803e-12,
+            "reference_l2": 26.14888003278386,
+            "entries": 12288
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.155489293827178e-09,
+            "max_abs": 3.752766986053757e-10,
+            "relative_linf": 1.1555384853452773e-09,
+            "reference_l2": 23.16375652983193,
+            "entries": 36864
+          },
+          "facelet_flux": {
+            "relative_l2": 3.5303930772680517e-12,
+            "max_abs": 2.4398538744918596e-13,
+            "relative_linf": 3.743830530327414e-12,
+            "reference_l2": 4.707905146270627,
+            "entries": 103680
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.5236691216877874e-12,
+            "max_abs": 2.1135315719789105e-12,
+            "relative_linf": 3.7295093355243845e-12,
+            "reference_l2": 14.01654007406253,
+            "entries": 11520,
+            "fraction_of_smallest_reported_discrete_error": 7.908458861337535e-11
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.347799195522455e-11,
+            "max_abs": 5.533285635239693e-12,
+            "relative_linf": 1.4164311630135255e-11,
+            "reference_l2": 42.58060229124197,
+            "entries": 311040
+          },
+          "voxel_u": {
+            "relative_l2": 4.4806100758817175e-12,
+            "max_abs": 3.247679902784739e-13,
+            "relative_linf": 4.990517933077397e-12,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.490789859249288e-12,
+            "max_abs": 7.427281012439835e-12,
+            "relative_linf": 7.491223296443367e-12,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.490684549044418e-12,
+            "max_abs": 9.763301278553627e-13,
+            "relative_linf": 7.46939783785992e-12,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 8.732488420983243e-12,
+            "max_abs": 4.531397479468069e-11,
+            "relative_linf": 7.333758043660696e-12,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 6.415739051623197e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 1.1162194711067286e-15,
+            "reference_l2": 8.075190876188406,
+            "entries": 12288,
+            "fraction_of_smallest_reported_discrete_error": 1.0450481749151237e-14
+          },
+          "cell_pressure": {
+            "relative_l2": 7.137556539040072e-16,
+            "max_abs": 1.3322676295501878e-15,
+            "relative_linf": 1.439634186726365e-15,
+            "reference_l2": 115.32789604950995,
+            "entries": 4096,
+            "fraction_of_smallest_reported_discrete_error": 1.7404847998719049e-13
+          },
+          "cell_force": {
+            "relative_l2": 7.049997736942711e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 1.3627521060397511e-15,
+            "reference_l2": 26.14888003278386,
+            "entries": 12288
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 9.795366486531042e-14,
+            "max_abs": 1.4210854715202004e-13,
+            "relative_linf": 4.3757551678779044e-13,
+            "reference_l2": 23.16375652983193,
+            "entries": 36864
+          },
+          "facelet_flux": {
+            "relative_l2": 4.993990348060854e-16,
+            "max_abs": 6.245004513516506e-17,
+            "relative_linf": 9.58263886381512e-16,
+            "reference_l2": 4.707905146270627,
+            "entries": 103680
+          },
+          "aggregate_flux": {
+            "relative_l2": 4.576827760524743e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 7.836338363238714e-16,
+            "reference_l2": 14.01654007406253,
+            "entries": 11520,
+            "fraction_of_smallest_reported_discrete_error": 1.0272148947458586e-14
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 7.606870817112205e-15,
+            "max_abs": 5.790506962810582e-15,
+            "relative_linf": 1.4822756409928978e-14,
+            "reference_l2": 42.58060229124197,
+            "entries": 311040
+          },
+          "voxel_u": {
+            "relative_l2": 8.342173558202563e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 2.5590212459161086e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 9.24558072008363e-16,
+            "max_abs": 2.4424906541753444e-15,
+            "relative_linf": 2.463518326458603e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 9.075494516408932e-16,
+            "max_abs": 3.191891195797325e-16,
+            "relative_linf": 2.441951192159116e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 9.20358557916413e-16,
+            "max_abs": 1.509903313490213e-14,
+            "relative_linf": 2.44367562559501e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 3.0750974880129414e-16,
+            "max_abs": 4.163336342344337e-17,
+            "relative_linf": 6.697316826640371e-16,
+            "reference_l2": 8.075190876188406,
+            "entries": 12288,
+            "fraction_of_smallest_reported_discrete_error": 5.0089708943523054e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 3.002269709392653e-16,
+            "max_abs": 8.881784197001252e-16,
+            "relative_linf": 9.597561244842435e-16,
+            "reference_l2": 115.32789604950995,
+            "entries": 4096,
+            "fraction_of_smallest_reported_discrete_error": 7.320999512553797e-14
+          },
+          "cell_force": {
+            "relative_l2": 3.030311815329982e-16,
+            "max_abs": 9.71445146547012e-17,
+            "relative_linf": 7.949387285231882e-16,
+            "reference_l2": 26.14888003278386,
+            "entries": 12288
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 8.837365803857194e-14,
+            "max_abs": 1.1368683772161603e-13,
+            "relative_linf": 3.5006041343023236e-13,
+            "reference_l2": 23.16375652983193,
+            "entries": 36864
+          },
+          "facelet_flux": {
+            "relative_l2": 2.939860614242566e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.517901212280107e-16,
+            "reference_l2": 4.707905146270627,
+            "entries": 103680
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.9437488649072105e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 3.918169181619357e-16,
+            "reference_l2": 14.01654007406253,
+            "entries": 11520,
+            "fraction_of_smallest_reported_discrete_error": 4.362514584663161e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 7.220187832091231e-15,
+            "max_abs": 6.5503158452884236e-15,
+            "relative_linf": 1.676774362009941e-14,
+            "reference_l2": 42.58060229124197,
+            "entries": 311040
+          },
+          "voxel_u": {
+            "relative_l2": 6.508204622832766e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.919265934437081e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 6.84715891792429e-16,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_linf": 2.0156059034661298e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 6.852454520619769e-16,
+            "max_abs": 3.0531133177191805e-16,
+            "relative_linf": 2.3357794011956764e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 6.815923928300962e-16,
+            "max_abs": 1.4210854715202004e-14,
+            "relative_linf": 2.2999300005600095e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.8717149568887083e-16,
+            "max_abs": 4.163336342344337e-17,
+            "relative_linf": 6.697316826640371e-16,
+            "reference_l2": 8.075190876188406,
+            "entries": 12288,
+            "fraction_of_smallest_reported_discrete_error": 4.677684753736559e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 3.0651782254677486e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 7.198170933631825e-16,
+            "reference_l2": 115.32789604950995,
+            "entries": 4096,
+            "fraction_of_smallest_reported_discrete_error": 7.474401191983333e-14
+          },
+          "cell_force": {
+            "relative_l2": 2.810879911015818e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.0220640795298134e-15,
+            "reference_l2": 26.14888003278386,
+            "entries": 12288
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 9.294873261545753e-14,
+            "max_abs": 1.4210854715202004e-13,
+            "relative_linf": 4.3757551678779044e-13,
+            "reference_l2": 23.16375652983193,
+            "entries": 36864
+          },
+          "facelet_flux": {
+            "relative_l2": 3.0943661873582e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.517901212280107e-16,
+            "reference_l2": 4.707905146270627,
+            "entries": 103680
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.0257419597408677e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 3.918169181619357e-16,
+            "reference_l2": 14.01654007406253,
+            "entries": 11520,
+            "fraction_of_smallest_reported_discrete_error": 4.546538394791829e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 7.461093850257494e-15,
+            "max_abs": 6.938893903907228e-15,
+            "relative_linf": 1.7762440275529034e-14,
+            "reference_l2": 42.58060229124197,
+            "entries": 311040
+          },
+          "voxel_u": {
+            "relative_l2": 6.936047399115156e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 2.3457694754230996e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.235396678675599e-16,
+            "max_abs": 2.220446049250313e-15,
+            "relative_linf": 2.2395621149623663e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.187071070960444e-16,
+            "max_abs": 2.914335439641036e-16,
+            "relative_linf": 2.2296076102322367e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 7.255267626224358e-16,
+            "max_abs": 1.3322676295501878e-14,
+            "relative_linf": 2.156184375525009e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        }
+      },
+      "tabulated_rows": [
+        "fixed_h/N048_m16_linear"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 61.765578396152705
+    },
+    {
+      "n": 48,
+      "m": 24,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 13824,
+      "N_facelets": 158976,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 4.475755457607694e-12,
+            "max_abs": 3.1857849691618867e-13,
+            "relative_linf": 4.9801036656458525e-12,
+            "reference_l2": 8.123348094950076,
+            "entries": 41472,
+            "fraction_of_smallest_reported_discrete_error": 2.683891684053131e-10
+          },
+          "cell_pressure": {
+            "relative_l2": 7.490792765013765e-12,
+            "max_abs": 7.238321053648633e-12,
+            "relative_linf": 7.491262759846928e-12,
+            "reference_l2": 116.57192703601613,
+            "entries": 13824,
+            "fraction_of_smallest_reported_discrete_error": 2.598339757902103e-09
+          },
+          "cell_force": {
+            "relative_l2": 7.490685031889148e-12,
+            "max_abs": 9.52071754767303e-13,
+            "relative_linf": 7.468152738901076e-12,
+            "reference_l2": 26.430938476999994,
+            "entries": 41472
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.6129691622653742e-09,
+            "max_abs": 1.1641443364851511e-10,
+            "relative_linf": 2.6130417501264325e-09,
+            "reference_l2": 5.656227330670162,
+            "entries": 124416
+          },
+          "facelet_flux": {
+            "relative_l2": 3.5303905067076647e-12,
+            "max_abs": 2.4398538744918596e-13,
+            "relative_linf": 3.743830530327414e-12,
+            "reference_l2": 5.76598268289302,
+            "entries": 158976
+          },
+          "aggregate_flux": {
+            "relative_l2": 3.5278665223089177e-12,
+            "max_abs": 9.621192731401607e-13,
+            "relative_linf": 3.738623794073272e-12,
+            "reference_l2": 11.499075569838324,
+            "entries": 39744,
+            "fraction_of_smallest_reported_discrete_error": 2.6150606712328056e-10
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 2.3217047510454397e-11,
+            "max_abs": 3.83248988100604e-12,
+            "relative_linf": 1.469232382842882e-11,
+            "reference_l2": 35.83948327570664,
+            "entries": 476928
+          },
+          "voxel_u": {
+            "relative_l2": 4.4806100758817175e-12,
+            "max_abs": 3.247679902784739e-13,
+            "relative_linf": 4.990517933077397e-12,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.490789859249288e-12,
+            "max_abs": 7.427281012439835e-12,
+            "relative_linf": 7.491223296443367e-12,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.490684549044418e-12,
+            "max_abs": 9.763301278553627e-13,
+            "relative_linf": 7.46939783785992e-12,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 8.732488420983243e-12,
+            "max_abs": 4.531397479468069e-11,
+            "relative_linf": 7.333758043660696e-12,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 6.521727914944246e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 1.0847063220173054e-15,
+            "reference_l2": 8.123348094950076,
+            "entries": 41472,
+            "fraction_of_smallest_reported_discrete_error": 3.910761318924195e-14
+          },
+          "cell_pressure": {
+            "relative_l2": 7.279260281886088e-16,
+            "max_abs": 1.4432899320127035e-15,
+            "relative_linf": 1.4937254149425598e-15,
+            "reference_l2": 116.57192703601613,
+            "entries": 13824,
+            "fraction_of_smallest_reported_discrete_error": 2.524965246252883e-13
+          },
+          "cell_force": {
+            "relative_l2": 7.143446944882355e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 1.306306233846611e-15,
+            "reference_l2": 26.430938476999994,
+            "entries": 41472
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.3225988176341713e-13,
+            "max_abs": 4.263256414560601e-14,
+            "relative_linf": 9.569317698504534e-13,
+            "reference_l2": 5.656227330670162,
+            "entries": 124416
+          },
+          "facelet_flux": {
+            "relative_l2": 5.019771912880688e-16,
+            "max_abs": 6.938893903907228e-17,
+            "relative_linf": 1.0647376515350133e-15,
+            "reference_l2": 5.76598268289302,
+            "entries": 158976
+          },
+          "aggregate_flux": {
+            "relative_l2": 4.662729414316005e-16,
+            "max_abs": 2.220446049250313e-16,
+            "relative_linf": 8.62825708302163e-16,
+            "reference_l2": 11.499075569838324,
+            "entries": 39744,
+            "fraction_of_smallest_reported_discrete_error": 3.45628731554103e-14
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 1.2026446370753548e-14,
+            "max_abs": 9.048317650695026e-15,
+            "relative_linf": 3.468784449643537e-14,
+            "reference_l2": 35.83948327570664,
+            "entries": 476928
+          },
+          "voxel_u": {
+            "relative_l2": 8.342173558202563e-16,
+            "max_abs": 1.6653345369377348e-16,
+            "relative_linf": 2.5590212459161086e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 9.24558072008363e-16,
+            "max_abs": 2.4424906541753444e-15,
+            "relative_linf": 2.463518326458603e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 9.075494516408932e-16,
+            "max_abs": 3.191891195797325e-16,
+            "relative_linf": 2.441951192159116e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 9.20358557916413e-16,
+            "max_abs": 1.509903313490213e-14,
+            "relative_linf": 2.44367562559501e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 3.2910630377585133e-16,
+            "max_abs": 4.85722573273506e-17,
+            "relative_linf": 7.592944254121138e-16,
+            "reference_l2": 8.123348094950076,
+            "entries": 41472,
+            "fraction_of_smallest_reported_discrete_error": 1.9734895711786497e-14
+          },
+          "cell_pressure": {
+            "relative_l2": 3.329612538759905e-16,
+            "max_abs": 7.771561172376096e-16,
+            "relative_linf": 8.043136849690706e-16,
+            "reference_l2": 116.57192703601613,
+            "entries": 13824,
+            "fraction_of_smallest_reported_discrete_error": 1.1549464668514723e-13
+          },
+          "cell_force": {
+            "relative_l2": 3.4528497070626875e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 1.1974473810260602e-15,
+            "reference_l2": 26.430938476999994,
+            "entries": 41472
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.3634076860969834e-13,
+            "max_abs": 5.684341886080802e-14,
+            "relative_linf": 1.2759090264672712e-12,
+            "reference_l2": 5.656227330670162,
+            "entries": 124416
+          },
+          "facelet_flux": {
+            "relative_l2": 2.919601570177311e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.517901212280107e-16,
+            "reference_l2": 5.76598268289302,
+            "entries": 158976
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.084545909218417e-16,
+            "max_abs": 1.1102230246251565e-16,
+            "relative_linf": 4.314128541510815e-16,
+            "reference_l2": 11.499075569838324,
+            "entries": 39744,
+            "fraction_of_smallest_reported_discrete_error": 1.5451871520945763e-14
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 1.2761538422353457e-14,
+            "max_abs": 1.0325074129013956e-14,
+            "relative_linf": 3.9582448321085764e-14,
+            "reference_l2": 35.83948327570664,
+            "entries": 476928
+          },
+          "voxel_u": {
+            "relative_l2": 6.508204622832766e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.919265934437081e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 6.84715891792429e-16,
+            "max_abs": 1.9984014443252818e-15,
+            "relative_linf": 2.0156059034661298e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 6.852454520619769e-16,
+            "max_abs": 3.0531133177191805e-16,
+            "relative_linf": 2.3357794011956764e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 6.815923928300962e-16,
+            "max_abs": 1.4210854715202004e-14,
+            "relative_linf": 2.2999300005600095e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 3.259385317013642e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.677650576138443e-16,
+            "reference_l2": 8.123348094950076,
+            "entries": 41472,
+            "fraction_of_smallest_reported_discrete_error": 1.9544939910844772e-14
+          },
+          "cell_pressure": {
+            "relative_l2": 3.22253565883995e-16,
+            "max_abs": 7.771561172376096e-16,
+            "relative_linf": 8.043136849690706e-16,
+            "reference_l2": 116.57192703601613,
+            "entries": 13824,
+            "fraction_of_smallest_reported_discrete_error": 1.1178045884180461e-13
+          },
+          "cell_force": {
+            "relative_l2": 3.3188734009321303e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 9.797296753849583e-16,
+            "reference_l2": 26.430938476999994,
+            "entries": 41472
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 2.5046303111953625e-13,
+            "max_abs": 6.394884621840902e-14,
+            "relative_linf": 1.43539765477568e-12,
+            "reference_l2": 5.656227330670162,
+            "entries": 124416
+          },
+          "facelet_flux": {
+            "relative_l2": 3.1063580794099087e-16,
+            "max_abs": 5.551115123125783e-17,
+            "relative_linf": 8.517901212280107e-16,
+            "reference_l2": 5.76598268289302,
+            "entries": 158976
+          },
+          "aggregate_flux": {
+            "relative_l2": 2.2072752977044973e-16,
+            "max_abs": 1.1102230246251565e-16,
+            "relative_linf": 4.314128541510815e-16,
+            "reference_l2": 11.499075569838324,
+            "entries": 39744,
+            "fraction_of_smallest_reported_discrete_error": 1.636161341453744e-14
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 1.3585076543779076e-14,
+            "max_abs": 8.076872504148014e-15,
+            "relative_linf": 3.096368941246225e-14,
+            "reference_l2": 35.83948327570664,
+            "entries": 476928
+          },
+          "voxel_u": {
+            "relative_l2": 6.936047399115156e-16,
+            "max_abs": 1.5265566588595902e-16,
+            "relative_linf": 2.3457694754230996e-15,
+            "reference_l2": 8.152391200985878,
+            "entries": 331776
+          },
+          "voxel_p": {
+            "relative_l2": 7.235396678675599e-16,
+            "max_abs": 2.220446049250313e-15,
+            "relative_linf": 2.2395621149623663e-15,
+            "reference_l2": 117.32391318755124,
+            "entries": 110592
+          },
+          "voxel_f": {
+            "relative_l2": 7.187071070960444e-16,
+            "max_abs": 2.914335439641036e-16,
+            "relative_linf": 2.2296076102322367e-15,
+            "reference_l2": 26.601435869211816,
+            "entries": 331776
+          },
+          "voxel_fx": {
+            "relative_l2": 7.255267626224358e-16,
+            "max_abs": 1.3322676295501878e-14,
+            "relative_linf": 2.156184375525009e-15,
+            "reference_l2": 1268.6806088539063,
+            "entries": 995328
+          }
+        }
+      },
+      "tabulated_rows": [
+        "fixed_h/N048_m24_linear"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 64.97741097817197
+    },
+    {
+      "n": 64,
+      "m": 16,
+      "h": 1.0,
+      "viscosity": 1.0,
+      "N_cells": 4096,
+      "N_facelets": 184320,
+      "reference_order": 7,
+      "tabulated_order": 5,
+      "comparisons": {
+        "3": {
+          "cell_velocity": {
+            "relative_l2": 7.951266716060677e-13,
+            "max_abs": 4.255623631266303e-14,
+            "relative_linf": 8.866668470291137e-13,
+            "reference_l2": 9.321716575354083,
+            "entries": 12288,
+            "fraction_of_smallest_reported_discrete_error": 8.133116141642052e-12
+          },
+          "cell_pressure": {
+            "relative_l2": 1.333032538150444e-12,
+            "max_abs": 1.2890799538922693e-12,
+            "relative_linf": 1.3333717259857573e-12,
+            "reference_l2": 177.41350909586825,
+            "entries": 4096,
+            "fraction_of_smallest_reported_discrete_error": 3.287391656515139e-10
+          },
+          "cell_force": {
+            "relative_l2": 1.3330407648160619e-12,
+            "max_abs": 1.2694012507807884e-13,
+            "relative_linf": 1.3317480007357906e-12,
+            "reference_l2": 30.175908509948524,
+            "entries": 12288
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 1.9173381202581816e-10,
+            "max_abs": 2.409601407293849e-10,
+            "relative_linf": 1.3089978052490422e-10,
+            "reference_l2": 59.439354525032726,
+            "entries": 36864
+          },
+          "facelet_flux": {
+            "relative_l2": 6.283523333030044e-13,
+            "max_abs": 3.256422909103662e-14,
+            "relative_linf": 6.665986756941413e-13,
+            "reference_l2": 4.709864049645665,
+            "entries": 184320
+          },
+          "aggregate_flux": {
+            "relative_l2": 6.276625318523822e-13,
+            "max_abs": 5.124789481669723e-13,
+            "relative_linf": 6.652147070869688e-13,
+            "reference_l2": 18.70027010036867,
+            "entries": 11520,
+            "fraction_of_smallest_reported_discrete_error": 8.701728270868157e-12
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 4.169801782976915e-12,
+            "max_abs": 1.0098588631990424e-12,
+            "relative_linf": 2.5718784075082268e-12,
+            "reference_l2": 56.88224609365488,
+            "entries": 552960
+          },
+          "voxel_u": {
+            "relative_l2": 7.975533264034179e-13,
+            "max_abs": 4.355543703482567e-14,
+            "relative_linf": 8.901597027825333e-13,
+            "reference_l2": 9.418471997040779,
+            "entries": 786432
+          },
+          "voxel_p": {
+            "relative_l2": 1.3330544247715291e-12,
+            "max_abs": 1.3278267374516872e-12,
+            "relative_linf": 1.3342432347319968e-12,
+            "reference_l2": 180.8013603020059,
+            "entries": 262144
+          },
+          "voxel_f": {
+            "relative_l2": 1.3330349604839412e-12,
+            "max_abs": 1.305483499081106e-13,
+            "relative_linf": 1.3309653479868967e-12,
+            "reference_l2": 30.744562196996448,
+            "entries": 786432
+          },
+          "voxel_fx": {
+            "relative_l2": 1.5539933341541433e-12,
+            "max_abs": 8.15525424968655e-12,
+            "relative_linf": 1.3128231508437982e-12,
+            "reference_l2": 1955.088149170225,
+            "entries": 2359296
+          }
+        },
+        "4": {
+          "cell_velocity": {
+            "relative_l2": 5.773462219100236e-16,
+            "max_abs": 4.85722573273506e-17,
+            "relative_linf": 1.0120117282249789e-15,
+            "reference_l2": 9.321716575354083,
+            "entries": 12288,
+            "fraction_of_smallest_reported_discrete_error": 5.9055041723702054e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 6.376507212176082e-16,
+            "max_abs": 1.2212453270876722e-15,
+            "relative_linf": 1.2632063548224382e-15,
+            "reference_l2": 177.41350909586825,
+            "entries": 4096,
+            "fraction_of_smallest_reported_discrete_error": 1.5725104982133988e-13
+          },
+          "cell_force": {
+            "relative_l2": 5.687009770459609e-16,
+            "max_abs": 1.249000902703301e-16,
+            "relative_linf": 1.3103456878344939e-15,
+            "reference_l2": 30.175908509948524,
+            "entries": 12288
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 8.871003361147256e-14,
+            "max_abs": 3.410605131648481e-13,
+            "relative_linf": 1.8527855347299537e-13,
+            "reference_l2": 59.439354525032726,
+            "entries": 36864
+          },
+          "facelet_flux": {
+            "relative_l2": 4.666583048183993e-16,
+            "max_abs": 4.85722573273506e-17,
+            "relative_linf": 9.942873918301702e-16,
+            "reference_l2": 4.709864049645665,
+            "entries": 184320
+          },
+          "aggregate_flux": {
+            "relative_l2": 4.0366049956914404e-16,
+            "max_abs": 5.551115123125783e-16,
+            "relative_linf": 7.205531922519159e-16,
+            "reference_l2": 18.70027010036867,
+            "entries": 11520,
+            "fraction_of_smallest_reported_discrete_error": 5.596230143875606e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 8.184877180931393e-15,
+            "max_abs": 8.326672684688674e-15,
+            "relative_linf": 2.1206121433939866e-14,
+            "reference_l2": 56.88224609365488,
+            "entries": 552960
+          },
+          "voxel_u": {
+            "relative_l2": 8.083750262546125e-16,
+            "max_abs": 1.1796119636642288e-16,
+            "relative_linf": 2.4108196506775637e-15,
+            "reference_l2": 9.418471997040779,
+            "entries": 786432
+          },
+          "voxel_p": {
+            "relative_l2": 8.28442966013969e-16,
+            "max_abs": 2.55351295663786e-15,
+            "relative_linf": 2.5658523744846096e-15,
+            "reference_l2": 180.8013603020059,
+            "entries": 262144
+          },
+          "voxel_f": {
+            "relative_l2": 8.261452265054481e-16,
+            "max_abs": 2.498001805406602e-16,
+            "relative_linf": 2.546760525540995e-15,
+            "reference_l2": 30.744562196996448,
+            "entries": 786432
+          },
+          "voxel_fx": {
+            "relative_l2": 8.251479298863307e-16,
+            "max_abs": 1.687538997430238e-14,
+            "relative_linf": 2.7165802511470448e-15,
+            "reference_l2": 1955.088149170225,
+            "entries": 2359296
+          }
+        },
+        "5": {
+          "cell_velocity": {
+            "relative_l2": 3.0946295476092945e-16,
+            "max_abs": 3.469446951953614e-17,
+            "relative_linf": 7.228655201606992e-16,
+            "reference_l2": 9.321716575354083,
+            "entries": 12288,
+            "fraction_of_smallest_reported_discrete_error": 3.1654052649529464e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 3.221854071891918e-16,
+            "max_abs": 5.551115123125783e-16,
+            "relative_linf": 5.741847067374719e-16,
+            "reference_l2": 177.41350909586825,
+            "entries": 4096,
+            "fraction_of_smallest_reported_discrete_error": 7.945414602664019e-14
+          },
+          "cell_force": {
+            "relative_l2": 3.012220019312931e-16,
+            "max_abs": 8.326672684688674e-17,
+            "relative_linf": 8.735637918896626e-16,
+            "reference_l2": 30.175908509948524,
+            "entries": 12288
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 8.286206382563557e-14,
+            "max_abs": 3.410605131648481e-13,
+            "relative_linf": 1.8527855347299537e-13,
+            "reference_l2": 59.439354525032726,
+            "entries": 36864
+          },
+          "facelet_flux": {
+            "relative_l2": 2.9588798673103814e-16,
+            "max_abs": 4.163336342344337e-17,
+            "relative_linf": 8.522463358544317e-16,
+            "reference_l2": 4.709864049645665,
+            "entries": 184320
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.9437364074531507e-16,
+            "max_abs": 3.3306690738754696e-16,
+            "relative_linf": 4.3233191535114957e-16,
+            "reference_l2": 18.70027010036867,
+            "entries": 11520,
+            "fraction_of_smallest_reported_discrete_error": 2.6947388428514165e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 7.543373288836249e-15,
+            "max_abs": 6.661338147750939e-15,
+            "relative_linf": 1.6964897147151892e-14,
+            "reference_l2": 56.88224609365488,
+            "entries": 552960
+          },
+          "voxel_u": {
+            "relative_l2": 6.683312907752595e-16,
+            "max_abs": 1.1796119636642288e-16,
+            "relative_linf": 2.4108196506775637e-15,
+            "reference_l2": 9.418471997040779,
+            "entries": 786432
+          },
+          "voxel_p": {
+            "relative_l2": 6.983238240646466e-16,
+            "max_abs": 2.4424906541753444e-15,
+            "relative_linf": 2.4542935755939744e-15,
+            "reference_l2": 180.8013603020059,
+            "entries": 262144
+          },
+          "voxel_f": {
+            "relative_l2": 6.605240586285252e-16,
+            "max_abs": 2.3592239273284576e-16,
+            "relative_linf": 2.4052738296776066e-15,
+            "reference_l2": 30.744562196996448,
+            "entries": 786432
+          },
+          "voxel_fx": {
+            "relative_l2": 6.550503015138501e-16,
+            "max_abs": 1.509903313490213e-14,
+            "relative_linf": 2.4306244352368295e-15,
+            "reference_l2": 1955.088149170225,
+            "entries": 2359296
+          }
+        },
+        "6": {
+          "cell_velocity": {
+            "relative_l2": 2.8126393685706465e-16,
+            "max_abs": 2.7755575615628914e-17,
+            "relative_linf": 5.782924161285593e-16,
+            "reference_l2": 9.321716575354083,
+            "entries": 12288,
+            "fraction_of_smallest_reported_discrete_error": 2.876965830228511e-15
+          },
+          "cell_pressure": {
+            "relative_l2": 2.7050125505593347e-16,
+            "max_abs": 6.661338147750939e-16,
+            "relative_linf": 6.890216480849663e-16,
+            "reference_l2": 177.41350909586825,
+            "entries": 4096,
+            "fraction_of_smallest_reported_discrete_error": 6.670831682635121e-14
+          },
+          "cell_force": {
+            "relative_l2": 2.9222277715992964e-16,
+            "max_abs": 9.71445146547012e-17,
+            "relative_linf": 1.0191577572046065e-15,
+            "reference_l2": 30.175908509948524,
+            "entries": 12288
+          },
+          "cell_force_first_moment": {
+            "relative_l2": 8.632824351224327e-14,
+            "max_abs": 3.410605131648481e-13,
+            "relative_linf": 1.8527855347299537e-13,
+            "reference_l2": 59.439354525032726,
+            "entries": 36864
+          },
+          "facelet_flux": {
+            "relative_l2": 3.1312682570525896e-16,
+            "max_abs": 4.85722573273506e-17,
+            "relative_linf": 9.942873918301702e-16,
+            "reference_l2": 4.709864049645665,
+            "entries": 184320
+          },
+          "aggregate_flux": {
+            "relative_l2": 1.8520657445359518e-16,
+            "max_abs": 4.440892098500626e-16,
+            "relative_linf": 5.764425538015327e-16,
+            "reference_l2": 18.70027010036867,
+            "entries": 11520,
+            "fraction_of_smallest_reported_discrete_error": 2.5676493387572928e-15
+          },
+          "facelet_load_coefficients": {
+            "relative_l2": 7.90714839200627e-15,
+            "max_abs": 7.696968062909093e-15,
+            "relative_linf": 1.9602408500498164e-14,
+            "reference_l2": 56.88224609365488,
+            "entries": 552960
+          },
+          "voxel_u": {
+            "relative_l2": 7.192136836573106e-16,
+            "max_abs": 1.3877787807814457e-16,
+            "relative_linf": 2.8362584125618395e-15,
+            "reference_l2": 9.418471997040779,
+            "entries": 786432
+          },
+          "voxel_p": {
+            "relative_l2": 7.317450639888476e-16,
+            "max_abs": 2.3314683517128287e-15,
+            "relative_linf": 2.342734776703339e-15,
+            "reference_l2": 180.8013603020059,
+            "entries": 262144
+          },
+          "voxel_f": {
+            "relative_l2": 7.118396924515284e-16,
+            "max_abs": 2.636779683484747e-16,
+            "relative_linf": 2.6882472214043838e-15,
+            "reference_l2": 30.744562196996448,
+            "entries": 786432
+          },
+          "voxel_fx": {
+            "relative_l2": 7.057105545777724e-16,
+            "max_abs": 2.042810365310288e-14,
+            "relative_linf": 3.2884918829674754e-15,
+            "reference_l2": 1955.088149170225,
+            "entries": 2359296
+          }
+        }
+      },
+      "tabulated_rows": [
+        "coupled/N064_m16_linear",
+        "coupled/N064_m16_mean"
+      ],
+      "acceptance": {
+        "reference_change_below_fraction_of_discrete_error": true,
+        "force_and_moment_relative_change_small": true,
+        "orders_6_7_agree": true
+      },
+      "elapsed_n_group_s": 138.6512572998181
+    }
+  ],
+  "orders": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "acceptance_thresholds": {
+    "reference_error_fraction": 0.001,
+    "force_relative": 1e-10
+  },
+  "cancelling_local_error_negative_control": {
+    "relative_l2": 4.472135955028877e-06,
+    "max_abs": 1.0000000000065512e-05,
+    "relative_linf": 5.000000000032756e-06,
+    "reference_l2": 3.1622776601683795,
+    "entries": 4
+  },
+  "all_passed": true,
+  "scope": "All unique geometries from the two retained MMS ladders; the Gauss routines used for the tabulated rows and source-exported symbolic fields. No new Stokes solve. Facelet load coefficients checked before patch-basis compression; no solution-sensitivity bound inferred."
+}

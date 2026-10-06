@@ -1,0 +1,17 @@
+# Conda environment for the released code (CPU part).
+#   conda env create -f environment/environment.yml
+#   conda activate porevoronoi-fv
+# The recorded laptop runs used Python 3.12.10 with the pinned versions below; see ENVIRONMENT.md.
+# For the GPU code, add CuPy afterwards:  pip install cupy-cuda12x==14.1.1
+name: porevoronoi-fv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy==2.4.6
+      - scipy==1.17.1
+      - matplotlib==3.10.9
+      - pandas==3.0.5
+      - sympy==1.14.0

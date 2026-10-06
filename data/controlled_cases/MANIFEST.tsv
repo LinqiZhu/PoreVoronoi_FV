@@ -1,0 +1,28 @@
+path	bytes	sha256	content
+orthogonal_duct/reference_flow.npz	2554268	83dd259f719360f5e6091b0ee8ca97deffdcd9e802b9d595007cfdcdad9ea192	c1 orthogonal duct: image and reference Stokes flow (mask, voxel-face connectivity, U, p, phi, K_eff_x, metadata)
+orthogonal_duct/particle_tracks.csv.gz	5267343	4018d2b852bd9322aae8aec71fd45a0bf5f16799f048cc9822b4ebe14bbab2da	c1 orthogonal duct: simulated particle tracks, 721 particles x 100 frames (72100 records)
+orthogonal_duct/stokes_only_solution.npz	3461072	07a13946554711cfd0709292fbc3e673263213f48f141e81bbd6ba4e320994fd	c1 orthogonal duct: stored Stokes-only solution on the cells of the particle tracks, tau = 1
+orthogonal_duct/run_record.json	5099	53133222fbd46fbded6f29eefcf23f371016f534a1d37e1d454beadf813aeed0	c1 orthogonal duct: run record (input and module SHA-256, counts, Table 5 row)
+skewed_duct/reference_flow.npz	2741355	90fef612807dafa8c2ca1b6af6e66f8e0f6b9421b9de4052b26d10590c375510	c2 skewed duct: image and reference Stokes flow (mask, voxel-face connectivity, U, p, phi, K_eff_x, metadata)
+skewed_duct/particle_tracks.csv.gz	5369502	a74be87081d265fb55942bb3db033714dacf676f881aa030c1b29fb60e5c7e37	c2 skewed duct: simulated particle tracks, 712 particles x 100 frames (71200 records)
+skewed_duct/stokes_only_solution.npz	3471138	ad719600e02d6047a11a895cd64dbf7ebea872b54b2f980f824b89e4c7fba895	c2 skewed duct: stored Stokes-only solution on the cells of the particle tracks, tau = 1
+skewed_duct/run_record.json	5094	f623de217397ece3ffe20e6497b57074e0411ac6ac9274871db4928a8ff14022	c2 skewed duct: run record (input and module SHA-256, counts, Table 5 row)
+thin_wall/reference_flow.npz	2650095	d1c1cc093757e88bcc19d1747f8f886c0a64f2e375dee5740aa8c5ebd0fe09f3	c3 thin-wall case: image and reference Stokes flow (mask, voxel-face connectivity, U, p, phi, K_eff_x, metadata)
+thin_wall/particle_tracks.csv.gz	5243074	2454d7ce47cdeff3acbdfba8c74822442e73b99859dc045eb9f4117d7033e0c9	c3 thin-wall case: simulated particle tracks, 692 particles x 100 frames (69200 records)
+thin_wall/stokes_only_solution.npz	3294512	a0baf4dce3962a8705216e775cedf0981f74cfe92856b83eb12a70529395d59b	c3 thin-wall case: stored Stokes-only solution on the cells of the particle tracks, tau = 1
+thin_wall/run_record.json	5095	74c539b3be8d0b966eb171a0c8d64b8f34f960dcfd0c7947179e67ac8bb04bf2	c3 thin-wall case: run record (input and module SHA-256, counts, Table 5 row)
+narrow_throat/reference_flow.npz	2242735	6082434f4a22c08eae8a4586f794d0038e6be2086756fafcf3de45ae5245d49b	c4 narrow-throat case: image and reference Stokes flow (mask, voxel-face connectivity, U, p, phi, K_eff_x, metadata)
+narrow_throat/particle_tracks.csv.gz	5365582	492647d1f3604bbc39f702ed1b366b11506dc8e5a0a267f16617f6e3f4c0564f	c4 narrow-throat case: simulated particle tracks, 711 particles x 100 frames (71100 records)
+narrow_throat/stokes_only_solution.npz	3435627	bca9f0af06b460ef8e10020d92669ecd823208ea11be488b2dd2a6f7e85d774e	c4 narrow-throat case: stored Stokes-only solution on the cells of the particle tracks, tau = 1
+narrow_throat/run_record.json	5103	1e2daa03cf5ae0d35799757a19d8b37722a1a3d676c41a2d9e75969b0a877655	c4 narrow-throat case: run record (input and module SHA-256, counts, Table 5 row)
+maze/reference_flow.npz	2577675	7366323f32c7a8264a718a728c5474d9070b05a70a11b6b04d57e0f504265cc6	c5 maze case: image and reference Stokes flow (mask, voxel-face connectivity, U, p, phi, K_eff_x, metadata)
+maze/particle_tracks.csv.gz	5195944	b6213f6077e1561e49d74149cb62da0c14f8d23c3001afa35a20f5719aaadd63	c5 maze case: simulated particle tracks, 691 particles x 100 frames (69100 records)
+maze/stokes_only_solution.npz	3435702	c323079e6e333f250364ed5bb719e6dbe5c71d1ab20405cb4f200e1e9ca96b9d	c5 maze case: stored Stokes-only solution on the cells of the particle tracks, tau = 1
+maze/run_record.json	5100	4f0a5b4aad5b27162459d7dcdfa49438447e13e96548f7cfe58d3e182df833d1	c5 maze case: run record (input and module SHA-256, counts, Table 5 row)
+bentheimer_crop/reference_flow.npz	3212393	c4dfbed26e670c30e47ba970021d9ffc23cd4c050e45a1b3e52153f0ab487fe3	c6 Bentheimer crop: image and reference Stokes flow (mask, voxel-face connectivity, U, p, phi, K_eff_x, metadata)
+bentheimer_crop/particle_tracks.csv.gz	6352386	dd369f58b618718153fce473d9db09834a476ee8de8c90dc1ff023a820042aa3	c6 Bentheimer crop: simulated particle tracks, 837 particles x 100 frames (83700 records)
+bentheimer_crop/stokes_only_solution.npz	3824807	640f6697d21e431c97221e97ec0ae630a896455da06426b4d31e15d98f253edd	c6 Bentheimer crop: stored Stokes-only solution on the cells of the particle tracks, tau = 1
+bentheimer_crop/run_record.json	5106	c2f354780b58055b201ea580d381ff52136995ab54d151f0c425d75b9b9af0d1	c6 Bentheimer crop: run record (input and module SHA-256, counts, Table 5 row)
+expected/permeability_readouts.json	2475	7ac769204642ad323d52f4b8e27dac527f52232f76263685d401cb01d2911e0e	Table 5: permeability of the method and the two reference permeabilities per case
+expected/printed_table_values.json	1610	44f26b964ad9116f2e129db87c7a7cbb929cdcd77039898f39fd45e116c76100	Table 5: printed values of the six cases
+expected/table_source_values.csv	1998	506c30c9e61070dbd3aa2d20e3be43bbcbd74fb5323030dda50ae0a1353d5740	Table 5: full-precision source values of the six cases

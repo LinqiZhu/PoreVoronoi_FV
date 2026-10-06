@@ -1,0 +1,94 @@
+{
+  "id": "assisted-arms-v1",
+  "scope": {
+    "cases": [
+      "c1 orthogonal_duct",
+      "c2 skewed_duct",
+      "c3 thin_wall",
+      "c4 narrow_throat",
+      "c5 maze",
+      "c6 bentheimer_crop"
+    ],
+    "basis": "connected_p1, the basis of the paper",
+    "reference": "each case's own reference_flow.npz",
+    "alpha": "fixed 1000.0 from config.json; no weight search"
+  },
+  "partition": {
+    "rule": "sites = cell_complex.sites_of(case, case_loader.select_records(case, 'pub')) - the paper site rule applied to EVERY window record (all frames, all particles). This is the published site set.",
+    "reads": "frame ids, particle ids and record coordinates only; reads no velocity, no reference field and no error metric",
+    "expected_N_c": {
+      "c1": 4937,
+      "c2": 5268,
+      "c3": 4900,
+      "c4": 5117,
+      "c5": 5989,
+      "c6": 6739
+    },
+    "assertion": "the built partition's n_cells MUST equal expected_N_c for that case; a mismatch is a hard failure of gate D_part with no substitution.",
+    "complex": "cell_complex.build: pore_ownership.exact_owners ownership, paper cell order, sorted (lo, hi) edges, connected_p1 trace; checks wrap_same == 0, max cell x-extent < L/2, each site owns its cell"
+  },
+  "arms": {
+    "PN": "pure FV (alpha = 0; observations.assisted_operator returns the forward A and b objects) on the published partition. Same configuration as Table 5.",
+    "AN": "assisted FV (alpha = 1000) on the SAME published partition, selector S-A = observations.nearest_centroid_selection over case_loader.select_records(case, 'pub'): in each cell the record nearest the cell volume centroid (Euclidean, minimum image in x), ties to the lower CSV row. Exactly one record per cell is asserted. N_obs = N_cells. Particles are NOT required to be distinct: one particle may supply the record of several cells, and that is recorded, not prevented.",
+    "MN": "assisted FV (alpha = 1000) on the SAME published partition, selector S-M = EVERY window record, with no per-cell reduction. N_obs = number of records (expected_records below). A cell receives as many observation triples as it owns records; the count per cell is recorded. Every record's voxel must have an owner cell (hard failure otherwise)."
+  },
+  "expected_records_no_solve": {
+    "note": "record counts are read from the window CSVs by case_loader and involve no solve; they are stated here so a mismatch is detectable",
+    "c1": 72100,
+    "c6": 83700,
+    "others": "not stated in advance; recorded and reported as read"
+  },
+  "assisted_problem": {
+    "objective": "min 0.5 z'Az - b'z + (gamma*w/2)||Hz - y||^2 subject to Dz = 0, solved as the reduced KKT system, identical to observations.assisted_operator",
+    "H": "velocity_recovery.point_operator(xyz, owners, trace, R, G): the first-order affine reconstruction R row + G (x - c) evaluated at each record's continuous position, minimum image in x.",
+    "gamma": "observations.gamma_of(case, trace, alpha) = alpha * nu * sum_i V_i / (mask.size * h^3)^(2/3); the value is recorded.",
+    "weight": "w = 1 / N_obs for both AN and MN. Consequence: the total data-term weight gamma*w*||Hz-y||^2 is held comparable across arms while the per-observation weight falls as observations grow, so MN does NOT simply apply 15x more penalty than AN. The alternative normalisation (fixed per-observation weight) is not evaluated here.",
+    "alpha_status": "fixed at 1000.0; no weight search; no sensitivity experiment in this protocol"
+  },
+  "solver": {
+    "method": "single-threaded CPU MINRES; OMP_NUM_THREADS = OPENBLAS_NUM_THREADS = MKL_NUM_THREADS = 1, recorded",
+    "residual_gate": "recomputed KKT relative residual of the system actually solved must be <= 1e-12",
+    "mass_gate": "eta_m <= 1e-12"
+  },
+  "readouts": {
+    "per_arm": [
+      "e_u_cell",
+      "e_phi",
+      "eK_arch_s",
+      "eK_flux_s",
+      "e_ff",
+      "eta_m",
+      "r_inf_m",
+      "kkt_relative_residual",
+      "iterations",
+      "K_method",
+      "N_c"
+    ],
+    "assisted_only": [
+      "observation_misfit",
+      "plain_stokes_momentum_relative_residual",
+      "gamma",
+      "weight",
+      "N_obs",
+      "records_per_cell_min/median/max",
+      "cells_with_zero_records"
+    ],
+    "e_ff": "full-field voxel velocity error, a fraction not a percent",
+    "leave_out_check": "for AN and MN, e_ff is ALSO recomputed with the directly observed voxels excluded from the error norm, and both values are reported.",
+    "naive_baseline": "for AN and MN, the volume-weighted mean of the observed velocities is formed with no solve at all and its eK_arch_s is reported beside the arm's, using pore_ownership.exact_owners ownership."
+  },
+  "gates": {
+    "D_int": "code and input sha256 match the run record; protocol sha256 recorded",
+    "D_part": "cell_complex partition checks pass AND n_cells == expected_N_c for the case",
+    "D_basis": "connected_p1 trace built, trace mode count recorded",
+    "D_obs": "AN: exactly one record per cell. MN: every record owned, per-cell counts recorded. Both: point-operator defect (observations.point_operator_defect) <= 1e-10",
+    "D_solver": "recomputed KKT relative residual <= 1e-12 for all three arms",
+    "D_mass": "eta_m <= 1e-12 for all three arms",
+    "D_readout": "recorded readouts equal locally recomputed readouts within 1e-10 * max(1, |value|)",
+    "D_pure_matches_E0": "PN's eK_arch_s, eK_flux_s, e_phi and e_u_cell must reproduce the Table 5 values stored in the case's run_record.json (row) to the printed precision. This is an external anchor that the published-partition path is built correctly; a mismatch is a hard failure."
+  },
+  "notes": [
+    "the observations are noise-free samples of the reference field at the record positions; they carry no independent information",
+    "the assisted solution does not solve the Stokes momentum equation; its plain-Stokes momentum relative residual is reported for every assisted arm"
+  ]
+}

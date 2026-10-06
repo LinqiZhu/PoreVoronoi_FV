@@ -1,0 +1,13 @@
+{
+  "files": {
+    "../../../data/berea64/mask.npz": {
+      "sha256": "3dda56074aa8a3f99492c1ba37669bdf5a9d1711443fe7470e05f9a139cc0551"
+    },
+    "../../../data/berea64/particle_tracks.csv.gz": {
+      "sha256": "3ea61d6ec6f1b305b96f48d4f8fdb351ecafcab673e4b3d997aadad106a01528"
+    },
+    "src/hybrid_site_sources.py": {
+      "sha256": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c"
+    }
+  }
+}

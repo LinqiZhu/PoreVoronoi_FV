@@ -1,0 +1,71 @@
+{
+  "description": "K of the method, the stored reference K (K_eff_x of reference_flow.npz) and the reference K from the same face-flux functional as the method; signed errors in percent.",
+  "cases": [
+    {
+      "case": "orthogonal_duct",
+      "N_f": 36864,
+      "N_c": 4937,
+      "mean_voxels_per_cell": 7.466882722300992,
+      "K_method": 19.52536083315763,
+      "K_reference_archived": 20.378276393389307,
+      "K_reference_flux": 20.378276393389555,
+      "e_K_archived_signed_percent": -4.185415605160603,
+      "e_K_common_flux_signed_percent": -4.185415605161769
+    },
+    {
+      "case": "skewed_duct",
+      "N_f": 36369,
+      "N_c": 5268,
+      "mean_voxels_per_cell": 6.90375854214123,
+      "K_method": 4.336349161617562,
+      "K_reference_archived": 4.11416514469534,
+      "K_reference_flux": 4.1117573878866125,
+      "e_K_archived_signed_percent": 5.400464228051183,
+      "e_K_common_flux_signed_percent": 5.462184475976262
+    },
+    {
+      "case": "thin_wall",
+      "N_f": 35392,
+      "N_c": 4900,
+      "mean_voxels_per_cell": 7.222857142857142,
+      "K_method": 7.401178918985949,
+      "K_reference_archived": 7.929508571134987,
+      "K_reference_flux": 7.929308850670434,
+      "e_K_archived_signed_percent": -6.662829700093442,
+      "e_K_common_flux_signed_percent": -6.660478758370358
+    },
+    {
+      "case": "narrow_throat",
+      "N_f": 36337,
+      "N_c": 5117,
+      "mean_voxels_per_cell": 7.101231190150479,
+      "K_method": 2.131541440884624,
+      "K_reference_archived": 1.908398990239913,
+      "K_reference_flux": 1.9073206630585802,
+      "e_K_archived_signed_percent": 11.692651892288964,
+      "e_K_common_flux_signed_percent": 11.75579870594403
+    },
+    {
+      "case": "maze",
+      "N_f": 35328,
+      "N_c": 5989,
+      "mean_voxels_per_cell": 5.8988144932376025,
+      "K_method": 1.1183465633878877,
+      "K_reference_archived": 1.0113186496784736,
+      "K_reference_flux": 1.00980860233488,
+      "e_K_archived_signed_percent": 10.58300603310749,
+      "e_K_common_flux_signed_percent": 10.748369621930953
+    },
+    {
+      "case": "bentheimer_crop",
+      "N_f": 42764,
+      "N_c": 6739,
+      "mean_voxels_per_cell": 6.345748627392788,
+      "K_method": 0.05695701965874589,
+      "K_reference_archived": 0.05225707669002652,
+      "K_reference_flux": 0.051803399647057415,
+      "e_K_archived_signed_percent": 8.99388803663479,
+      "e_K_common_flux_signed_percent": 9.948420464295182
+    }
+  ]
+}

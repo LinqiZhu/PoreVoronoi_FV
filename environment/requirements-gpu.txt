@@ -1,0 +1,7 @@
+# GPU dependencies: CuPy built for CUDA 12 (an NVIDIA driver with CUDA 12 support is required).
+# Used by the ROI-JFA ownership code in gpu/ownership/ and the GPU forward path. Every GPU result of the paper used
+# CuPy 14.1.1; the forward runs on the laptop used the CUDA 12.9 runtime and the H200 runs the system CUDA 12.8 of
+# the cluster nodes (see ENVIRONMENT.md).
+# Through requirements.txt this file needs Python 3.11 or later.
+-r requirements.txt
+cupy-cuda12x==14.1.1

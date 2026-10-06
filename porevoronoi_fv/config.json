@@ -1,0 +1,24 @@
+{
+ "in_dir": "../data/controlled_cases",
+ "out_dir": "../outputs",
+ "nu": 1.0,
+ "force": [0.002, 0.0, 0.0],
+ "h": 1.0,
+ "periodic_x": true,
+ "trace_basis": "connected_p1",
+ "viscous_form": "symmetric_gradient",
+ "alpha": 1000.0,
+ "solver": {"rtol": 1e-14, "maxiter": 50000, "refinement_steps": 1},
+ "single_frame": 32,
+ "table_literals": "expected/printed_table_values.json",
+ "table_csv": "expected/table_source_values.csv",
+ "kflux_receipt": "expected/permeability_readouts.json",
+ "cases": {
+  "c1": {"tag": "orthogonal_duct", "reference": "orthogonal_duct/reference_flow.npz", "window": "orthogonal_duct/particle_tracks.csv.gz", "state": "orthogonal_duct/stokes_only_solution.npz", "manifest": "orthogonal_duct/run_record.json"},
+  "c2": {"tag": "skewed_duct", "reference": "skewed_duct/reference_flow.npz", "window": "skewed_duct/particle_tracks.csv.gz", "state": "skewed_duct/stokes_only_solution.npz", "manifest": "skewed_duct/run_record.json"},
+  "c3": {"tag": "thin_wall", "reference": "thin_wall/reference_flow.npz", "window": "thin_wall/particle_tracks.csv.gz", "state": "thin_wall/stokes_only_solution.npz", "manifest": "thin_wall/run_record.json"},
+  "c4": {"tag": "narrow_throat", "reference": "narrow_throat/reference_flow.npz", "window": "narrow_throat/particle_tracks.csv.gz", "state": "narrow_throat/stokes_only_solution.npz", "manifest": "narrow_throat/run_record.json"},
+  "c5": {"tag": "maze", "reference": "maze/reference_flow.npz", "window": "maze/particle_tracks.csv.gz", "state": "maze/stokes_only_solution.npz", "manifest": "maze/run_record.json"},
+  "c6": {"tag": "bentheimer_crop", "reference": "bentheimer_crop/reference_flow.npz", "window": "bentheimer_crop/particle_tracks.csv.gz", "state": "bentheimer_crop/stokes_only_solution.npz", "manifest": "bentheimer_crop/run_record.json"}
+ }
+}

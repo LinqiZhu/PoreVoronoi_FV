@@ -1,0 +1,50 @@
+{
+  "generated_at_utc": "2026-08-27T10:43:37Z",
+  "source_file": "gpu/ownership/code/ptv_ownership_gpu6.py",
+  "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "cupy_version": "14.1.1",
+  "exhaustive_1d_length": 16,
+  "backends": {
+    "scan": {
+      "cases": 134807,
+      "distance_mismatch": 0,
+      "owner_mismatch": 0,
+      "tie_mismatch": 0,
+      "tie_voxels": 366802,
+      "failures": [],
+      "seconds": 101.25585520011373,
+      "status": "PASS"
+    },
+    "jump": {
+      "cases": 134807,
+      "distance_mismatch": 0,
+      "owner_mismatch": 0,
+      "tie_mismatch": 0,
+      "tie_voxels": 366802,
+      "failures": [],
+      "seconds": 112.25792130012996,
+      "status": "PASS"
+    },
+    "jump_cooperative": {
+      "cases": 134807,
+      "distance_mismatch": 0,
+      "owner_mismatch": 0,
+      "tie_mismatch": 0,
+      "tie_voxels": 366802,
+      "failures": [],
+      "seconds": 79.89216880011372,
+      "status": "PASS"
+    },
+    "jump_fused": {
+      "cases": 134807,
+      "distance_mismatch": 0,
+      "owner_mismatch": 0,
+      "tie_mismatch": 0,
+      "tie_voxels": 366802,
+      "failures": [],
+      "seconds": 85.09040640015155,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

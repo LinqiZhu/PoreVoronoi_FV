@@ -1,0 +1,71 @@
+{
+ "description": "Values of Table 5 (Stokes-only errors on the controlled cases at the default weight). r_inf is given to three significant digits; the table prints two.",
+ "rows": {
+  "c1": {
+   "label": "Orthogonal duct",
+   "tag": "orthogonal_duct",
+   "N_c": "4937",
+   "eK_arch_s": "-4.19",
+   "eK_flux_s": "-4.19",
+   "e_phi": "4.33",
+   "e_u_cell": "3.89",
+   "r_inf_mantissa": "1.14",
+   "r_inf_exponent": "-16"
+  },
+  "c2": {
+   "label": "Skewed duct",
+   "tag": "skewed_duct",
+   "N_c": "5268",
+   "eK_arch_s": "5.40",
+   "eK_flux_s": "5.46",
+   "e_phi": "6.29",
+   "e_u_cell": "5.91",
+   "r_inf_mantissa": "1.54",
+   "r_inf_exponent": "-17"
+  },
+  "c3": {
+   "label": "Thin-wall case",
+   "tag": "thin_wall",
+   "N_c": "4900",
+   "eK_arch_s": "-6.66",
+   "eK_flux_s": "-6.66",
+   "e_phi": "7.24",
+   "e_u_cell": "6.59",
+   "r_inf_mantissa": "1.90",
+   "r_inf_exponent": "-16"
+  },
+  "c4": {
+   "label": "Narrow-throat case",
+   "tag": "narrow_throat",
+   "N_c": "5117",
+   "eK_arch_s": "11.69",
+   "eK_flux_s": "11.76",
+   "e_phi": "12.51",
+   "e_u_cell": "11.29",
+   "r_inf_mantissa": "9.54",
+   "r_inf_exponent": "-18"
+  },
+  "c5": {
+   "label": "Maze case",
+   "tag": "maze",
+   "N_c": "5989",
+   "eK_arch_s": "10.58",
+   "eK_flux_s": "10.75",
+   "e_phi": "10.95",
+   "e_u_cell": "9.46",
+   "r_inf_mantissa": "1.52",
+   "r_inf_exponent": "-17"
+  },
+  "c6": {
+   "label": "Bentheimer crop",
+   "tag": "bentheimer_crop",
+   "N_c": "6739",
+   "eK_arch_s": "8.99",
+   "eK_flux_s": "9.95",
+   "e_phi": "12.98",
+   "e_u_cell": "12.65",
+   "r_inf_mantissa": "5.75",
+   "r_inf_exponent": "-18"
+  }
+ }
+}

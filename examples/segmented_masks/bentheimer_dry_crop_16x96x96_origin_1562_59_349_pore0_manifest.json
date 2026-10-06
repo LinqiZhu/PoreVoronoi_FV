@@ -31,5 +31,5 @@
                          "span_y":  true,
                          "span_x":  true
                      },
-    "interpretation":  "Segmented Bentheimer dry-scan crop; voxels equal to pore_value are used as traversable pore space. For permeability production, only the largest face-connected pore component is retained. The selected component spans the x, y, and z directions."
+    "interpretation":  "Segmented Bentheimer dry-scan crop; voxels equal to pore_value are used as traversable pore space. For the permeability calculations, only the largest face-connected pore component is retained. The selected component spans the x, y, and z directions."
 }

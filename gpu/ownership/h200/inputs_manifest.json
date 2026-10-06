@@ -1,0 +1,1513 @@
+{
+  "masks": {
+    "thin_wall": {
+      "source": "data/controlled_cases/thin_wall/reference_flow.npz",
+      "source_file_sha256": "d1c1cc093757e88bcc19d1747f8f886c0a64f2e375dee5740aa8c5ebd0fe09f3",
+      "members": {
+        "mask.npy": {
+          "shape": [
+            24,
+            24,
+            64
+          ],
+          "dtype": "bool",
+          "fortran_order": false,
+          "data_sha256": "861ac979d277119164da3b05f06dfc4452061e125c37bb87a4db95e2867deb5d"
+        }
+      }
+    },
+    "maze": {
+      "source": "data/controlled_cases/maze/reference_flow.npz",
+      "source_file_sha256": "7366323f32c7a8264a718a728c5474d9070b05a70a11b6b04d57e0f504265cc6",
+      "members": {
+        "mask.npy": {
+          "shape": [
+            24,
+            24,
+            64
+          ],
+          "dtype": "bool",
+          "fortran_order": false,
+          "data_sha256": "a9f97ce9921fab5333af18a07894efc6eb7cc12235218679e890e1bf3a7ddec9"
+        }
+      }
+    },
+    "bentheimer_crop": {
+      "source": "data/controlled_cases/bentheimer_crop/reference_flow.npz",
+      "source_file_sha256": "c4dfbed26e670c30e47ba970021d9ffc23cd4c050e45a1b3e52153f0ab487fe3",
+      "members": {
+        "mask.npy": {
+          "shape": [
+            16,
+            96,
+            96
+          ],
+          "dtype": "bool",
+          "fortran_order": false,
+          "data_sha256": "eeb7ac30ca747cfc109fc1c881c60e5c6272b8e630167c0e555d367dc1267e93"
+        }
+      }
+    },
+    "berea_heldout_64": {
+      "source": "data/berea64/reference_flow_x.npz",
+      "source_file_sha256": "7734b57a280650b86bda555ea9f8f7aed99c65a614cea4cdbe8f62289be58c2e",
+      "members": {
+        "mask.npy": {
+          "shape": [
+            64,
+            64,
+            64
+          ],
+          "dtype": "bool",
+          "fortran_order": false,
+          "data_sha256": "060ed297f24141637094e442f63d08505105da82166e21c0db9ac0f42d4315d4"
+        }
+      }
+    }
+  },
+  "ownership_fields": [
+    {
+      "filename": "bentheimer_crop__mask_graph_fps_n200__ownership.npz",
+      "source_file_sha256": "0976c5b7cff369992cfd4689b5588116a0656ba03049d47ff7206e0f66ec36ee",
+      "members": {
+        "pore_flat.npy": {
+          "shape": [
+            42764
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "f9bcb4091495bd36c3c3f46853ed0c570d73a387542a19cdbb9e40a067a4772b"
+        },
+        "sites.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "f893fde4ffe230559f88f9b7deb95de910f4e59c26ec52c0e0d3f7034a95a7b7"
+        },
+        "owner_euclidean.npy": {
+          "shape": [
+            42764
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "ef064232e9436df0b4598ef06cf83b0c59b913823136d2abe768f5de9da3b99d"
+        },
+        "owner_geodesic.npy": {
+          "shape": [
+            42764
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "f6f05d4fc2d04b05051c7724d2f34a00234e278b889d8e78bc0e931b7dcb09c2"
+        },
+        "distance_geodesic.npy": {
+          "shape": [
+            42764
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "909d6ea00113c2abcfc57d6bb7c42ad3e0808c66b6219086c4b807318bce16a8"
+        },
+        "euclidean_components_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "a72355f302555245385a832df3b3bd2d4fedfbe05d722ca5d7a7abd8f122c445"
+        },
+        "geodesic_components_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "cbada1801f2fd2398d490e2bb14a4350672f27cb58b14b58c7d5868e390a445e"
+        },
+        "euclidean_orphan_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "03e244efbd8570c4113710f0930659322beb4dd946cfede2520c71d6a04d3882"
+        },
+        "geodesic_orphan_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "67042dfda5683aead81b6055d19c4dba238341f9dd82f49c0e7cc0c19c5f10d1"
+        }
+      }
+    },
+    {
+      "filename": "bentheimer_crop__mask_graph_fps_n800__ownership.npz",
+      "source_file_sha256": "2526c23ddb154655df6844820f5d4a60171ba0a5f63af11511fdb4b7c119e0ae",
+      "members": {
+        "pore_flat.npy": {
+          "shape": [
+            42764
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "f9bcb4091495bd36c3c3f46853ed0c570d73a387542a19cdbb9e40a067a4772b"
+        },
+        "sites.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "f635cf2f916b6b0c0afeadb077d133c7517da8b1e425114d8dd3b595550d673d"
+        },
+        "owner_euclidean.npy": {
+          "shape": [
+            42764
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "d9075a7d9908f6d92488d42ff61f134af7b2d3f3dc534b2c8ca24e036e3096db"
+        },
+        "owner_geodesic.npy": {
+          "shape": [
+            42764
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "a0d04d31629ea9c4e59bb9ac8671258742076a934f4a671977cc7b5b251b19c2"
+        },
+        "distance_geodesic.npy": {
+          "shape": [
+            42764
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "7a18c264aa58400de38f8dde1bc17b71f46993b95fac9f66a9000f1292340357"
+        },
+        "euclidean_components_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "61f8f9b99bc559e59e64fcb9e1b6b1d302347d6799d64152fec31ccf48907ce6"
+        },
+        "geodesic_components_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "2bdba08cf918a884a5f6e4c81c764ce00f53e63be2d65ce7f62cff1963e8800e"
+        },
+        "euclidean_orphan_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "1ad908903b6d74dd294ed0c9232a98fbb9e7a4bcc279782720f7b688f552373b"
+        },
+        "geodesic_orphan_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "5a312281df4bd8dfbb4d4a94ad0bf44d01bb8cfced1206b90e21b4ca0568cdb1"
+        }
+      }
+    },
+    {
+      "filename": "berea_heldout_64__mask_graph_fps_n200__ownership.npz",
+      "source_file_sha256": "75efa0e0dba78273d5296cb0f0b26bda46fdba85064d5be56fa9fe4b2ddfd61f",
+      "members": {
+        "pore_flat.npy": {
+          "shape": [
+            51113
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "80bba229be885198bb788c36cef2b77ad2191431962208fbee996a430bce3e02"
+        },
+        "sites.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "12dd484605beca2baa2ad31d83dea3763b754faa0fea9d85663a7795b074b29a"
+        },
+        "owner_euclidean.npy": {
+          "shape": [
+            51113
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "43ceb4f7958f9f130298492459f85096542b25b0ac6b98194bf32cdf11793eb6"
+        },
+        "owner_geodesic.npy": {
+          "shape": [
+            51113
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "4404c03a7b7cd2739a5cfc2837cc98f02e397b701317940cd2a2f2b5446a9048"
+        },
+        "distance_geodesic.npy": {
+          "shape": [
+            51113
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "425fe0583bcabfbe0c97b38df2ae1bba833c0c0794ad4c65e14e5a0014646dd9"
+        },
+        "euclidean_components_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "ec20a63ed67c4e8385067963644934a6386cef464c954a86a3e3f52a75970d73"
+        },
+        "geodesic_components_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "cbada1801f2fd2398d490e2bb14a4350672f27cb58b14b58c7d5868e390a445e"
+        },
+        "euclidean_orphan_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "3ced6bae2dcdd91062379acee1e9120d284931adf1f19be59083248c3003e862"
+        },
+        "geodesic_orphan_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "67042dfda5683aead81b6055d19c4dba238341f9dd82f49c0e7cc0c19c5f10d1"
+        }
+      }
+    },
+    {
+      "filename": "berea_heldout_64__mask_graph_fps_n800__ownership.npz",
+      "source_file_sha256": "87b7bbe7d0a7659e06baa10d9774daa6c4e3d0c9b1e3f3b52aba71ed59ce351e",
+      "members": {
+        "pore_flat.npy": {
+          "shape": [
+            51113
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "80bba229be885198bb788c36cef2b77ad2191431962208fbee996a430bce3e02"
+        },
+        "sites.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "c7173044341d1719c09b8e271efe8b9c26712d1eb0a75c4a9b07444d74389522"
+        },
+        "owner_euclidean.npy": {
+          "shape": [
+            51113
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "c728e3d2bd53119b897ba4fd2a1c78f9ee25ec491c1355e1467190b0922eec34"
+        },
+        "owner_geodesic.npy": {
+          "shape": [
+            51113
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "9435daae713b2c77e5f10dca1c11042a5de587f5482a877d2689a5ff276ef1a0"
+        },
+        "distance_geodesic.npy": {
+          "shape": [
+            51113
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "c558800ac7bd102a11d355b09d9d01eee25c5e91d37997310d65c2da38f07c9e"
+        },
+        "euclidean_components_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "42f54d830ff16957f7e3beeb02e0d2bc10feabde7aa6166e4c5ec2fa2e6f46aa"
+        },
+        "geodesic_components_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "2bdba08cf918a884a5f6e4c81c764ce00f53e63be2d65ce7f62cff1963e8800e"
+        },
+        "euclidean_orphan_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "8237ee773ce1d31ab60331205083a82b58c5ee3b7170b83bd86aeb7c55f97d93"
+        },
+        "geodesic_orphan_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "5a312281df4bd8dfbb4d4a94ad0bf44d01bb8cfced1206b90e21b4ca0568cdb1"
+        }
+      }
+    },
+    {
+      "filename": "maze__mask_graph_fps_n200__ownership.npz",
+      "source_file_sha256": "f75cbe595ca50cdd3cdb8e2c7bb4cb7da1773ad19d9d19364dc42d04ee7845eb",
+      "members": {
+        "pore_flat.npy": {
+          "shape": [
+            35328
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "51996a16488237ad9b40eeef7f4d9e385c2a4988d0f56bffc50fe23a44cb5d6e"
+        },
+        "sites.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "ea0c19959fbb70cef13d752fc8bd45e2a1ebbbc8b0c63da33fb7a03a59234706"
+        },
+        "owner_euclidean.npy": {
+          "shape": [
+            35328
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "d0cca69ab6dd28ffa42d36c7611dd90f3ccd048df8fd90070e8d7d0e40c80282"
+        },
+        "owner_geodesic.npy": {
+          "shape": [
+            35328
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "236ccb539c96e5db38e0653a85a1977851b08342ef893a5920a974afdaeaa24a"
+        },
+        "distance_geodesic.npy": {
+          "shape": [
+            35328
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "814227d615af5787e0a9a7dcb78fbe39b435b425115d6b8525d2fa333185b0fc"
+        },
+        "euclidean_components_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "dd9daf4c960b637433536fd240c810f9011ea32c35f58b399cbd78edf74c406e"
+        },
+        "geodesic_components_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "cbada1801f2fd2398d490e2bb14a4350672f27cb58b14b58c7d5868e390a445e"
+        },
+        "euclidean_orphan_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "0d74bed510d5a440b65194f6717fe5aab2b72f0f3ddd7ab4099a457638886d8d"
+        },
+        "geodesic_orphan_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "67042dfda5683aead81b6055d19c4dba238341f9dd82f49c0e7cc0c19c5f10d1"
+        }
+      }
+    },
+    {
+      "filename": "maze__mask_graph_fps_n800__ownership.npz",
+      "source_file_sha256": "ddc231628ca47b9f6fe4c9f3f40ab51a1759a3ad4c1eb2caf7a66ab6b5781621",
+      "members": {
+        "pore_flat.npy": {
+          "shape": [
+            35328
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "51996a16488237ad9b40eeef7f4d9e385c2a4988d0f56bffc50fe23a44cb5d6e"
+        },
+        "sites.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "95bc205d618ab3d1faf422f2954efec5b1189080fe170d561e373ce1243fa8b9"
+        },
+        "owner_euclidean.npy": {
+          "shape": [
+            35328
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "255723cdbef59f6a1c49d331a65f6d8db5bd7ef1b96aabea2ba537b8eccd2a1e"
+        },
+        "owner_geodesic.npy": {
+          "shape": [
+            35328
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "96765b327969230f29632c93fdc7e618d57a5b63da808805931f9a6c5ea61124"
+        },
+        "distance_geodesic.npy": {
+          "shape": [
+            35328
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "507a5683c5dcc9e63251c4b2c3f804de235b23e80e7cd6c78b6347b1b4700c63"
+        },
+        "euclidean_components_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "8500e8008c886ffced11368a8cb0d8bfa7e4558e85cb90a56518ecebfea56d22"
+        },
+        "geodesic_components_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "2bdba08cf918a884a5f6e4c81c764ce00f53e63be2d65ce7f62cff1963e8800e"
+        },
+        "euclidean_orphan_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "9ee3aeeb515d74abb934fec891e4f9e4437c619e10265701f22172b2ef3fbd81"
+        },
+        "geodesic_orphan_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "5a312281df4bd8dfbb4d4a94ad0bf44d01bb8cfced1206b90e21b4ca0568cdb1"
+        }
+      }
+    },
+    {
+      "filename": "thin_wall__mask_graph_fps_n200__ownership.npz",
+      "source_file_sha256": "92d73108d3c144d11375a9db9da9c5cbae23f25fc432c91ce4713e30c59fad6f",
+      "members": {
+        "pore_flat.npy": {
+          "shape": [
+            35392
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "371f69ca88c00243be3f10986eb32c0c7dcad771ace7431238a729828b355be3"
+        },
+        "sites.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "94aea5fbead74d25649ccccce9d706016816bf05bf41a5ffaf27123f20ca1a27"
+        },
+        "owner_euclidean.npy": {
+          "shape": [
+            35392
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "e1b66ed00b6a2c6712ee2ad59aa1535fc8de58dd3fffd3a1f163b4fd2d487e69"
+        },
+        "owner_geodesic.npy": {
+          "shape": [
+            35392
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "3df004b5c3fcbb3619ff2f9f5f4991bd561b089b9446b8b3ad6f1b7ce7f5d4e5"
+        },
+        "distance_geodesic.npy": {
+          "shape": [
+            35392
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "5cc139a93814a7f49d7933a56e93def22799a0bf29ad6832824b42fff20fbb92"
+        },
+        "euclidean_components_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "ce6a02ee1ddc70372112cf1acbbca2da2ce189e2de0c456f7dd91c0f7e2510ec"
+        },
+        "geodesic_components_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "cbada1801f2fd2398d490e2bb14a4350672f27cb58b14b58c7d5868e390a445e"
+        },
+        "euclidean_orphan_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "4090ef77fb20576cd351d1cb9c704759918c0f63aeccf33c826f88580150e1e0"
+        },
+        "geodesic_orphan_per_cell.npy": {
+          "shape": [
+            200
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "67042dfda5683aead81b6055d19c4dba238341f9dd82f49c0e7cc0c19c5f10d1"
+        }
+      }
+    },
+    {
+      "filename": "thin_wall__mask_graph_fps_n800__ownership.npz",
+      "source_file_sha256": "9e3173cba81b2c464c83c8c598212efd4d93cd6194715c02a87d3ca102b8e858",
+      "members": {
+        "pore_flat.npy": {
+          "shape": [
+            35392
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "371f69ca88c00243be3f10986eb32c0c7dcad771ace7431238a729828b355be3"
+        },
+        "sites.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int64",
+          "fortran_order": false,
+          "data_sha256": "2dbc60aa617fed0dfa907657a4df5f85a4c5cbfd45179cd00b5a4278fc470b98"
+        },
+        "owner_euclidean.npy": {
+          "shape": [
+            35392
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "1744cf4194e956423743a213961a19b3dbc36ebaf1f45c94b33275fe13bb0b1c"
+        },
+        "owner_geodesic.npy": {
+          "shape": [
+            35392
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "7a61d6b373991110d8a479cfc012360b9db7651e71b6de28c41a2d728eb9b63d"
+        },
+        "distance_geodesic.npy": {
+          "shape": [
+            35392
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "c19206f298845657a649178ce1b40ea1fb71fe741fc03a7d7d02efcac758ba79"
+        },
+        "euclidean_components_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "2003f10d4b3f105fe229c82cd7197c8a5faeceb7c6c8e90dcb0686b76009521e"
+        },
+        "geodesic_components_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "2bdba08cf918a884a5f6e4c81c764ce00f53e63be2d65ce7f62cff1963e8800e"
+        },
+        "euclidean_orphan_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "c4cb69fef7b464cfd3307161927827235cf0581cfb89d1a80f732d9d6777d435"
+        },
+        "geodesic_orphan_per_cell.npy": {
+          "shape": [
+            800
+          ],
+          "dtype": "int32",
+          "fortran_order": false,
+          "data_sha256": "5a312281df4bd8dfbb4d4a94ad0bf44d01bb8cfced1206b90e21b4ca0568cdb1"
+        }
+      }
+    }
+  ],
+  "source_files": {
+    "study_common.py": {
+      "source": "same bytes as gpu/studies/study_common.py",
+      "sha256": "f54408fb33729a5eaf7450d1b7b5982430c20eba0a099b4cf009b2ea41e446de"
+    },
+    "ptv_ownership_gpu6.py": {
+      "sha256": "b73978dc16b0f00af953291496a2273df09b8e769f4c987e04341397267d0616",
+      "source": "ownership module run on the H200: SM count cached once per device; numerical kernels identical to ptv_ownership_gpu6_sm_query.py"
+    },
+    "manufactured_fields_export.py": {
+      "source": "source export from Manufactured class",
+      "sha256": "d3b2ac361adf873008476eea6e24d0a0e168a37ec1a3329a404b43375962f6dc"
+    },
+    "ptv_ownership_gpu6_sm_query.py": {
+      "sha256": "8a98f0741e04ed197be2480ef05520708744845cf99179ed0c3b0ee7e5fd4243",
+      "source": "same bytes as gpu/ownership/code/ptv_ownership_gpu6.py (SM count queried at each launch; Table 2 version)"
+    },
+    "hybrid_site_sources.py": {
+      "sha256": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
+      "source": "same bytes as gpu/code/hybrid_site_sources.py"
+    }
+  },
+  "mms_studies": [
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N016_m04_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "16",
+      "sites_per_side": "4",
+      "h_over_L": "0.0625",
+      "H_over_L": "0.25",
+      "H_over_h": "4.0",
+      "N_cv": "64",
+      "N_system": "1359",
+      "e_u_percent": "46.02939927688942",
+      "e_p_percent": "7.708379331510218",
+      "e_phi_percent": "31.269088221017704",
+      "N_f": "4096",
+      "N_facelets": "2304",
+      "N_p_after_gauge": "63",
+      "N_patches": "144",
+      "N_sites": "64",
+      "N_trace_modes": "432",
+      "N_z": "1296",
+      "domain_length": "16.0",
+      "e_p_percent_multiplier_convention": "196.625152516176",
+      "factor_memory_MiB": "0.5463333129882812",
+      "linear_solver_iterations": "184",
+      "linear_solver_relative_residual": "4.0991409425317805e-14",
+      "mass_backward_error_dimensionless": "5.75176455472815e-14",
+      "mass_inf_per_volume": "4.054573735561486e-15",
+      "momentum_residual_inf": "5.657696533489798e-13",
+      "nnz_A": "45234",
+      "nnz_D": "576",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9974753148939044",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N016_m04_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.0015183000359684229",
+      "t_geometry_build_s": "0.4517399000469595",
+      "t_matrix_assembly_s": "0.3497885998804122",
+      "t_solve_s": "0.010038200067356229",
+      "t_trace_geometry_s": "0.017690100008621812",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "1.4097198999952525",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N016_m04_mean",
+      "load_functional": "mean",
+      "voxels_per_side": "16",
+      "sites_per_side": "4",
+      "h_over_L": "0.0625",
+      "H_over_L": "0.25",
+      "H_over_h": "4.0",
+      "N_cv": "64",
+      "N_system": "1359",
+      "e_u_percent": "60.321490071275946",
+      "e_p_percent": "45.72793094284698",
+      "e_phi_percent": "51.546819787931355",
+      "N_f": "4096",
+      "N_facelets": "2304",
+      "N_p_after_gauge": "63",
+      "N_patches": "144",
+      "N_sites": "64",
+      "N_trace_modes": "432",
+      "N_z": "1296",
+      "domain_length": "16.0",
+      "e_p_percent_multiplier_convention": "155.29768740912593",
+      "factor_memory_MiB": "0.5463333129882812",
+      "linear_solver_iterations": "184",
+      "linear_solver_relative_residual": "3.279899028504043e-14",
+      "mass_backward_error_dimensionless": "3.948376516971613e-14",
+      "mass_inf_per_volume": "5.155096015560821e-15",
+      "momentum_residual_inf": "3.2951419370874646e-13",
+      "nnz_A": "45234",
+      "nnz_D": "576",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9883408054885648",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N016_m04_mean",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.0012332999613136053",
+      "t_geometry_build_s": "0.03756020008586347",
+      "t_matrix_assembly_s": "0.2976569999009371",
+      "t_solve_s": "0.010394399985671043",
+      "t_trace_geometry_s": "0.012391000054776669",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "0.9049001999665052",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N024_m06_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "24",
+      "sites_per_side": "6",
+      "h_over_L": "0.041666666666666664",
+      "H_over_L": "0.16666666666666666",
+      "H_over_h": "4.0",
+      "N_cv": "216",
+      "N_system": "5075",
+      "e_u_percent": "37.1980644301027",
+      "e_p_percent": "4.690572447192027",
+      "e_phi_percent": "23.645935177008397",
+      "N_f": "13824",
+      "N_facelets": "8640",
+      "N_p_after_gauge": "215",
+      "N_patches": "540",
+      "N_sites": "216",
+      "N_trace_modes": "1620",
+      "N_z": "4860",
+      "domain_length": "24.0",
+      "e_p_percent_multiplier_convention": "200.5955372552897",
+      "factor_memory_MiB": "2.1071243286132812",
+      "linear_solver_iterations": "390",
+      "linear_solver_relative_residual": "1.0101740398887581e-13",
+      "mass_backward_error_dimensionless": "6.931074257393954e-14",
+      "mass_inf_per_volume": "6.14705721860721e-15",
+      "momentum_residual_inf": "1.1790568521519162e-12",
+      "nnz_A": "174734",
+      "nnz_D": "2160",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.99892796820894",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N024_m06_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.00478379987180233",
+      "t_geometry_build_s": "0.21208029985427856",
+      "t_matrix_assembly_s": "1.1622087000869215",
+      "t_solve_s": "0.0588638000190258",
+      "t_trace_geometry_s": "0.023426800034940243",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "3.4405989998485893",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N024_m06_mean",
+      "load_functional": "mean",
+      "voxels_per_side": "24",
+      "sites_per_side": "6",
+      "h_over_L": "0.041666666666666664",
+      "H_over_L": "0.16666666666666666",
+      "H_over_h": "4.0",
+      "N_cv": "216",
+      "N_system": "5075",
+      "e_u_percent": "44.60234955438114",
+      "e_p_percent": "23.630106751768547",
+      "e_phi_percent": "35.71994670694693",
+      "N_f": "13824",
+      "N_facelets": "8640",
+      "N_p_after_gauge": "215",
+      "N_patches": "540",
+      "N_sites": "216",
+      "N_trace_modes": "1620",
+      "N_z": "4860",
+      "domain_length": "24.0",
+      "e_p_percent_multiplier_convention": "177.33174378594714",
+      "factor_memory_MiB": "2.1071243286132812",
+      "linear_solver_iterations": "393",
+      "linear_solver_relative_residual": "8.942889411911087e-14",
+      "mass_backward_error_dimensionless": "1.0227764909460975e-13",
+      "mass_inf_per_volume": "1.3621894599742591e-14",
+      "momentum_residual_inf": "1.0231815394945443e-12",
+      "nnz_A": "174734",
+      "nnz_D": "2160",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9967065618481868",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N024_m06_mean",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.0055890001822263",
+      "t_geometry_build_s": "0.04623889992944896",
+      "t_matrix_assembly_s": "1.1161295999772847",
+      "t_solve_s": "0.06487190001644194",
+      "t_trace_geometry_s": "0.023589099990203977",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "3.321318699978292",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N032_m08_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "32",
+      "sites_per_side": "8",
+      "h_over_L": "0.03125",
+      "H_over_L": "0.125",
+      "H_over_h": "4.0",
+      "N_cv": "512",
+      "N_system": "12607",
+      "e_u_percent": "27.68207357544628",
+      "e_p_percent": "2.599299031274847",
+      "e_phi_percent": "17.811223289179807",
+      "N_f": "32768",
+      "N_facelets": "21504",
+      "N_p_after_gauge": "511",
+      "N_patches": "1344",
+      "N_sites": "512",
+      "N_trace_modes": "4032",
+      "N_z": "12096",
+      "domain_length": "32.0",
+      "e_p_percent_multiplier_convention": "200.71643001714403",
+      "factor_memory_MiB": "5.242439270019531",
+      "linear_solver_iterations": "618",
+      "linear_solver_relative_residual": "1.660339683752648e-13",
+      "mass_backward_error_dimensionless": "1.516526282437732e-13",
+      "mass_inf_per_volume": "9.424433274071512e-15",
+      "momentum_residual_inf": "1.5702994460298214e-12",
+      "nnz_A": "434738",
+      "nnz_D": "5376",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9996912279563367",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N032_m08_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.008269699988886714",
+      "t_geometry_build_s": "0.17165909986943007",
+      "t_matrix_assembly_s": "2.8569239999633282",
+      "t_solve_s": "0.7958649999927729",
+      "t_trace_geometry_s": "0.0458120999392122",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "9.497939399909228",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N032_m08_mean",
+      "load_functional": "mean",
+      "voxels_per_side": "32",
+      "sites_per_side": "8",
+      "h_over_L": "0.03125",
+      "H_over_L": "0.125",
+      "H_over_h": "4.0",
+      "N_cv": "512",
+      "N_system": "12607",
+      "e_u_percent": "33.271592525661326",
+      "e_p_percent": "14.094862076276607",
+      "e_phi_percent": "26.285631542085596",
+      "N_f": "32768",
+      "N_facelets": "21504",
+      "N_p_after_gauge": "511",
+      "N_patches": "1344",
+      "N_sites": "512",
+      "N_trace_modes": "4032",
+      "N_z": "12096",
+      "domain_length": "32.0",
+      "e_p_percent_multiplier_convention": "186.3871194385991",
+      "factor_memory_MiB": "5.242439270019531",
+      "linear_solver_iterations": "627",
+      "linear_solver_relative_residual": "1.498995267288197e-13",
+      "mass_backward_error_dimensionless": "1.8291054880661432e-13",
+      "mass_inf_per_volume": "7.764118195510995e-15",
+      "momentum_residual_inf": "1.2079226507921703e-12",
+      "nnz_A": "434738",
+      "nnz_D": "5376",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9991666198732487",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N032_m08_mean",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.009789799805730581",
+      "t_geometry_build_s": "0.6207385000307113",
+      "t_matrix_assembly_s": "3.4298866000026464",
+      "t_solve_s": "0.9308610998559743",
+      "t_trace_geometry_s": "0.09277480002492666",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "10.755297600058839",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N048_m12_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "48",
+      "sites_per_side": "12",
+      "h_over_L": "0.020833333333333332",
+      "H_over_L": "0.08333333333333333",
+      "H_over_h": "4.0",
+      "N_cv": "1728",
+      "N_system": "44495",
+      "e_u_percent": "15.672519984169558",
+      "e_p_percent": "0.9074100249864343",
+      "e_phi_percent": "10.787878724321466",
+      "N_f": "110592",
+      "N_facelets": "76032",
+      "N_p_after_gauge": "1727",
+      "N_patches": "4752",
+      "N_sites": "1728",
+      "N_trace_modes": "14256",
+      "N_z": "42768",
+      "domain_length": "48.0",
+      "e_p_percent_multiplier_convention": "200.36385369172257",
+      "factor_memory_MiB": "18.35700225830078",
+      "linear_solver_iterations": "1183",
+      "linear_solver_relative_residual": "3.524708315135827e-13",
+      "mass_backward_error_dimensionless": "3.924550577782205e-13",
+      "mass_inf_per_volume": "1.3487138936225962e-14",
+      "momentum_residual_inf": "3.126388037344441e-12",
+      "nnz_A": "1521554",
+      "nnz_D": "19008",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9999656382215801",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N048_m12_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.038982999976724386",
+      "t_geometry_build_s": "2.6012586997821927",
+      "t_matrix_assembly_s": "11.88992640003562",
+      "t_solve_s": "6.260701099876314",
+      "t_trace_geometry_s": "0.18515300005674362",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "46.91832359996624",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N048_m12_mean",
+      "load_functional": "mean",
+      "voxels_per_side": "48",
+      "sites_per_side": "12",
+      "h_over_L": "0.020833333333333332",
+      "H_over_L": "0.08333333333333333",
+      "H_over_h": "4.0",
+      "N_cv": "1728",
+      "N_system": "44495",
+      "e_u_percent": "23.318013329347515",
+      "e_p_percent": "6.527313091487342",
+      "e_phi_percent": "20.214017739643346",
+      "N_f": "110592",
+      "N_facelets": "76032",
+      "N_p_after_gauge": "1727",
+      "N_patches": "4752",
+      "N_sites": "1728",
+      "N_trace_modes": "14256",
+      "N_z": "42768",
+      "domain_length": "48.0",
+      "e_p_percent_multiplier_convention": "193.60154472365093",
+      "factor_memory_MiB": "18.35700225830078",
+      "linear_solver_iterations": "1184",
+      "linear_solver_relative_residual": "3.0588008321527713e-13",
+      "mass_backward_error_dimensionless": "5.911794425661673e-13",
+      "mass_inf_per_volume": "2.2564732156433346e-14",
+      "momentum_residual_inf": "2.3785418079569354e-12",
+      "nnz_A": "1521554",
+      "nnz_D": "19008",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9999079923460847",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N048_m12_mean",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.05113909998908639",
+      "t_geometry_build_s": "0.4329921000171453",
+      "t_matrix_assembly_s": "17.552434799959883",
+      "t_solve_s": "6.38258650014177",
+      "t_trace_geometry_s": "0.3269571999553591",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "57.54712560004555",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N064_m16_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "64",
+      "sites_per_side": "16",
+      "h_over_L": "0.015625",
+      "H_over_L": "0.0625",
+      "H_over_h": "4.0",
+      "N_cv": "4096",
+      "N_system": "107775",
+      "e_u_percent": "9.776408669918908",
+      "e_p_percent": "0.40549854639576166",
+      "e_phi_percent": "7.213078969078879",
+      "N_f": "262144",
+      "N_facelets": "184320",
+      "N_p_after_gauge": "4095",
+      "N_patches": "11520",
+      "N_sites": "4096",
+      "N_trace_modes": "34560",
+      "N_z": "103680",
+      "domain_length": "64.0",
+      "e_p_percent_multiplier_convention": "200.19610808698187",
+      "factor_memory_MiB": "44.13074493408203",
+      "linear_solver_iterations": "1786",
+      "linear_solver_relative_residual": "5.83154881105837e-13",
+      "mass_backward_error_dimensionless": "7.93534178268283e-13",
+      "mass_inf_per_volume": "5.4470366883330505e-14",
+      "momentum_residual_inf": "3.738787057727677e-12",
+      "nnz_A": "3656274",
+      "nnz_D": "46080",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9999937199697283",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N064_m16_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.10371799999848008",
+      "t_geometry_build_s": "0.08710270002484322",
+      "t_matrix_assembly_s": "40.612483699806035",
+      "t_solve_s": "20.697589399991557",
+      "t_trace_geometry_s": "0.6802691998891532",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "150.68935619993135",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N064_m16_mean",
+      "load_functional": "mean",
+      "voxels_per_side": "64",
+      "sites_per_side": "16",
+      "h_over_L": "0.015625",
+      "H_over_L": "0.0625",
+      "H_over_h": "4.0",
+      "N_cv": "4096",
+      "N_system": "107775",
+      "e_u_percent": "20.428049806559642",
+      "e_p_percent": "3.723443180279041",
+      "e_phi_percent": "19.118660348387976",
+      "N_f": "262144",
+      "N_facelets": "184320",
+      "N_p_after_gauge": "4095",
+      "N_patches": "11520",
+      "N_sites": "4096",
+      "N_trace_modes": "34560",
+      "N_z": "103680",
+      "domain_length": "64.0",
+      "e_p_percent_multiplier_convention": "196.32520316270097",
+      "factor_memory_MiB": "44.13074493408203",
+      "linear_solver_iterations": "1805",
+      "linear_solver_relative_residual": "5.453626083808167e-13",
+      "mass_backward_error_dimensionless": "9.650248136798978e-13",
+      "mass_inf_per_volume": "4.3823887161077695e-14",
+      "momentum_residual_inf": "3.649636148850277e-12",
+      "nnz_A": "3656274",
+      "nnz_D": "46080",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9999809625170543",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/runs/N064_m16_mean",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.1016639000736177",
+      "t_geometry_build_s": "0.07203969988040626",
+      "t_matrix_assembly_s": "42.06656890013255",
+      "t_solve_s": "22.979552499949932",
+      "t_trace_geometry_s": "0.6895595001988113",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "161.4655522000976",
+      "study": "coupled"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N048_m04_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "48",
+      "sites_per_side": "4",
+      "h_over_L": "0.020833333333333332",
+      "H_over_L": "0.25",
+      "H_over_h": "12.0",
+      "N_cv": "64",
+      "N_system": "1359",
+      "e_u_percent": "140.62288554970021",
+      "e_p_percent": "11.081566293654745",
+      "e_phi_percent": "87.27484436148012",
+      "N_f": "110592",
+      "N_facelets": "20736",
+      "N_p_after_gauge": "63",
+      "N_patches": "144",
+      "N_sites": "64",
+      "N_trace_modes": "432",
+      "N_z": "1296",
+      "domain_length": "48.0",
+      "e_p_percent_multiplier_convention": "197.64238192682774",
+      "factor_memory_MiB": "0.846282958984375",
+      "linear_solver_iterations": "203",
+      "linear_solver_relative_residual": "2.8220260677330538e-14",
+      "mass_backward_error_dimensionless": "9.514199617487722e-14",
+      "mass_inf_per_volume": "5.283945802783154e-16",
+      "momentum_residual_inf": "2.418509836843441e-12",
+      "nnz_A": "70880",
+      "nnz_D": "864",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9939471291474072",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/fixed_h/runs/N048_m04_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.0031214000191539526",
+      "t_geometry_build_s": "0.7283128001727164",
+      "t_matrix_assembly_s": "4.535782399820164",
+      "t_solve_s": "0.031188700115308166",
+      "t_trace_geometry_s": "0.11397770000621676",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "23.847591100027785",
+      "study": "fixed_h"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N048_m06_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "48",
+      "sites_per_side": "6",
+      "h_over_L": "0.020833333333333332",
+      "H_over_L": "0.16666666666666666",
+      "H_over_h": "8.0",
+      "N_cv": "216",
+      "N_system": "5075",
+      "e_u_percent": "76.52611434702854",
+      "e_p_percent": "5.512638503180562",
+      "e_phi_percent": "54.108472662702546",
+      "N_f": "110592",
+      "N_facelets": "34560",
+      "N_p_after_gauge": "215",
+      "N_patches": "540",
+      "N_sites": "216",
+      "N_trace_modes": "1620",
+      "N_z": "4860",
+      "domain_length": "48.0",
+      "e_p_percent_multiplier_convention": "200.85509161702115",
+      "factor_memory_MiB": "2.9277114868164062",
+      "linear_solver_iterations": "453",
+      "linear_solver_relative_residual": "6.49399442059288e-14",
+      "mass_backward_error_dimensionless": "8.456100052463702e-14",
+      "mass_inf_per_volume": "1.1787616123192753e-15",
+      "momentum_residual_inf": "3.248956659263058e-12",
+      "nnz_A": "247098",
+      "nnz_D": "1830",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9985372369332572",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/fixed_h/runs/N048_m06_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.007040600059553981",
+      "t_geometry_build_s": "0.32784619997255504",
+      "t_matrix_assembly_s": "8.104944899911061",
+      "t_solve_s": "0.2037419998086989",
+      "t_trace_geometry_s": "0.1593174000736326",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "30.38831069995649",
+      "study": "fixed_h"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N048_m08_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "48",
+      "sites_per_side": "8",
+      "h_over_L": "0.020833333333333332",
+      "H_over_L": "0.125",
+      "H_over_h": "6.0",
+      "N_cv": "512",
+      "N_system": "12607",
+      "e_u_percent": "40.58691362932766",
+      "e_p_percent": "2.5307376069878416",
+      "e_phi_percent": "29.460135533197086",
+      "N_f": "110592",
+      "N_facelets": "48384",
+      "N_p_after_gauge": "511",
+      "N_patches": "1344",
+      "N_sites": "512",
+      "N_trace_modes": "4032",
+      "N_z": "12096",
+      "domain_length": "48.0",
+      "e_p_percent_multiplier_convention": "200.65029752378567",
+      "factor_memory_MiB": "7.660667419433594",
+      "linear_solver_iterations": "558",
+      "linear_solver_relative_residual": "1.190946892816481e-13",
+      "mass_backward_error_dimensionless": "2.488912205973207e-13",
+      "mass_inf_per_volume": "5.621525354435471e-15",
+      "momentum_residual_inf": "2.6802518537927256e-12",
+      "nnz_A": "646052",
+      "nnz_D": "5376",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9997038596517838",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/fixed_h/runs/N048_m08_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.019834299804642797",
+      "t_geometry_build_s": "0.3316824999637902",
+      "t_matrix_assembly_s": "10.605679200030863",
+      "t_solve_s": "1.8262410999741405",
+      "t_trace_geometry_s": "0.20102020003832877",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "37.963080200133845",
+      "study": "fixed_h"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N048_m12_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "48",
+      "sites_per_side": "12",
+      "h_over_L": "0.020833333333333332",
+      "H_over_L": "0.08333333333333333",
+      "H_over_h": "4.0",
+      "N_cv": "1728",
+      "N_system": "44495",
+      "e_u_percent": "15.672519984169558",
+      "e_p_percent": "0.9074100249864343",
+      "e_phi_percent": "10.787878724321466",
+      "N_f": "110592",
+      "N_facelets": "76032",
+      "N_p_after_gauge": "1727",
+      "N_patches": "4752",
+      "N_sites": "1728",
+      "N_trace_modes": "14256",
+      "N_z": "42768",
+      "domain_length": "48.0",
+      "e_p_percent_multiplier_convention": "200.36385369172257",
+      "factor_memory_MiB": "18.35700225830078",
+      "linear_solver_iterations": "1183",
+      "linear_solver_relative_residual": "3.524708315135827e-13",
+      "mass_backward_error_dimensionless": "3.924550577782205e-13",
+      "mass_inf_per_volume": "1.3487138936225962e-14",
+      "momentum_residual_inf": "3.126388037344441e-12",
+      "nnz_A": "1521554",
+      "nnz_D": "19008",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9999656382215801",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/fixed_h/runs/N048_m12_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.033160499995574355",
+      "t_geometry_build_s": "0.1124901999719441",
+      "t_matrix_assembly_s": "12.877447300124913",
+      "t_solve_s": "5.805080399848521",
+      "t_trace_geometry_s": "0.2509045999031514",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "45.79704890004359",
+      "study": "fixed_h"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N048_m16_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "48",
+      "sites_per_side": "16",
+      "h_over_L": "0.020833333333333332",
+      "H_over_L": "0.0625",
+      "H_over_h": "3.0",
+      "N_cv": "4096",
+      "N_system": "107775",
+      "e_u_percent": "6.139180188649455",
+      "e_p_percent": "0.4100901392281839",
+      "e_phi_percent": "4.455569894804814",
+      "N_f": "110592",
+      "N_facelets": "103680",
+      "N_p_after_gauge": "4095",
+      "N_patches": "11520",
+      "N_sites": "4096",
+      "N_trace_modes": "34560",
+      "N_z": "103680",
+      "domain_length": "48.0",
+      "e_p_percent_multiplier_convention": "200.28907128587647",
+      "factor_memory_MiB": "36.89361572265625",
+      "linear_solver_iterations": "1271",
+      "linear_solver_relative_residual": "6.200592037248754e-13",
+      "mass_backward_error_dimensionless": "6.680109469562215e-13",
+      "mass_inf_per_volume": "3.6320052559133667e-14",
+      "momentum_residual_inf": "2.2164492463616625e-12",
+      "nnz_A": "3069964",
+      "nnz_D": "23040",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9999957876990355",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/fixed_h/runs/N048_m16_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.0723598999902606",
+      "t_geometry_build_s": "0.3043259000405669",
+      "t_matrix_assembly_s": "22.17391819995828",
+      "t_solve_s": "9.943390999920666",
+      "t_trace_geometry_s": "0.4197245999239385",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "60.987631699768826",
+      "study": "fixed_h"
+    },
+    {
+      "protocol_id": "pvfv_manufactured_stokes",
+      "case": "manufactured_cube",
+      "level_label": "N048_m24_linear",
+      "load_functional": "linear",
+      "voxels_per_side": "48",
+      "sites_per_side": "24",
+      "h_over_L": "0.020833333333333332",
+      "H_over_L": "0.041666666666666664",
+      "H_over_h": "2.0",
+      "N_cv": "13824",
+      "N_system": "371519",
+      "e_u_percent": "1.6676363968789325",
+      "e_p_percent": "0.2882915039202503",
+      "e_phi_percent": "1.3490572364601363",
+      "N_f": "110592",
+      "N_facelets": "158976",
+      "N_p_after_gauge": "13823",
+      "N_patches": "39744",
+      "N_sites": "13824",
+      "N_trace_modes": "119232",
+      "N_z": "357696",
+      "domain_length": "48.0",
+      "e_p_percent_multiplier_convention": "200.27549150173",
+      "factor_memory_MiB": "65.07414245605469",
+      "linear_solver_iterations": "4139",
+      "linear_solver_relative_residual": "4.24140045650073e-16",
+      "mass_backward_error_dimensionless": "9.94610391384074e-16",
+      "mass_inf_per_volume": "8.33179980201103e-17",
+      "momentum_residual_inf": "8.881784197001252e-16",
+      "nnz_A": "5155776",
+      "nnz_D": "79488",
+      "periodic_x": "False",
+      "pressure_gauge": "one_pressure_dof_eliminated_then_centered",
+      "pressure_multiplier_vs_reference_cosine": "-0.9999996406644845",
+      "quadrature_order": "5",
+      "run_directory": "reproduce/table_03/fixed_h/runs/N048_m24_linear",
+      "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
+      "t_factorization_s": "0.15311069996096194",
+      "t_geometry_build_s": "0.34309439989738166",
+      "t_matrix_assembly_s": "27.49587930017151",
+      "t_solve_s": "142.29990969994105",
+      "t_trace_geometry_s": "0.4694161000661552",
+      "velocity_matrix_symmetry_defect": "0.0",
+      "viscosity": "1.0",
+      "voxel_size": "1.0",
+      "wall_seconds": "221.91940959985368",
+      "study": "fixed_h"
+    }
+  ],
+  "symbolic_export": {
+    "original_sha256": "e91fb35e7134f74c897acaa406d2375303995150399b7db1e72f78b46338b54a",
+    "export_sha256": "d3b2ac361adf873008476eea6e24d0a0e168a37ec1a3329a404b43375962f6dc",
+    "source": "unchanged Manufactured class; exact symbolic divergence and force-identity assertions executed while emitting Python source; no numerical experiment locally"
+  },
+  "driver_sha256": {
+    "common.py": "af09f2ecae6151ac10d27b0a7022501ddb0c5137ffc1735668ca0ea2ffda409f",
+    "run_quadrature.py": "ac3c0d8787a2fd6967b5e550bca034b9f2f86b3f88a8f6b71d69ea347a4841e2",
+    "run_roi_matrix.py": "cfea257ac1665657a27b77b39960e56bb5e96298ebfcfe4dee4495550c401021",
+    "time_paper_prefixes.py": "10efcf434536ae180c53db93cf0de9b9532789f7d1507a96f25a33fc82d34690"
+  }
+}

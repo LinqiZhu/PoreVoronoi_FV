@@ -1,0 +1,132 @@
+{
+  "all_pointwise_exact": true,
+  "canonical_source": "table_02/records/ptv_ownership_statistics_canonical.json",
+  "row_csv": "table_02/records/ptv_ownership_timing_stability_4runs.csv",
+  "run_definition": "one paper record plus three fresh 101-repeat processes per prefix",
+  "same_mask": true,
+  "same_trajectory_window": true,
+  "stable_code_hashes": {
+    "audit_ptv_ownership_backends.py": "d5adff42f35ca9a7a76befcf856dae8f5807fb65ed34700c2c53c53123354ca1",
+    "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
+    "ptv_ownership_gpu6.py": "8a98f0741e04ed197be2480ef05520708744845cf99179ed0c3b0ee7e5fd4243"
+  },
+  "status": "PASS_FOUR_RUN_ROI_JFA_STABILITY_AUDIT",
+  "summary": [
+    {
+      "all_pointwise_exact": true,
+      "exact_gpu_propagation_median_ms_across_runs": 7.503949993406422,
+      "exact_gpu_propagation_median_ms_max": 8.276400010799989,
+      "exact_gpu_propagation_median_ms_min": 6.63170000188984,
+      "paired_sample_count": 404,
+      "particle_count": 10,
+      "pooled_classification": "faster",
+      "pooled_ratio_ci_high": 13.395689601841626,
+      "pooled_ratio_ci_low": 12.884007215768687,
+      "pooled_ratio_median": 13.15179829523301,
+      "roi_jfa_median_ms_across_runs": 0.5835500051034614,
+      "roi_jfa_median_ms_max": 0.6419999990612268,
+      "roi_jfa_median_ms_min": 0.4895000020042062,
+      "round_classifications": {
+        "faster": 4
+      },
+      "round_ratio_max": 13.416649654553394,
+      "round_ratio_median": 12.975991206083211,
+      "round_ratio_min": 12.80828821133222,
+      "run_count": 4,
+      "site_count": 45
+    },
+    {
+      "all_pointwise_exact": true,
+      "exact_gpu_propagation_median_ms_across_runs": 4.895099991699681,
+      "exact_gpu_propagation_median_ms_max": 6.791200023144484,
+      "exact_gpu_propagation_median_ms_min": 4.625400004442781,
+      "paired_sample_count": 404,
+      "particle_count": 50,
+      "pooled_classification": "faster",
+      "pooled_ratio_ci_high": 10.733953986367183,
+      "pooled_ratio_ci_low": 10.305870551493625,
+      "pooled_ratio_median": 10.540653368669215,
+      "roi_jfa_median_ms_across_runs": 0.4690500063588843,
+      "roi_jfa_median_ms_max": 0.5736999737564474,
+      "roi_jfa_median_ms_min": 0.440500007243827,
+      "round_classifications": {
+        "faster": 4
+      },
+      "round_ratio_max": 10.82805825547688,
+      "round_ratio_median": 10.537971926931624,
+      "round_ratio_min": 10.371101642708444,
+      "run_count": 4,
+      "site_count": 379
+    },
+    {
+      "all_pointwise_exact": true,
+      "exact_gpu_propagation_median_ms_across_runs": 4.130300003453158,
+      "exact_gpu_propagation_median_ms_max": 5.560799996601418,
+      "exact_gpu_propagation_median_ms_min": 3.777500009164214,
+      "paired_sample_count": 404,
+      "particle_count": 100,
+      "pooled_classification": "faster",
+      "pooled_ratio_ci_high": 9.522154702809265,
+      "pooled_ratio_ci_low": 9.152871590102308,
+      "pooled_ratio_median": 9.33151655850208,
+      "roi_jfa_median_ms_across_runs": 0.4439500189619139,
+      "roi_jfa_median_ms_max": 0.5588000058196485,
+      "roi_jfa_median_ms_min": 0.3989999822806567,
+      "round_classifications": {
+        "faster": 4
+      },
+      "round_ratio_max": 9.536565684103456,
+      "round_ratio_median": 9.300229944169065,
+      "round_ratio_min": 8.92178892967727,
+      "run_count": 4,
+      "site_count": 900
+    },
+    {
+      "all_pointwise_exact": true,
+      "exact_gpu_propagation_median_ms_across_runs": 3.6535499966703355,
+      "exact_gpu_propagation_median_ms_max": 4.569600016111508,
+      "exact_gpu_propagation_median_ms_min": 3.0809000018052757,
+      "paired_sample_count": 404,
+      "particle_count": 200,
+      "pooled_classification": "faster",
+      "pooled_ratio_ci_high": 8.00020094182973,
+      "pooled_ratio_ci_low": 7.575659045505665,
+      "pooled_ratio_median": 7.745372272648991,
+      "roi_jfa_median_ms_across_runs": 0.5034000059822574,
+      "roi_jfa_median_ms_max": 0.5930000043008476,
+      "roi_jfa_median_ms_min": 0.37369999336078763,
+      "round_classifications": {
+        "faster": 4
+      },
+      "round_ratio_max": 8.294219082717854,
+      "round_ratio_median": 7.5329854499362465,
+      "round_ratio_min": 7.404011700462923,
+      "run_count": 4,
+      "site_count": 1831
+    },
+    {
+      "all_pointwise_exact": true,
+      "exact_gpu_propagation_median_ms_across_runs": 2.638899997691624,
+      "exact_gpu_propagation_median_ms_max": 2.962600003229454,
+      "exact_gpu_propagation_median_ms_min": 2.569700009189546,
+      "paired_sample_count": 404,
+      "particle_count": 500,
+      "pooled_classification": "faster",
+      "pooled_ratio_ci_high": 7.9658291123902565,
+      "pooled_ratio_ci_low": 7.641006283646114,
+      "pooled_ratio_median": 7.788319571740605,
+      "roi_jfa_median_ms_across_runs": 0.3361499839229509,
+      "roi_jfa_median_ms_max": 0.4110999871045351,
+      "roi_jfa_median_ms_min": 0.3145999799016863,
+      "round_classifications": {
+        "faster": 4
+      },
+      "round_ratio_max": 8.230134067275367,
+      "round_ratio_median": 7.952509422679418,
+      "round_ratio_min": 7.350090724158962,
+      "run_count": 4,
+      "site_count": 4452
+    }
+  ],
+  "summary_csv": "table_02/records/ptv_ownership_timing_stability_4runs_summary.csv"
+}

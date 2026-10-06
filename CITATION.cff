@@ -1,11 +1,44 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the associated GeoVoronoi-FV manuscript and this software package."
-title: "PoreVoronoi: reproducibility package for GeoVoronoi-FV"
+message: "If you use this software or its data, please cite the manuscript given under preferred-citation."
+type: software
+title: "PoreVoronoi-FV"
+abstract: >-
+  Code, case inputs and result records of the manuscript "PoreVoronoi-FV: Conservative pore-scale flow on cells
+  fixed by tracked particles". PoreVoronoi-FV is a finite-volume Stokes-flow method on cells around
+  particle-visited voxels: each voxel goes to the nearest of them through the pore, so every cell is one
+  connected piece. Code: Apache-2.0; data: CC BY 4.0 except where DATA_LICENSE.md states otherwise.
 authors:
   - family-names: Zhu
     given-names: Linqi
+    email: linqi.zhu@imperial.ac.uk
+    affiliation: "Department of Earth Science and Engineering, Imperial College London; I-X, Imperial College London"
 repository-code: "https://github.com/LinqiZhu/PoreVoronoi_FV"
-version: "0.1.0"
-date-released: "2026-06-25"
-license: "Apache-2.0"
-abstract: "Reference code, compact examples, figure source data, and paper-ready tables for the GeoVoronoi-FV prescribed-site conservative finite-volume manuscript."
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - finite volume method
+  - Stokes flow
+  - geodesic Voronoi diagram
+  - particle tracking velocimetry
+  - data assimilation
+  - local mass conservation
+preferred-citation:
+  type: unpublished
+  title: "PoreVoronoi-FV: Conservative pore-scale flow on cells fixed by tracked particles"
+  authors:
+    - family-names: Zhu
+      given-names: Linqi
+    - family-names: Wang
+      given-names: Chunyang
+    - family-names: Gu
+      given-names: Yuxuan
+    - family-names: Blunt
+      given-names: Martin J.
+    - family-names: Bultreys
+      given-names: Tom
+    - family-names: Wen
+      given-names: Gege
+  year: 2026
+  notes: "Manuscript (2026)"
+  url: "https://github.com/LinqiZhu/PoreVoronoi_FV"

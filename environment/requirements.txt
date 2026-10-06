@@ -1,0 +1,18 @@
+# Core CPU dependencies of the released code.
+# Versions are those of the laptop environment (Python 3.12.10) that ran the forward, refinement, pressure,
+# stability, manufactured-solution and cost calculations; see ENVIRONMENT.md for the other recorded environments.
+# These pins need Python 3.11 or later (NumPy 2.4.6, SciPy 1.17.1 and pandas 3.0.5 do not install on Python 3.10).
+# On Python 3.10 install the versions of the cluster runs instead: pip install numpy==2.2.6 scipy==1.15.3
+# (enough for porevoronoi_fv/).
+#
+#   numpy, scipy   everything, including the CPU package porevoronoi_fv/ (which needs nothing else)
+#   matplotlib     figure scripts in reproduce/
+#   pandas         table and figure generators (for example reproduce/shared/build_tables.py)
+#   sympy          the manufactured-solution driver reproduce/shared/manufactured_stokes.py
+#
+# GPU code (ROI-JFA ownership, the GPU forward path) also needs requirements-gpu.txt.
+numpy==2.4.6
+scipy==1.17.1
+matplotlib==3.10.9
+pandas==3.0.5
+sympy==1.14.0

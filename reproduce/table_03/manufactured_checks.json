@@ -1,0 +1,30 @@
+{
+  "boundary_velocity_max": 4.805569724854028e-17,
+  "divergence_max": 0.0,
+  "forcing_derivation": "two independent symbolic derivations agreed exactly",
+  "quadrature": {
+    "3": {
+      "pressure_integral_over_domain": 8.829742492721948e-16,
+      "pressure_mean_relative_to_amplitude": 2.1556988507621944e-19,
+      "velocity_absolute_integral": 256.0000004681568
+    },
+    "4": {
+      "change_from_previous_order": 7.598088824778415e-16,
+      "pressure_integral_over_domain": 1.231653667943533e-16,
+      "pressure_mean_relative_to_amplitude": 3.006966962752766e-20,
+      "velocity_absolute_integral": 255.99999999991815
+    },
+    "5": {
+      "change_from_previous_order": 6.92154666914746e-16,
+      "pressure_integral_over_domain": 8.153200337090993e-16,
+      "pressure_mean_relative_to_amplitude": 1.9905274260476058e-19,
+      "velocity_absolute_integral": 255.99999999999997
+    },
+    "6": {
+      "change_from_previous_order": 2.2750898387435825e-15,
+      "pressure_integral_over_domain": -1.4597698050344832e-15,
+      "pressure_mean_relative_to_amplitude": -3.5638911255724687e-19,
+      "velocity_absolute_integral": 256.0
+    }
+  }
+}
