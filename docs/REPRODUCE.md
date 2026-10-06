@@ -188,8 +188,8 @@ cells of the manufactured cube at seven stabilization weights, written by `repro
 `linear`). These studies ran on the GPU forward path: `python reproduce/figure_06/run_refinement.py --root
 outputs/figure_06`, `python reproduce/shared/stabilization_scaling_cube.py --root outputs/voxel_refinement` and
 `python reproduce/shared/manufactured_stokes.py --root outputs/table_03` (NVIDIA GPU with CuPy; the last two also
-need SymPy). The drawing script of Figure 6, the rows of panel b as printed and the fixed-size columns of Table 3 are
-in the evidence archive.
+need SymPy). The rows of panel b as printed and the fixed-size columns of Table 3 are in the evidence archive; the
+drawing code of Figure 6 is not distributed.
 
 ## Matched partitions: Table S3
 
@@ -248,17 +248,18 @@ outputs/table_s8`.
 The evidence archive supplied with the manuscript holds the result records of the items marked "evidence archive"
 above, the scripts that wrote them, and summary records of the drainage experiment that contain no particle
 coordinate, velocity or image voxel. It also holds the extended-data entries (ED1.1, ED2.7, ...) that the
-Supporting Information cites: per-case tables, notes and figures behind the printed ranges, one file per entry,
-with an index. Large voxel and interface field arrays are listed there with size and checksum, not stored; the
-scripts regenerate them. Until the paper is published the archive is available from the corresponding author,
+Supporting Information cites: per-case tables, notes and figures behind the printed ranges, one file per entry
+(the two figures that draw the drainage experiment excepted), with an index. Large voxel and interface field arrays
+(441 files, about 577 MB) are listed there in `field_arrays.csv` with size and checksum, not stored; the scripts regenerate them. Until the paper is published the archive is available from the corresponding author,
 Linqi Zhu (linqi.zhu@imperial.ac.uk), on request.
 
 ## About the code in this repository
 
 The scripts and modules here are those that produced the results. For this release their file names, comments,
 help texts and path settings were made readable and repository-relative; the computations are unchanged. The
-evidence archive keeps the files exactly as they ran, with the checksums that the run records name; because names,
-comments and paths changed, most code files here no longer match those checksums. Some code files are identical to
+evidence archive holds its scripts in the same released form. The checksums that the run records name are those of the files as
+they ran; the corresponding author supplies those originals on request (linqi.zhu@imperial.ac.uk). Because names, comments and
+paths changed, most code files here and in the archive no longer match those checksums. Some code files are identical to
 the files that ran, so their checksums still match the records: the two method modules `geodesic_face_operator.py`
 and `hybrid_voronoi_trace.py` (in `porevoronoi_fv/` and, as identical copies, in `gpu/code/`), whose SHA-256 every
 `run_record.json` lists, and the GPU ownership module, its timing driver and the site rule

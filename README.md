@@ -27,7 +27,8 @@ flow on these cells. Measured or sampled particle velocities can be added to the
 
 > **Manuscript:** Zhu, L., Wang, C., Gu, Y., Blunt, M. J., Bultreys, T., & Wen, G. (2026). *PoreVoronoi-FV: Conservative pore-scale flow on cells fixed by tracked particles.* Manuscript.
 >
-> **Evidence archive:** result records not in this repository are in the evidence archive supplied with the manuscript; until the article is published it is available from the corresponding author (linqi.zhu@imperial.ac.uk) on request.
+> **Evidence archive:** result records not in this repository are in the evidence archive supplied with the manuscript; until the article is published it is available from the corresponding author (linqi.zhu@imperial.ac.uk) on request. SHA-256 of its checksum list `SHA256SUMS.txt`:
+> `a4972a8d5a2c9214d4790fdfebf725e7371900dbd321e627846e4092ffe2a3e3`
 >
 > **This repository:** the code, our own numerical data and two small segmented rock images (a Bentheimer crop and a Berea block) behind the manuscript; no experimental flow data.
 
@@ -266,7 +267,7 @@ The Bentheimer crop is cut from a segmented dry scan of Bentheimer sandstone tha
 | Public Bentheimer image of Jackson et al. (2021), 225³ voxels | Whole-rock reconstructions, Supporting Information Section S5.3 | Zenodo, doi:[10.5281/zenodo.5542624](https://doi.org/10.5281/zenodo.5542624) |
 | Full Berea image | Source of the 64³ block above | Figshare, doi:[10.6084/m9.figshare.1153794.v2](https://doi.org/10.6084/m9.figshare.1153794.v2) |
 | Segmented Bentheimer dry scan | Source of the 16 × 96 × 96 crop | Not public |
-| Large voxel and interface field arrays (457 files, about 603 MB) | Intermediate fields | Listed with size and checksum in the evidence archive; the scripts regenerate them |
+| Large voxel and interface field arrays (441 files, about 577 MB) | Intermediate fields | Listed with size and checksum in `field_arrays.csv` of the evidence archive; the scripts regenerate them |
 
 Scripts that read the experimental data (for example `reproduce/table_s8/glass_filter_projection.py`) are included; the data are not. The drainage-experiment drivers stay in the evidence archive.
 
@@ -384,7 +385,7 @@ These calls are those of `porevoronoi_fv/run_stokes_only.py` and `porevoronoi_fv
 - **evidence archive** (12): the result records are in the evidence archive supplied with the manuscript; scripts that wrote them may be here;
 - **not redistributed: experimental data** (6): the item rests on experimental data of other studies, cited by DOI.
 
-The evidence archive supplied with the manuscript holds the result records of the items not reproducible here, the extended-data entries that the Supporting Information cites and, for the drainage experiment, scripts, logs and summary records with no particle coordinate, velocity or image voxel; until the article is published it is available from the corresponding author on request. The folders of `reproduce/` are explained in [`reproduce/README.md`](reproduce/README.md).
+The evidence archive supplied with the manuscript holds the result records of the items not reproducible here, the extended-data entries that the Supporting Information cites and, for the drainage experiment, run and scoring scripts and summary records with no particle coordinate, velocity or image voxel; until the article is published it is available from the corresponding author on request. The folders of `reproduce/` are explained in [`reproduce/README.md`](reproduce/README.md).
 
 ---
 

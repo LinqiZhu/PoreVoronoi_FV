@@ -172,7 +172,7 @@ From the glass-filter study no file is included: neither the tracer table and th
 data set nor the results derived from them. The scripts that read the published data set,
 `reproduce/table_s8/glass_filter_projection.py` and `reproduce/table_s8/glass_filter_registration.py`, are included;
 they expect the downloaded data set in `data/glass_filter/`. For the drainage experiment the evidence archive
-supplied with the manuscript holds the run and scoring scripts, logs and aggregate scorer outputs, with no particle
+supplied with the manuscript holds the run and scoring scripts and aggregate scorer outputs, with no particle
 coordinate, particle velocity or image voxel.
 
 ### Third-party and parent images (not copied)
@@ -186,7 +186,7 @@ coordinate, particle velocity or image voxel.
 ### Large field arrays and per-run records
 
 Voxel and trace field arrays of the solves (for example the state files of the refinement runs and the checkpoints
-of the controlled-case runs) are not copied; they are listed with size and checksum in the evidence archive supplied
+of the controlled-case runs) are not copied; they are listed with size and checksum (`field_arrays.csv`: 441 files, about 577 MB) in the evidence archive supplied
 with the manuscript, and the scripts regenerate them. The per-repeat timing records from which
 `reproduce/shared/build_ownership_statistics.py` collects the Table 2 statistics are not included in this
 repository; their summaries are in `reproduce/table_02/records/`.
