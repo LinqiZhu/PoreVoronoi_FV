@@ -283,7 +283,7 @@ def build_filter_core_from_bubble_kernel_3d():
             return;
         }
 
-        // 默认：非 core -> ROI
+        // default: not core -> ROI
         unsigned char roi = (unsigned char)1;
         unsigned long long out = pack_inf_neg1;
 
@@ -1123,7 +1123,7 @@ def assert_seeds_valid_and_in_pore(mask, seeds, backend="cupy"):
             coord = tuple(int(v.item()) for v in seeds_cp[k])
             raise ValueError(
                 f"Seed {k} is NOT in pore(mask==1): {coord}. "
-                f"要保证 M1/M2/M3/M4 一致，就必须保证所有 seed 都在 pore 里。"
+                f"M1/M2/M3/M4 agree only if every seed lies in the pore."
             )
         return  # ok
 
@@ -3263,7 +3263,7 @@ def debug_probe_slice_point(
     print("[mask patch] 1=fluid, 0=solid")
     print(m_patch)
 
-    print("[label patch] (solid通常为 -1；若 fluid==1 但 label==-1，则是漏标/未赋值)")
+    print("[label patch] (solid is usually -1; fluid==1 with label==-1 means a missing or unassigned label)")
     print(L_patch)
 
     bad = (m_patch == 1) & (L_patch < 0)
@@ -3422,9 +3422,9 @@ def debug_compare_two_slice_points_same_label(
     print(f"  => same label? {same}")
 
     if (not mA) or (not mB):
-        print("  NOTE: 至少一个点在 solid(mask==0) 里；请换到 fluid 体素再比较。")
+        print("  NOTE: at least one point is in solid (mask==0); compare at fluid voxels instead.")
     if (mA and lA < 0) or (mB and lB < 0):
-        print("  NOTE: 至少一个点是 fluid 但 label==-1；这是“漏标/未赋值”的警报。")
+        print("  NOTE: at least one point is fluid but label==-1; this flags a missing or unassigned label.")
 
     print("=" * 100)
     return same
@@ -4016,7 +4016,7 @@ def visualize_exact_geodesic_slice(
     D, H, W = mask_np.shape
     axis = axis.lower()
     if axis not in ("z", "y", "x"):
-        raise ValueError("axis 必须是 'z', 'y' 或 'x'。")
+        raise ValueError("axis must be 'z', 'y' or 'x'.")
 
     if axis == "z":
         n_slices = D
@@ -4040,7 +4040,7 @@ def visualize_exact_geodesic_slice(
             index = non_empty[len(non_empty) // 2]
     else:
         if not (0 <= index < n_slices):
-            raise ValueError(f"index 超出范围：0 <= index < {n_slices}")
+            raise ValueError(f"index out of range: 0 <= index < {n_slices}")
 
     # take the slice
     if axis == "z":
@@ -4672,7 +4672,7 @@ def visualize_active_tiles_slice(
 
     axis = axis.lower()
     if axis not in ("z", "y", "x"):
-        raise ValueError("axis 必须是 'z', 'y' 或 'x'。")
+        raise ValueError("axis must be 'z', 'y' or 'x'.")
 
     # slice index: the middle plane with the most fluid where possible
     if axis == "z":
@@ -4697,7 +4697,7 @@ def visualize_active_tiles_slice(
             index = non_empty[len(non_empty) // 2]
     else:
         if not (0 <= index < n_slices):
-            raise ValueError(f"index 超出范围：0 <= index < {n_slices}")
+            raise ValueError(f"index out of range: 0 <= index < {n_slices}")
 
     # background slice
     if axis == "z":
@@ -4841,7 +4841,7 @@ def visualize_seed_stamping_slice(
     D, H, W = mask_np.shape
     axis = axis.lower()
     if axis not in ("z", "y", "x"):
-        raise ValueError("axis 必须是 'z', 'y' 或 'x'。")
+        raise ValueError("axis must be 'z', 'y' or 'x'.")
 
     seeds_np = _ensure_numpy(seeds) if seeds is not None else None
     if seeds_np is not None and seeds_np.ndim == 2 and seeds_np.shape[1] == 3:
@@ -4872,7 +4872,7 @@ def visualize_seed_stamping_slice(
             index = non_empty[len(non_empty) // 2]
     else:
         if not (0 <= index < n_slices):
-            raise ValueError(f"index 超出范围：0 <= index < {n_slices}")
+            raise ValueError(f"index out of range: 0 <= index < {n_slices}")
 
     # take the slice
     if axis == "z":
@@ -5637,14 +5637,14 @@ def build_tiles_dual_3d_kernel():
         __syncthreads();
 
         if (threadIdx.x == 0 && threadIdx.y == 0 && threadIdx.z == 0) {
-            if (!s_any) return;  // 这个 tile 完全没有 ROI==1
+            if (!s_any) return;  // this tile has no ROI==1 voxel
 
             if (!s_zero) {
-                // tile 内全是 ROI==1 → dense tile
+                // all voxels of the tile are ROI==1 -> dense tile
                 int idx = atomicAdd(cnt_dense, 1);
                 tiles_dense[idx] = make_int3(tbz, tby, tbx);
             } else {
-                // 既有 ROI==1 又有 ROI==0 → mixed tile
+                // both ROI==1 and ROI==0 -> mixed tile
                 int idx = atomicAdd(cnt_mixed, 1);
                 tiles_mixed[idx] = make_int3(tbz, tby, tbx);
             }
@@ -5731,34 +5731,34 @@ def build_roi_oajfa_kernel():
         if (idx >= nvox) return;
 
         if (!mask[idx]) {
-            // 固体：直接拷贝
+            // solid: copy through
             label_out[idx] = label_in[idx];
             dist_out[idx]  = dist_in[idx];
             return;
         }
 
         if (!roi_mask[idx]) {
-            // 不在 ROI：保持原值
+            // not in ROI: keep the old value
             label_out[idx] = label_in[idx];
             dist_out[idx]  = dist_in[idx];
             return;
         }
 
-        // voxel 坐标
+        // voxel coordinates
         const int HW = H * W;
         int z = idx / HW;
         int rem = idx - z * HW;
         int y = rem / W;
         int x = rem - y * W;
 
-        // 对应的 tile index
+        // index of the corresponding tile
         int tz = z / Tz;
         int ty = y / Ty;
         int tx = x / Tx;
         int tile_id = (tz * nTilesY + ty) * nTilesX + tx;
 
         if (tile_active[tile_id] == 0) {
-            // 非活跃 tile，不更新
+            // inactive tile: no update
             label_out[idx] = label_in[idx];
             dist_out[idx]  = dist_in[idx];
             return;
@@ -5773,7 +5773,7 @@ def build_roi_oajfa_kernel():
         float best_dist = cur_dist;
         int best_label = cur_label;
 
-        // 3x3x3 邻域，步长为 jump
+        // 3x3x3 neighbourhood, step = jump
         for (int dz = -1; dz <= 1; ++dz) {
             for (int dy = -1; dy <= 1; ++dy) {
                 for (int dx = -1; dx <= 1; ++dx) {
@@ -5913,13 +5913,13 @@ def build_mark_changed_tiles_kernel_3d(mode="frontier"):
     import cupy as cp
 
     """
-    标记 tile_changed，用于下一轮 active tiles 的构建。
+    Mark tile_changed, for building the active tiles of the next round.
 
     mode:
-      - "frontier": 只追踪波前推进（old_label<0 && new_label>=0）
-                    这是控制 active tiles 不爆炸的关键修复。
-      - "frontier+competitive": 兼容旧逻辑（前沿 + 有意义的 label 争夺）
-                                一般不建议默认开，会导致 active tiles 扩散。
+      - "frontier": track only the advance of the wavefront (old_label<0 && new_label>=0)
+                    This is the key fix that keeps the number of active tiles from exploding.
+      - "frontier+competitive": compatible with the old logic (frontier + meaningful label competition)
+                                Not recommended as a default: it makes the active tiles spread.
     """
     mode = str(mode).lower().strip()
 
@@ -5927,7 +5927,7 @@ def build_mark_changed_tiles_kernel_3d(mode="frontier"):
         change_logic = r'''
         bool changed = false;
 
-        // 只追踪波前推进：之前 label<0，这一轮刚被接管
+        // track only the wavefront advance: label<0 before, taken over in this round
         if (old_label < 0 && new_label >= 0) {
             changed = true;
         } else {
@@ -5938,11 +5938,11 @@ def build_mark_changed_tiles_kernel_3d(mode="frontier"):
         change_logic = r'''
         bool changed = false;
 
-        // 1) 前沿推进
+        // 1) frontier advance
         if (old_label < 0 && new_label >= 0) {
             changed = true;
         }
-        // 2) label 争夺：只有当距离确实显著变小（超过 eps）才算 changed
+        // 2) label competition: count as changed only if the distance really decreases (by more than eps)
         else if (old_label >= 0 && new_label >= 0 && old_label != new_label) {
             const float diff = old_dist - new_dist;
             if (diff > eps) {
@@ -5975,7 +5975,7 @@ def build_mark_changed_tiles_kernel_3d(mode="frontier"):
         int idx = blockDim.x * blockIdx.x + threadIdx.x;
         if (idx >= nvox) return;
 
-        // 只在 “流体 + ROI” 内观察变化
+        // observe changes only inside "fluid + ROI"
         if (!mask[idx])     return;
         if (!roi_mask[idx]) return;
 
@@ -6010,19 +6010,19 @@ def build_mark_changed_tiles_kernel_3d(mode="frontier"):
 def build_seed_stamping_los_parallel_packed_kernel():
     import cupy as cp
     """
-    并行 Seed stamping（所有 seeds 一次 launch）+ 64-bit packed state（dist|label）原子更新。
+    Parallel seed stamping (all seeds in one launch) + atomic update of a 64-bit packed state (dist|label).
 
-    【方案二：距离契约一致】
-    - 不再用 3D Bresenham 做“直线可见性检查”
-    - 改为检查“与二十六邻域闭式最短路一致的规范路径（canonical path）”：
-        设 |dx|,|dy|,|dz| 排序 a>=b>=c
-        规范步序列：
-          m3=c 次三轴对角步
-          m2=b-c 次双轴对角步（最大轴+中间轴）
-          m1=a-b 次单轴步（最大轴）
-      每一步只检查“落点体素 mask==1”，与 solver 的邻接定义一致（允许角穿越）。
+    [Variant 2: consistent distance contract]
+    - No longer uses a 3D Bresenham "line-of-sight check"
+    - Instead checks the canonical path that is consistent with the closed-form shortest path of the 26-neighbourhood:
+        sort |dx|,|dy|,|dz| so that a>=b>=c
+        canonical step sequence:
+          m3=c three-axis diagonal steps
+          m2=b-c two-axis diagonal steps (largest axis + middle axis)
+          m1=a-b single-axis steps (largest axis)
+      Each step checks only that the landing voxel has mask==1, consistent with the solver's adjacency definition (corner crossing allowed).
 
-    只有当规范路径全程可走时，才写入闭式距离 d，并可安全冻结 stamped 区域。
+    Only when the whole canonical path is walkable is the closed-form distance d written, and the stamped region can then be frozen safely.
     """
     import cupy as cp
     code = r'''
@@ -6088,7 +6088,7 @@ def build_seed_stamping_los_parallel_packed_kernel():
         float radius = radius_arr[seed_id];
 
         // ------------------------------------------------------------
-        // 1) 计算 |dz|,|dy|,|dx| 并做“带轴标识”的排序（降序，tie-break: x>y>z）
+        // 1) compute |dz|,|dy|,|dx| and sort them with axis ids (descending, tie-break: x>y>z)
         // ------------------------------------------------------------
         int dz_i = z - sz0;
         int dy_i = y - sy0;
@@ -6098,7 +6098,7 @@ def build_seed_stamping_los_parallel_packed_kernel():
         int ay = dy_i; if (ay < 0) ay = -ay;
         int ax = dx_i; if (ax < 0) ax = -ax;
 
-        // A,B,C 分别存 (value, axis_id)，axis_id: z=0, y=1, x=2
+        // A,B,C store (value, axis_id), axis_id: z=0, y=1, x=2
         int vA = az, aA = 0;
         int vB = ay, aB = 1;
         int vC = ax, aC = 2;
@@ -6112,9 +6112,9 @@ def build_seed_stamping_los_parallel_packed_kernel():
         int mid_axis   = aB;
         int minor_axis = aC;
 
-        int a = vA;   // 最大
-        int b = vB;   // 中间
-        int c = vC;   // 最小
+        int a = vA;   // largest
+        int b = vB;   // middle
+        int c = vC;   // smallest
 
         int m3 = c;
         int m2 = b - c;
@@ -6129,8 +6129,8 @@ def build_seed_stamping_los_parallel_packed_kernel():
         if (d > radius) return;
 
         // ------------------------------------------------------------
-        // 2) 规范最短路路径检查（metric-consistent canonical path）
-        //    每一步只检查落点 mask==1（与 solver 的二十六邻域一致）
+        // 2) canonical shortest-path check (metric-consistent canonical path)
+        //    each step checks only that the landing voxel has mask==1 (consistent with the solver's 26-neighbourhood)
         // ------------------------------------------------------------
         int sgn_z = (dz_i >= 0) ? 1 : -1;
         int sgn_y = (dy_i >= 0) ? 1 : -1;
@@ -6195,7 +6195,7 @@ def build_seed_stamping_los_parallel_packed_kernel():
         if (!clear) return;
 
         // ------------------------------------------------------------
-        // 3) packed 原子更新：按 (dist_bits, label) 字典序取最小
+        // 3) packed atomic update: take the minimum in lexicographic order of (dist_bits, label)
         // ------------------------------------------------------------
         unsigned int dist_u = __float_as_uint(d);
         unsigned long long new_pack =
@@ -6609,14 +6609,14 @@ def build_active_tiles_kernel_3d():
 
         if (tile_roi[tid] == 0) return;
 
-        // 1) 自己 unfinished / changed -> 必 active
+        // 1) if I am unfinished / changed -> I am active
         if (tile_unfinished_prev[tid] != 0 || tile_changed_prev[tid] != 0) {
             tile_active_out[tid] = 1;
             atomicExch(&any_active[0], 1);
             return;
         }
 
-        // 2) 否则：pull 扫描 “哪些 changed tile 会影响我”
+        // 2) otherwise: pull-scan "which changed tiles affect me"
         int tz = tid / (nTilesY * nTilesX);
         int rem = tid - tz * (nTilesY * nTilesX);
         int ty = rem / nTilesX;
@@ -7091,7 +7091,7 @@ def build_geodesic_roi_jfa_step_active_list_kernels_3d(use_int_offset=True):
         const unsigned char* __restrict__ roi_mask,
         const int* __restrict__ tile_type,     // 0=nonROI, 1=mixed, 2=dense
         const int* __restrict__ tile_roi,      // 0/1
-        const int* __restrict__ tile_active,   // 保留参数兼容（active-list 版不需要读它）
+        const int* __restrict__ tile_active,   // kept for compatibility (the active-list version does not read it)
         const signed char* __restrict__ los_kmax27, // [27*nvox], dir-major
         const int nvox,
 
@@ -7429,7 +7429,7 @@ def build_apply_roi_tile_updates_active_list_kernel_3d():
         const unsigned char* __restrict__ roi_mask,
         const int* __restrict__ tile_type,      // 0=nonROI,1=mixed,2=dense
         const int* __restrict__ tile_roi,       // 0/1
-        const int* __restrict__ tile_active,    // 保留参数兼容（active-list 版不需要读它）
+        const int* __restrict__ tile_active,    // kept for compatibility (the active-list version does not read it)
 
         const unsigned long long* __restrict__ state_src,
         unsigned long long* __restrict__ state_dst,
@@ -7635,7 +7635,7 @@ def build_geodesic_roi_jfa_step_kernels_3d(use_int_offset=True):
                     }
                     continue;
                 }
-                // roi_mask==1 implies mask==1 (通常如此，但仍以 mask 为准)
+                // roi_mask==1 implies mask==1 (normally so, but mask is still the reference)
             }
 
             unsigned long long cur = state_in[idx];
@@ -8041,7 +8041,7 @@ def build_geodesic_roi_jfa_check_kernels_3d():
                 }
             }
 
-            // 只要存在任何 voxel 能让 dist 变短，就说明这个 tile “需要更新”
+            // if any voxel can shorten its dist, the tile "needs an update"
             if (best_dist + eps < old_dist) {
                 local_need = 1;
             }
@@ -9411,7 +9411,7 @@ def build_local_relax_kernel():
         int idx = blockDim.x * blockIdx.x + threadIdx.x;
         if (idx >= nvox) return;
 
-        // 固体：直接拷贝
+        // solid: copy through
         if (!mask[idx]) {
             label_out[idx] = label_in[idx];
             dist_out[idx]  = dist_in[idx];
@@ -9433,7 +9433,7 @@ def build_local_relax_kernel():
         const float SQRT2 = 1.41421356237f;
         const float SQRT3 = 1.73205080757f;
 
-        // 3x3x3 邻域, jump = 1
+        // 3x3x3 neighbourhood, jump = 1
         for (int dz = -1; dz <= 1; ++dz) {
             for (int dy = -1; dy <= 1; ++dy) {
                 for (int dx = -1; dx <= 1; ++dx) {
@@ -9463,7 +9463,7 @@ def build_local_relax_kernel():
 
                     float cand_dist = dist_in[j_idx] + step;
 
-                    // 用 eps 防抖，避免在浮点误差附近抖动
+                    // use eps as a guard against jitter near floating-point error
                     if (cand_dist + eps < best_dist) {
                         best_dist  = cand_dist;
                         best_label = neigh_label;
@@ -9907,7 +9907,7 @@ def make_sinusoidal_channel_case(
         rng = np.random.RandomState(seed_random_state)
         fluid_indices = np.argwhere(mask)
         if n_seeds > fluid_indices.shape[0]:
-            raise ValueError("流体体素太少，无法放置这么多种子")
+            raise ValueError("too few fluid voxels to place that many seeds")
         chosen = rng.choice(fluid_indices.shape[0], size=n_seeds, replace=False)
         seeds = fluid_indices[chosen]
 
@@ -9933,11 +9933,11 @@ def make_sinusoidal_channel_case(
                     if found:
                         break
                 if not found:
-                    raise RuntimeError(f"在 x={x} 附近找不到流体体素放种子")
+                    raise RuntimeError(f"no fluid voxel found near x={x} to place a seed")
         seeds = np.asarray(seeds, dtype=np.int64)
 
     else:
-        raise ValueError(f"未知 seed_mode: {seed_mode}")
+        raise ValueError(f"unknown seed_mode: {seed_mode}")
 
     return mask, seeds
 
