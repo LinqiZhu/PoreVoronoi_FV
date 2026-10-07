@@ -234,7 +234,6 @@ def _geometry_metrics(
         reference_total_s=float("nan"),
         export_state=False,
     )
-    forward.segmented.configure_roi_environment()
     os.environ["PVFV_LABEL_BACKEND"] = str(FORWARD_ARGS["label_backend"])
     runner = forward.segmented.load_runner()
     runner_args = forward._runner_args(run_args)

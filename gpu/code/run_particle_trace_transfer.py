@@ -98,7 +98,6 @@ def _velocity_errors(velocity: np.ndarray, reference: np.ndarray, volume: np.nda
 
 def run(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any]]:
     total_start = time.perf_counter()
-    segmented.configure_roi_environment()
     os.environ["PVFV_LABEL_BACKEND"] = str(args.label_backend)
     runner = segmented.load_runner()
     runner_args = _runner_args(args)
@@ -631,7 +630,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--label-backend",
         default="exact_frontier_gpu",
-        choices=["exact_frontier_gpu", "roi_jfa"],
+        choices=["exact_frontier_gpu"],
     )
     parser.add_argument(
         "--trace-basis",

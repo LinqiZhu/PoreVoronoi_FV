@@ -55,7 +55,7 @@ REQUIRED_CODE_FILES = (
     "run_segmented_selector_geodesic_rows.py",
     "geodesic_face_operator.py",
     "flow_runner.py",
-    "roi_jfa_backend.py",
+    "exact_frontier_backend.py",
 )
 
 
@@ -300,7 +300,6 @@ def bootstrap(out_dir: str | Path | None = None) -> dict[str, Any]:
     scratch = Path(out_dir) if out_dir is not None else (DELIVERY_ROOT / "runs" / "_scratch")
     scratch.mkdir(parents=True, exist_ok=True)
 
-    forward.segmented.configure_roi_environment()
     os.environ["PVFV_LABEL_BACKEND"] = str(FORWARD_ARGS["label_backend"])
     runner = forward.segmented.load_runner()
     runner_args = forward._runner_args(types.SimpleNamespace())

@@ -44,7 +44,6 @@
     "snap_displacement_max_vox": 0.0,
     "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
     "source_hashes": {
-      "roi_jfa_backend.py": "778f7915532cfb0a184e3d966a0302cbfa8bcf7452ecae5a7ecb63ddafb3f4e7",
       "flow_notebook": "be3b61541de2407e69eb577f92763ab39148bd2902fa867fe640eabbaef7d1eb",
       "geodesic_face_operator.py": "dac56260635f5f753c4319b064aea2dff117d858b2338f17a8bdb47f7a66bdd9",
       "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
@@ -105,7 +104,6 @@
     "snap_displacement_max_vox": 0.0,
     "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
     "source_hashes": {
-      "roi_jfa_backend.py": "778f7915532cfb0a184e3d966a0302cbfa8bcf7452ecae5a7ecb63ddafb3f4e7",
       "flow_notebook": "be3b61541de2407e69eb577f92763ab39148bd2902fa867fe640eabbaef7d1eb",
       "geodesic_face_operator.py": "dac56260635f5f753c4319b064aea2dff117d858b2338f17a8bdb47f7a66bdd9",
       "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
@@ -166,7 +164,6 @@
     "snap_displacement_max_vox": 0.0,
     "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
     "source_hashes": {
-      "roi_jfa_backend.py": "778f7915532cfb0a184e3d966a0302cbfa8bcf7452ecae5a7ecb63ddafb3f4e7",
       "flow_notebook": "be3b61541de2407e69eb577f92763ab39148bd2902fa867fe640eabbaef7d1eb",
       "geodesic_face_operator.py": "dac56260635f5f753c4319b064aea2dff117d858b2338f17a8bdb47f7a66bdd9",
       "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
@@ -227,7 +224,6 @@
     "snap_displacement_max_vox": 0.0,
     "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
     "source_hashes": {
-      "roi_jfa_backend.py": "778f7915532cfb0a184e3d966a0302cbfa8bcf7452ecae5a7ecb63ddafb3f4e7",
       "flow_notebook": "be3b61541de2407e69eb577f92763ab39148bd2902fa867fe640eabbaef7d1eb",
       "geodesic_face_operator.py": "dac56260635f5f753c4319b064aea2dff117d858b2338f17a8bdb47f7a66bdd9",
       "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
@@ -288,7 +284,6 @@
     "snap_displacement_max_vox": 0.0,
     "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
     "source_hashes": {
-      "roi_jfa_backend.py": "778f7915532cfb0a184e3d966a0302cbfa8bcf7452ecae5a7ecb63ddafb3f4e7",
       "flow_notebook": "be3b61541de2407e69eb577f92763ab39148bd2902fa867fe640eabbaef7d1eb",
       "geodesic_face_operator.py": "dac56260635f5f753c4319b064aea2dff117d858b2338f17a8bdb47f7a66bdd9",
       "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
@@ -349,7 +344,6 @@
     "snap_displacement_max_vox": 0.0,
     "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
     "source_hashes": {
-      "roi_jfa_backend.py": "778f7915532cfb0a184e3d966a0302cbfa8bcf7452ecae5a7ecb63ddafb3f4e7",
       "flow_notebook": "be3b61541de2407e69eb577f92763ab39148bd2902fa867fe640eabbaef7d1eb",
       "geodesic_face_operator.py": "dac56260635f5f753c4319b064aea2dff117d858b2338f17a8bdb47f7a66bdd9",
       "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
@@ -410,7 +404,6 @@
     "snap_displacement_max_vox": 0.0,
     "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
     "source_hashes": {
-      "roi_jfa_backend.py": "778f7915532cfb0a184e3d966a0302cbfa8bcf7452ecae5a7ecb63ddafb3f4e7",
       "flow_notebook": "be3b61541de2407e69eb577f92763ab39148bd2902fa867fe640eabbaef7d1eb",
       "geodesic_face_operator.py": "dac56260635f5f753c4319b064aea2dff117d858b2338f17a8bdb47f7a66bdd9",
       "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",
@@ -471,7 +464,6 @@
     "snap_displacement_max_vox": 0.0,
     "solver_formulation_id": "moment_constrained_hybrid_voronoi_connected_p1_symmetric_gradient_v1",
     "source_hashes": {
-      "roi_jfa_backend.py": "778f7915532cfb0a184e3d966a0302cbfa8bcf7452ecae5a7ecb63ddafb3f4e7",
       "flow_notebook": "be3b61541de2407e69eb577f92763ab39148bd2902fa867fe640eabbaef7d1eb",
       "geodesic_face_operator.py": "dac56260635f5f753c4319b064aea2dff117d858b2338f17a8bdb47f7a66bdd9",
       "hybrid_site_sources.py": "1ac7f13e2dcf927cfde52339ef056dfcc051b61c3f0fd59e70e1d0b0783a4e0c",

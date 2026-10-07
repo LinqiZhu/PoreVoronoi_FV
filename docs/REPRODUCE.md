@@ -256,7 +256,8 @@ Linqi Zhu (linqi.zhu@imperial.ac.uk), on request.
 ## About the code in this repository
 
 The scripts and modules here are those that produced the results. For this release their file names, comments,
-help texts and path settings were made readable and repository-relative; the computations are unchanged. The
+help texts and path settings were made readable and repository-relative, and options and code paths that no reported
+result used were left out; the computations behind the results are unchanged. The
 evidence archive holds its scripts in the same released form. The checksums that the run records name are those of the files as
 they ran; the corresponding author supplies those originals on request (linqi.zhu@imperial.ac.uk). Because names, comments and
 paths changed, most code files here and in the archive no longer match those checksums. Some code files are identical to

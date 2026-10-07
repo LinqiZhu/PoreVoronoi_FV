@@ -35,9 +35,9 @@ The controlled-case values of Table 5 can be checked without a GPU with the CPU 
 | File | What it does |
 |---|---|
 | `run_hybrid_voronoi_forward.py` | Forward runner: particle window to sites (`hybrid_site_sources.py`), GPU ownership labels to cells, assembly and MINRES solve (`hybrid_voronoi_trace.py`), errors against the reference field, one run manifest per run. Behind the forward rows in `reproduce/table_05/forward_rows.csv` and the forward dimensions of the Berea block (`reproduce/supplementary/s4_cost/forward_manifests/`); it also has the options of the cross-flow check (`--site-flow-axis`, `--particle-window-provenance`). |
-| `run_segmented_selector_geodesic_rows.py` | Loads the flow namespace through `flow_runner.py`, the solver configuration and the reference fields, and sets the ROI-JFA environment; imported by every runner. |
-| `flow_runner.py` | Executes code cells 1, 3, 5, 7 and 9 of `notebooks/flow_solver.ipynb` in one namespace and installs the ownership labels from `roi_jfa_backend.py` (the exact six-neighbour frontier search on the GPU used by the forward runs, or ROI-JFA), the GPU face-connected split and the cell order; run on its own it computes the reference fields and coarse runs of the cases it defines. |
-| `roi_jfa_backend.py` | GPU ownership kernels loaded by `flow_runner.py`: the exact six-neighbour frontier search used by the forward runs, and ROI-JFA (tile-based and sparse-voxel variants). |
+| `run_segmented_selector_geodesic_rows.py` | Loads the flow namespace through `flow_runner.py`, the solver configuration and the reference fields; imported by every runner. |
+| `flow_runner.py` | Executes code cells 1, 3, 5, 7 and 9 of `notebooks/flow_solver.ipynb` in one namespace and installs the ownership labels from `exact_frontier_backend.py` (the exact six-neighbour frontier search on the GPU used by the forward runs), the GPU face-connected split and the cell order; run on its own it computes the reference fields and coarse runs of the cases it defines. |
+| `exact_frontier_backend.py` | The exact six-neighbour frontier search on the GPU (multi-source breadth-first search over the pore voxels, ties to the lower site index), loaded by `flow_runner.py`; it gives the cells of the forward runs. |
 | `hybrid_voronoi_trace.py`, `geodesic_face_operator.py` | The two method modules (trace space, assembly and solve; face groups and face metric). |
 | `hybrid_site_sources.py` | The site rule: particle window to sites (rounding to voxels, zero snap distance, periodic wrap in x); also used by the ownership drivers. |
 | `build_particle_window.py` | Generator of the simulated particle windows (Figure 2, Table 1): explicit Euler steps with the voxel reference velocity, each track stopped at the first wall face. The settings of every window in `data/` are in the `particle_tracks_generator.json` beside it. |
@@ -88,6 +88,5 @@ on the orthogonal duct, the skewed duct and the Bentheimer crop of `data/control
 | `PVFV_PROTOCOL_ROOT` | `outputs/protocol` | `study_common.py`: recorded in the environment record |
 | `PVFV_STUDIES_DIR` | `gpu/ownership/h200/src` | set by `ownership/h200/common.py` |
 | `PVFV_OWNERSHIP_CODE` | `gpu/ownership/code` | `ownership/code/check_free_space_bound.py`: folder of the ownership module |
-| `PVFV_LABEL_BACKEND` | per runner (`exact_frontier_gpu`, `roi_jfa`, `exact_geodesic`) | ownership labels of the forward runners and of `flow_runner.py` |
-| `PVFV_ROIJFA_*` | set by the runners | ROI-JFA settings (tile size, stamping mode, active lists, closure); `flow_runner.py --help` lists the matching options |
+| `PVFV_LABEL_BACKEND` | `exact_frontier_gpu` (`exact_geodesic`: the relaxation of the notebook) | ownership labels of the forward runners and of `flow_runner.py` |
 | `PVFV_FLOW_PROFILE`, `PVFV_FLOW_PROGRESS`, `PVFV_FLOW_PROGRESS_EVERY_S` | `production`, `1`, `30` | profile and progress lines of `flow_runner.py` |

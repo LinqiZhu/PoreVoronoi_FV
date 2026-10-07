@@ -51,15 +51,6 @@ def load_runner():
     return module
 
 
-def configure_roi_environment() -> None:
-    os.environ["PVFV_ROIJFA_C2_CORE"] = "1"
-    os.environ["PVFV_ROIJFA_SPARSE_VOXELS"] = "1"
-    os.environ["PVFV_ROIJFA_STAMPING_MODE"] = "D_c2_geodesic_ball"
-    os.environ["PVFV_ROIJFA_TILE"] = "8,8,16"
-    os.environ["PVFV_ROIJFA_REGULAR_STRIDE_HOTPATH"] = "0"
-    os.environ["PVFV_LABEL_BACKEND"] = "roi_jfa"
-
-
 def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     keys: list[str] = []
@@ -403,7 +394,7 @@ def install_namespace(runner, args: argparse.Namespace):
     runner.install_runtime_cfg_attr_preservation(ns)
     runner.install_skip_zero_area_diagnostic(ns)
     runner.install_gpu_face_connected_split(ns, verify=False)
-    runner.install_roi_backend(ns, runner.FLOW_NOTEBOOK.parent)
+    runner.install_label_backend(ns, runner.FLOW_NOTEBOOK.parent)
     runner.install_lsq_gradient_batched_compat(ns)
 
     fixed_wall_clone = ns["_pb618_clone_geometry_with_scaled_twall"]
@@ -1367,7 +1358,6 @@ def run_case(
                     "operator_tproj_mean": op_meta.get("operator_tproj_mean", ""),
                     "operator_tproj_min": op_meta.get("operator_tproj_min", ""),
                     "operator_tproj_max": op_meta.get("operator_tproj_max", ""),
-                    "roi_label_engine": meta.get("roi_label_engine", ""),
                     "label_mode": meta.get("label_mode", ""),
                     "diagnostic_note": (
                         "diagnostic dense KKT; not a production-table formulation"
@@ -1401,8 +1391,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--label-backend",
-        default="roi_jfa",
-        choices=["roi_jfa", "exact_geodesic", "exact_frontier_gpu"],
+        default="exact_frontier_gpu",
+        choices=["exact_frontier_gpu", "exact_geodesic"],
         help="Ownership backend used to build the retained cells.",
     )
     parser.add_argument(
@@ -1512,7 +1502,6 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    configure_roi_environment()
     os.environ["PVFV_LABEL_BACKEND"] = str(args.label_backend)
     runner = load_runner()
     ns, fixed_wall_clone, global_wall_clone = install_namespace(runner, args)

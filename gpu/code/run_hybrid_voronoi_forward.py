@@ -237,7 +237,6 @@ def _velocity_errors(U: np.ndarray, U_ref: np.ndarray, volume: np.ndarray) -> di
 
 
 def run(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any]]:
-    segmented.configure_roi_environment()
     os.environ["PVFV_LABEL_BACKEND"] = str(args.label_backend)
     runner = segmented.load_runner()
     runner_args = _runner_args(args)
@@ -422,7 +421,7 @@ def run(args: argparse.Namespace) -> tuple[dict[str, Any], dict[str, Any]]:
         ),
         "flow_runner.py": CODE_DIR / "flow_runner.py",
         "geodesic_face_operator.py": CODE_DIR / "geodesic_face_operator.py",
-        "roi_jfa_backend.py": CODE_DIR / "roi_jfa_backend.py",
+        "exact_frontier_backend.py": CODE_DIR / "exact_frontier_backend.py",
         "hybrid_site_sources.py": CODE_DIR / "hybrid_site_sources.py",
         "flow_notebook": PACKAGE
         / "notebooks"
@@ -504,7 +503,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--label-backend",
         default="exact_frontier_gpu",
-        choices=["exact_frontier_gpu", "roi_jfa"],
+        choices=["exact_frontier_gpu"],
     )
     parser.add_argument(
         "--trace-basis",
