@@ -21,8 +21,8 @@ The CPU package `porevoronoi_fv/` needs only NumPy and SciPy. CuPy is needed by 
 ## Recorded environments
 
 The results of the paper come from five environments. The versions are those recorded by the runs themselves
-(environment fields of the result records and run logs) and in extended-data entry ED7.2 of the Supporting
-Information.
+(environment fields of the result records and run logs) and in extended-data entry ED7.2 of the evidence
+archive.
 
 | # | Machine | Python | NumPy | SciPy | GPU stack | Used for |
 |---|---|---|---|---|---|---|
@@ -32,7 +32,7 @@ Information.
 | 4 | Linux cluster, NVIDIA H200 (132 streaming multiprocessors) | 3.10.20 | 2.2.6 | | CuPy 14.1.1; driver CUDA 12.8; CuPy runtime 12.9; system CUDA 12.8 runtime compiler | GPU ownership timings on the H200 (Figure 3d, Table 2 persistent column, extended data ED1.2-ED1.4) and local quadrature (ED2.4) |
 | 5 | cluster of the Imperial College Research Computing Service | 3.12.11 | 2.5.3 | 1.18.1 | none | two-phase calculations on the drainage experiment; figures rendered there |
 
-Sources: the environment fields of the result records and extended-data entry ED7.2 of the Supporting Information.
+Sources: the environment fields of the result records and extended-data entry ED7.2 of the evidence archive.
 
 ### Further packages per environment
 
@@ -50,7 +50,7 @@ Sources: the environment fields of the result records and extended-data entry ED
 The calculations use double precision throughout. Geometry and topology counts are reproducible, and reported errors
 reproduce to about 1e-14 relative. MINRES iteration counts differ between builds of BLAS and SciPy by up to 69
 iterations, about 1% of a typical 6500, because rounding near the relative tolerance 1e-14 changes the stopping
-iterate; every solve compared across builds attains its residual limit (ED7.2; Supporting Information Section S7.1).
+iterate; every solve compared across builds attains its residual limit (ED7.2 of the evidence archive).
 The run records `data/controlled_cases/<case>/run_record.json` (the forward runs) and our later CPU solves
 (environment 3) differ by 7-174 iterations (0.1-2.3%; c5: 7487 against 7661); all of these solves attain their
 residual limit.

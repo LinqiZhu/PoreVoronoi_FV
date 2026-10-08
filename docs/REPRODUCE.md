@@ -14,7 +14,7 @@ The numbers behind an item are in one of these places:
 | evidence archive | the result records are in the evidence archive supplied with the manuscript (see [below](#the-evidence-archive)); the scripts that wrote them may be here |
 | not redistributed: experimental data | the item rests on experimental data of other studies, which we do not redistribute; the CSV names the published source |
 
-All 29 printed items: 3 in repository, 8 partly in repository, 12 in the evidence archive, 6 resting on
+All 28 printed items: 3 in repository, 7 partly in repository, 12 in the evidence archive, 6 resting on
 experimental data that are not redistributed.
 
 Commands are run from the repository root, except those in `reproduce/stabilization_weight/`, which are run from
@@ -25,37 +25,38 @@ and Matplotlib for tables and figures); scripts marked GPU need an NVIDIA GPU an
 
 ## Overview
 
-| Item | What it shows | Status | Start here |
-|---|---|---|---|
-| Figure 1 | cell construction; through-the-pore assignment splits no cell | partly in repository | [`reproduce/figure_01/`](../reproduce/figure_01/) |
-| Figure 2 | particle tracks in the seven numerical images and the drainage experiment | partly in repository | [`data/controlled_cases/`](../data/controlled_cases/), [`data/berea64/`](../data/berea64/) |
-| Figure 3 | ROI-JFA proposal, certification, closure; speed-up on one H200 GPU | in repository | [`reproduce/figure_03/`](../reproduce/figure_03/) |
-| Figure 4 | one shared trace per interface patch | evidence archive | |
-| Figure 5 | inf-sup constant across cell counts | evidence archive | |
-| Figure 6 | refining cells against refining voxels | partly in repository | [`reproduce/figure_06/`](../reproduce/figure_06/) |
-| Figure 7 | tracer transport with facelet and recovered fluxes | evidence archive | |
-| Figure 8 | assisted against Stokes-only error at equal weight | evidence archive | [`reproduce/stabilization_weight/`](../reproduce/stabilization_weight/) |
-| Figure 9 | drainage experiment, one block | not redistributed: experimental data | |
-| Figure 10 | drainage experiment, twelve block-windows | not redistributed: experimental data | |
-| Table 1 | test images, particles and cell complexes | partly in repository | [`data/`](../data/) |
-| Table 2 | certified ownership and speed-up on five Berea prefixes | in repository | [`reproduce/table_02/records/`](../reproduce/table_02/records/) |
-| Table 3 | manufactured-solution refinement | partly in repository | [`reproduce/table_03/`](../reproduce/table_03/) |
-| Table 4 | best stabilization weight | evidence archive | [`reproduce/stabilization_weight/`](../reproduce/stabilization_weight/) |
-| Table 5 | Stokes-only errors on the six controlled cases | in repository | [`porevoronoi_fv/`](../porevoronoi_fv/), [`data/controlled_cases/`](../data/controlled_cases/) |
-| Table 6 | assisted calculation on the controlled cases | evidence archive | [`porevoronoi_fv/assisted/`](../porevoronoi_fv/assisted/) |
-| Table 7 | drainage experiment, summary | not redistributed: experimental data | |
-| Figure S1 | numerical geometries | partly in repository | [`data/controlled_cases/`](../data/controlled_cases/) |
-| Figure S2 | dense simulated particle tracks | evidence archive | |
-| Figure S3 | measured tracks in a glass filter | not redistributed: experimental data | |
-| Table S1 | normal-flux defects of recovered velocities | evidence archive | |
-| Table S2 | stabilization weight on skewed-duct partitions | evidence archive | |
-| Table S3 | site and partition rules at matched size | partly in repository | [`reproduce/table_s3/`](../reproduce/table_s3/) |
-| Table S4 | tracer transport | evidence archive | |
-| Table S5 | weights chosen from the particle records | evidence archive | [`reproduce/stabilization_weight/`](../reproduce/stabilization_weight/) |
-| Table S6 | certified floor | evidence archive | |
-| Table S7 | stabilization weight, drainage block-windows | not redistributed: experimental data | |
-| Table S8 | glass filter, projection onto balanced fluxes | not redistributed: experimental data | [`reproduce/table_s8/`](../reproduce/table_s8/) |
-| Table S9 | this map | partly in repository | [`figures_and_tables.csv`](figures_and_tables.csv) |
+| Item | What it shows | Status | Start here | Extended data (evidence archive) |
+|---|---|---|---|---|
+| Figure 1 | cell construction; through-the-pore assignment splits no cell | partly in repository | [`reproduce/figure_01/`](../reproduce/figure_01/) | ED1.5 |
+| Figure 2 | particle tracks in the seven numerical images and the drainage experiment | partly in repository | [`data/controlled_cases/`](../data/controlled_cases/), [`data/berea64/`](../data/berea64/) |  |
+| Figure 3 | ROI-JFA proposal, certification, closure; speed-up on one H200 GPU | in repository | [`reproduce/figure_03/`](../reproduce/figure_03/) | ED1.4 |
+| Figure 4 | one shared trace per interface patch | evidence archive |  |  |
+| Figure 5 | inf-sup constant across cell counts | evidence archive |  | ED2.7, ED2.8 |
+| Figure 6 | refining cells against refining voxels | partly in repository | [`reproduce/figure_06/`](../reproduce/figure_06/) | ED3.5, ED3.8 |
+| Figure 7 | tracer transport with facelet and recovered fluxes | evidence archive |  | ED3.15 |
+| Figure 8 | assisted against Stokes-only error at equal weight | evidence archive | [`reproduce/stabilization_weight/`](../reproduce/stabilization_weight/) | ED3.9, ED5.8 |
+| Figure 9 | drainage experiment, one block | not redistributed: experimental data |  | ED6.2-ED6.5, ED6.7 |
+| Figure 10 | drainage experiment, twelve block-windows | not redistributed: experimental data |  | ED6.2-ED6.5 |
+| Table 1 | test images, particles and cell complexes | partly in repository | [`data/`](../data/) | ED6.2 |
+| Table 2 | certified ownership and speed-up on five Berea prefixes | in repository | [`reproduce/table_02/records/`](../reproduce/table_02/records/) |  |
+| Table 3 | manufactured-solution refinement | partly in repository | [`reproduce/table_03/`](../reproduce/table_03/) |  |
+| Table 4 | best stabilization weight | evidence archive | [`reproduce/stabilization_weight/`](../reproduce/stabilization_weight/) | ED3.9-ED3.11 |
+| Table 5 | Stokes-only errors on the six controlled cases | in repository | [`porevoronoi_fv/`](../porevoronoi_fv/), [`data/controlled_cases/`](../data/controlled_cases/) |  |
+| Table 6 | assisted calculation on the controlled cases | evidence archive | [`porevoronoi_fv/assisted/`](../porevoronoi_fv/assisted/) | ED5.7, ED5.11, ED5.15 |
+| Table 7 | drainage experiment, summary | not redistributed: experimental data |  | ED6.2-ED6.5 |
+| Figure S1 | numerical geometries | partly in repository | [`data/controlled_cases/`](../data/controlled_cases/) |  |
+| Figure S2 | dense simulated particle tracks | evidence archive |  |  |
+| Figure S3 | measured tracks in a glass filter | not redistributed: experimental data |  |  |
+| Table S1 | normal-flux defects of recovered velocities | evidence archive |  | ED2.13, ED2.14 |
+| Table S2 | stabilization weight on skewed-duct partitions | evidence archive |  | ED3.10 |
+| Table S3 | site and partition rules at matched size | partly in repository | [`reproduce/table_s3/`](../reproduce/table_s3/) | ED2.10 |
+| Table S4 | tracer transport | evidence archive |  | ED3.15 |
+| Table S5 | weights chosen from the particle records | evidence archive | [`reproduce/stabilization_weight/`](../reproduce/stabilization_weight/) | ED5.8-ED5.11 |
+| Table S6 | certified floor | evidence archive |  | ED5.15, ED5.16 |
+| Table S7 | stabilization weight, drainage block-windows | not redistributed: experimental data |  | ED6.7 |
+| Table S8 | glass filter, projection onto balanced fluxes | not redistributed: experimental data | [`reproduce/table_s8/`](../reproduce/table_s8/) | ED6.11 |
+
+The last column names the extended-data entries of the [evidence archive](#the-evidence-archive) that hold the values behind an item.
 
 Numbers quoted in the text of the Supporting Information have their records in
 [`reproduce/supplementary/`](../reproduce/supplementary/), one folder per section (S1 ownership, S2 discretization,
@@ -228,6 +229,14 @@ evidence archive (extended-data entries ED3.9-ED3.11 and ED5.8-ED5.11).
 | Drainage experiment 073: segmented images and Kalman-smoothed tracks | Figures 2b-c, 9, 10; Tables 1 (one row), 7, S7 | Wang et al. (2026), arXiv:2603.12516; tomograms: Bultreys et al. (2024), PSI Public Data Repository, doi:10.16907/c0dfa6c8-25da-454e-82fa-fc5db7f7c6f2 |
 | Glass-filter X-ray particle tracking | Figure S3, Table S8 | Bultreys et al. (2022), Zenodo doi:10.5281/zenodo.6010490 |
 | Full Bentheimer and Berea images | Figure S1a-b | Jackson et al. (2021), Zenodo doi:10.5281/zenodo.5542624; Figshare "Berea Sandstone", doi:10.6084/m9.figshare.1153794.v2 |
+| Sand-pack X-ray particle tracking | Solver cross-check of the Supporting Information (Section S3.1) | Bultreys et al. (2022), Zenodo doi:10.5281/zenodo.6010425 |
+| Segmented Bentheimer dry scan | Case c6, Table 1: the 16 × 96 × 96 crop of it is in this repository | not public |
+
+For the drainage experiment the evidence archive holds the run and scoring scripts and aggregate summary records, none with a particle
+coordinate, velocity or image voxel, so repeating the two-phase calculations needs the segmented images and tracks from their authors
+(Wang et al.). The public glass-filter and sand-pack data sets are in neither this repository nor the evidence archive. The 16 × 96 × 96
+Bentheimer crop of the controlled cases is cut from a segmented dry scan of Bentheimer sandstone that is not public, a different image
+from the public Bentheimer image of Jackson et al.; the crop is included so that case c6 can be repeated ([`DATA.md`](DATA.md), Section 3).
 
 The open-boundary cells used for the drainage experiment are in `porevoronoi_fv/open_boundary.py` and
 `porevoronoi_fv/open_boundary_weighted.py`. The glass-filter scripts are in `reproduce/table_s8/`; download the data
@@ -245,13 +254,28 @@ outputs/table_s8`.
 
 ## The evidence archive
 
-The evidence archive supplied with the manuscript holds the result records of the items marked "evidence archive"
-above, the scripts that wrote them, and summary records of the drainage experiment that contain no particle
-coordinate, velocity or image voxel. It also holds the extended-data entries (ED1.1, ED2.7, ...) that the
-Supporting Information cites: per-case tables, notes and figures behind the printed ranges, one file per entry
-(the two figures that draw the drainage experiment excepted), with an index. Large voxel and interface field arrays
-(441 files, about 577 MB) are listed there in `field_arrays.csv` with size and checksum, not stored; the scripts regenerate them. Until the paper is published the archive is available from the corresponding author,
-Linqi Zhu (linqi.zhu@imperial.ac.uk), on request.
+The evidence archive `porevoronoi_fv_evidence_archive` is supplied with the manuscript. It holds the result
+records of the items marked "evidence archive" above, the scripts that wrote them, and summary records of the
+drainage experiment that contain no particle coordinate, velocity or image voxel. It also holds the
+extended-data entries (ED1.1, ED2.7, ...) that the Supporting Information cites: per-case tables, notes and
+figures behind the printed ranges, one file per entry (the two figures that draw the drainage experiment
+excepted). Until the paper is published the archive is available from the corresponding author, Linqi Zhu
+(linqi.zhu@imperial.ac.uk), on request.
+
+**Index.** The file `INDEX.csv` in the folder `extended_data` of the archive lists the entries, each with its
+records and scripts, in the archive or in this repository; `captions.md` in the same folder gives their captions
+and column notes. An entry is named `ED<m>.<n>`, where m is the module of the Supporting Information that
+summarizes it. The entries ED7.1 to ED7.4 belong to no module: ED7.1, the file `reproduction_map.csv` at the root
+of the archive, lists for every printed table and figure and every extended-data entry the data files and scripts
+it comes from, with their SHA-256; ED7.2 records the environments, the processor and GPU models, the solvers, the
+acceptance rules and the gauge convention; ED7.3 lists the analysis and scoring scripts with their checksums (see
+[Scripts and checksums](#scripts-and-checksums)); ED7.4 lists the inputs that are not redistributed.
+
+**Checking the archive.** `SHA256SUMS.txt` at the root of the archive lists the SHA-256 of every file except
+itself, so `sha256sum -c SHA256SUMS.txt` checks the whole archive. The archive digest is the SHA-256 of
+`SHA256SUMS.txt`; it is printed in the [README](../README.md) of this repository. Large voxel and interface field
+arrays (441 files, about 577 MB) are listed in `field_arrays.csv` with size and checksum, not stored; the scripts
+regenerate them.
 
 ## About the code in this repository
 
@@ -268,3 +292,17 @@ and `hybrid_voronoi_trace.py` (in `porevoronoi_fv/` and, as identical copies, in
 `gpu/code/hybrid_site_sources.py`), which `build_ownership_statistics.py` compares with the timing records. The
 numerical data files (arrays and particle tracks) are stored byte for byte; `SHA256SUMS.txt` at the repository root
 lists the checksum of every file.
+
+## Scripts and checksums
+
+Pre-registered analysis and scoring scripts state their rules in a header whose SHA-256 was stored before they
+read any case velocity, reference field or two-phase record. ED7.3 lists the 37 scripts with the SHA-256 of each
+original, as recorded, and of the released copy. The released copies of these scripts (archive and code release) differ from the
+originals only in names, comments, docstrings, messages and path strings, so their hashes differ; with the
+docstrings removed, the listed names applied and the texts of messages and paths set aside, the syntax tree of
+each equals that of its original (column `syntax_tree_check`), and `script_changes.csv` lists each changed string
+and name by line with the SHA-256 of the text it replaced. The hashed originals are available on request from the
+corresponding author (linqi.zhu@imperial.ac.uk).
+
+ED7.3 is the file `ED7.3_script_hashes.csv` of the evidence archive; `script_changes.csv` and `script_hashes.csv`
+(the checksums of the hashed scripts) are in the folder `registrations` of the archive.

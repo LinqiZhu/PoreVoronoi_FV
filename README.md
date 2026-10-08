@@ -27,8 +27,8 @@ flow on these cells. Measured or sampled particle velocities can be added to the
 
 > **Manuscript:** Zhu, L., Wang, C., Gu, Y., Blunt, M. J., Bultreys, T., & Wen, G. (2026). *PoreVoronoi-FV: Conservative pore-scale flow on cells fixed by tracked particles.* Manuscript.
 >
-> **Evidence archive:** result records not in this repository are in the evidence archive supplied with the manuscript; until the article is published it is available from the corresponding author (linqi.zhu@imperial.ac.uk) on request. SHA-256 of its checksum list `SHA256SUMS.txt`:
-> `119a27923a6e766d97c939020b2b925b381c67c15617c7a3039a39ab914da6f1`
+> **Evidence archive:** result records not in this repository are in the evidence archive supplied with the manuscript; until the article is published it is available from the corresponding author (linqi.zhu@imperial.ac.uk) on request; [`docs/REPRODUCE.md`](docs/REPRODUCE.md#the-evidence-archive) describes it. SHA-256 of its checksum list `SHA256SUMS.txt`:
+> `4d87ac661351e0e67449f63d597b2ba5dac3bb476dfe20b337359c615d489e02`
 >
 > **This repository:** the code, our own numerical data and two small segmented rock images (a Bentheimer crop and a Berea block) behind the manuscript; no experimental flow data.
 
@@ -378,10 +378,10 @@ These calls are those of `porevoronoi_fv/run_stokes_only.py` and `porevoronoi_fv
 
 ## Reproducing the paper
 
-[`docs/REPRODUCE.md`](docs/REPRODUCE.md) gives, for every figure and table of the paper and its Supporting Information, the data files, the scripts and the commands; [`docs/figures_and_tables.csv`](docs/figures_and_tables.csv) is the same map with one row per item. Each of the 29 printed items has one of four statuses:
+[`docs/REPRODUCE.md`](docs/REPRODUCE.md) gives, for every figure and table of the paper and its Supporting Information, the data files, the scripts and the commands; [`docs/figures_and_tables.csv`](docs/figures_and_tables.csv) is the same map with one row per item. Each of the 28 printed items has one of four statuses:
 
 - **in repository** (3 items): the numbers and the scripts that produce them are here;
-- **partly in repository** (8): some panels or columns are here, and the map says where the rest is;
+- **partly in repository** (7): some panels or columns are here, and the map says where the rest is;
 - **evidence archive** (12): the result records are in the evidence archive supplied with the manuscript; scripts that wrote them may be here;
 - **not redistributed: experimental data** (6): the item rests on experimental data of other studies, cited by DOI.
 
@@ -442,7 +442,7 @@ This is research code released as it ran. Check these points before running it o
 2. **Solver settings** (`porevoronoi_fv/config.json`, except τ): viscous form `symmetric_gradient`; trace basis `connected_p1`; stabilization weight τ = 1 (2νA/h per facelet), fixed in the assemblers `hybrid_voronoi_trace` and `fast_assembly` (`reproduce/stabilization_weight/sweep/fast_assembly_weighted.py` adds the option `tau_cell`); ν = 1, h = 1, f = (0.002, 0, 0), periodic in x. The saddle-point system drops the last balance row to fix the pressure constant and is solved by MINRES in double precision with a diagonal preconditioner (the inverse diagonal of A, and of D<sub>r</sub> diag(A)⁻¹ D<sub>r</sub>ᵀ for the pressure block): `rtol` 1e-14, `maxiter` 50000, one refinement step. A solve stops with an error unless MINRES returns `info == 0` and the relative residual of the saddle-point (KKT) system is at most max(20 `rtol`, 1e-12) (`hybrid_voronoi_trace.solve_moment_constrained_hybrid_stokes`). `hybrid_voronoi_trace` returns the balance multiplier as `p`; the cell pressure is its negative.
 3. **Assembly.** `stokes_solve.assemble(..., "fast")` uses the vectorised assembler `fast_assembly.assemble_vectorised`. Check G1 (`run_stokes_only.py --stage g1`) compares it with the loop assembly `hybrid_voronoi_trace.assemble_moment_constrained_hybrid_stokes`; in the recorded runs D was identical bit for bit on all six cases, and the largest relative difference in A was 1.33 × 10⁻¹⁵ (c6).
 4. **One BLAS thread.** Every script of `porevoronoi_fv/` calls `config_io.thread_env(1)` before importing NumPy. It sets `OPENBLAS_NUM_THREADS`, `OMP_NUM_THREADS` and `MKL_NUM_THREADS` only if they are not already set.
-5. **MINRES iteration counts vary.** For the same system they differ between builds of BLAS and SciPy; the Supporting Information (Section S7.1) reports up to 69 iterations (about 1%) between the builds it compares. The run records (the forward runs) and our later CPU solves differ by 7–174 iterations (0.1–2.3%; c5: 7487 against 7661). Every compared solve reaches its residual limit. The quick start therefore checks the residual, not the iteration count.
+5. **MINRES iteration counts vary.** For the same system they differ between builds of BLAS and SciPy; extended-data entry ED7.2 of the evidence archive reports up to 69 iterations (about 1%) between the builds it compares. The run records (the forward runs) and our later CPU solves differ by 7–174 iterations (0.1–2.3%; c5: 7487 against 7661). Every compared solve reaches its residual limit. The quick start therefore checks the residual, not the iteration count.
 6. **The GPU forward path.** The runners in `gpu/code/` and the flow notebook run on the GPU (CuPy) only. The CPU package reproduces their controlled-case cells and the Table 5 values on the CPU.
 7. **Files are stored byte for byte.** Numerical data files (arrays, particle tracks) are kept exactly as they were written, and `.gitattributes` sets `* -text`, so git stores and checks out every file byte for byte, whatever `core.autocrlf` says; `SHA256SUMS.txt` lists the checksum of every file, and `case_loader.load_case` refuses a reference flow or particle window whose SHA-256 differs from its run record. The code files differ from the files that ran only in names, comments, help texts and paths, and in options and code paths that no reported result used, which were left out; the computations behind the results are unchanged. Do not re-save data files with an editor that normalizes line endings or encodings.
 

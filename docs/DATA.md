@@ -105,12 +105,12 @@ doi:[10.6084/m9.figshare.1153794.v2](https://doi.org/10.6084/m9.figshare.1153794
 (400³ one-byte voxels of 5.345 µm, pore value 0). It holds voxels 64–127, 224–287 and 288–351, counted from 0,
 along the first (fastest-varying), second and third axes of that file; its x, y and z axes lie along the file's
 third, second and first axes; and it keeps the 51,113 voxels of the block's one face-connected pore component that
-spans all three axes (extended data ED7.4 of the Supporting Information).
+spans all three axes (extended-data entry ED7.4 of the evidence archive).
 
 `mask.npz` differs from the mask file that was timed for Table 2 and Figure 3 only in its text member `raw_file`,
 which now names the source record instead of a local file path; every array is unchanged. The timing records keep
 the SHA-256 of the timed file. `gpu/ownership/h200/inputs/berea_heldout_64.npz` holds the same block as a mask array
-only. The 128³ public Berea block of the Supporting Information is not in this repository; ED7.4 gives its voxel
+only. The 128³ public Berea block of the Supporting Information is not in this repository; ED7.4 of the evidence archive gives its voxel
 range in the same file.
 
 ## 3. Segmented example masks (`examples/segmented_masks/`)
