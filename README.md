@@ -25,7 +25,7 @@ flow on these cells. Measured or sampled particle velocities can be added to the
 </p>
 <p align="center"><em>The four steps: (1) a pore–solid image and the sites; (2) every pore voxel is assigned to the site reached in the fewest steps through the pore; (3) a site with its voxels is a cell, and two cells meet on facelets (shared voxel faces); (4) the cell graph, one node per cell and one line per neighbour pair. The letters above the steps refer to the panels of manuscript Figure 1, shown under <a href="#method-in-one-figure">Method in one figure</a>.</em></p>
 
-> **Manuscript:** Zhu, L., Wang, C., Gu, Y., Blunt, M. J., Bultreys, T., & Wen, G. (2026). *PoreVoronoi-FV: Conservative pore-scale flow on cells fixed by tracked particles.* Manuscript.
+> **Manuscript:** Zhu, L., Wang, C., Gu, Y., van der Merwe, R., Bultreys, T., Blunt, M. J., & Wen, G. (2026). *PoreVoronoi-FV: Conservative pore-scale flow on cells fixed by tracked particles.* Manuscript.
 >
 > **Evidence archive:** result records not in this repository are in the evidence archive supplied with the manuscript; until the article is published it is available from the corresponding author (linqi.zhu@imperial.ac.uk) on request; [`docs/REPRODUCE.md`](docs/REPRODUCE.md#the-evidence-archive) describes it. SHA-256 of its checksum list `SHA256SUMS.txt`:
 > `d840a64431be34db4db62d16bb596179a601a8f277309799ce0179205cf8cbac`
@@ -527,7 +527,7 @@ If you use this code or data, please cite:
 ```bibtex
 @misc{zhu2026porevoronoifv,
   title  = {{PoreVoronoi-FV}: Conservative pore-scale flow on cells fixed by tracked particles},
-  author = {Zhu, Linqi and Wang, Chunyang and Gu, Yuxuan and Blunt, Martin J. and Bultreys, Tom and Wen, Gege},
+  author = {Zhu, Linqi and Wang, Chunyang and Gu, Yuxuan and van der Merwe, Robert and Bultreys, Tom and Blunt, Martin J. and Wen, Gege},
   year   = {2026},
   note   = {Manuscript},
   url    = {https://github.com/LinqiZhu/PoreVoronoi_FV}

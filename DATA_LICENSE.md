@@ -9,8 +9,7 @@ What each folder contains is described in [`docs/DATA.md`](docs/DATA.md).
 Unless Section 2 or 3 below says otherwise, the data files of this repository were produced by the authors and are
 licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0,
 <https://creativecommons.org/licenses/by/4.0/>). Please attribute them by citing the manuscript (2026) *PoreVoronoi-FV:
-Conservative pore-scale flow on cells fixed by tracked particles* by Linqi Zhu, Chunyang Wang, Yuxuan Gu, Martin J.
-Blunt, Tom Bultreys and Gege Wen, or this repository (see [`CITATION.cff`](CITATION.cff)).
+Conservative pore-scale flow on cells fixed by tracked particles* by Linqi Zhu, Chunyang Wang, Yuxuan Gu, Robert van der Merwe, Tom Bultreys, Martin J. Blunt and Gege Wen, or this repository (see [`CITATION.cff`](CITATION.cff)).
 
 This covers in particular:
 
