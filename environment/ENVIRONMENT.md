@@ -29,7 +29,7 @@ archive.
 | 1 | laptop: Windows 11, Intel64 Family 6 Model 198 (24 logical cores), NVIDIA GeForce RTX 5080 Laptop GPU (16,303 MiB, driver 595.79) | 3.12.10 | 2.4.6 | 1.17.1 | CuPy 14.1.1, CUDA runtime 12.9 | forward, refinement, pressure, stability, manufactured-solution and cost runs; the recomputations and cross-script checks of the Supporting Information |
 | 2 | the same laptop | 3.13.5 (Anaconda) | 2.1.3 | | CuPy 14.1.1 | ownership timing and exactness runs: Table 2, ED1.1, the launch-configuration sweep, the CPU reference verification |
 | 3 | Linux cluster, CPU nodes | 3.10.20 | 2.2.6 | 1.15.3 | none | Stokes-only solves and checks of the six controlled cases; assisted calculations (Table 6); single-frame timing |
-| 4 | Linux cluster, NVIDIA H200 (132 streaming multiprocessors) | 3.10.20 | 2.2.6 | | CuPy 14.1.1; driver CUDA 12.8; CuPy runtime 12.9; system CUDA 12.8 runtime compiler | GPU ownership timings on the H200 (Figure 3d, Table 2 persistent column, extended data ED1.2-ED1.4) and local quadrature (ED2.4) |
+| 4 | Linux cluster, NVIDIA H200 (132 streaming multiprocessors) | 3.10.20 | 2.2.6 | | CuPy 14.1.1; driver CUDA 12.8; CuPy runtime 12.9; system CUDA 12.8 runtime compiler | GPU ownership timings on the H200 (Figure 3d, Table 2 persistent column, extended data ED1.2 and ED1.4) and local quadrature (ED2.4) |
 | 5 | cluster of the Imperial College Research Computing Service | 3.12.11 | 2.5.3 | 1.18.1 | none | two-phase calculations on the drainage experiment; figures rendered there |
 
 Sources: the environment fields of the result records and extended-data entry ED7.2 of the evidence archive.

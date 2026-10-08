@@ -28,7 +28,7 @@ flow on these cells. Measured or sampled particle velocities can be added to the
 > **Manuscript:** Zhu, L., Wang, C., Gu, Y., Blunt, M. J., Bultreys, T., & Wen, G. (2026). *PoreVoronoi-FV: Conservative pore-scale flow on cells fixed by tracked particles.* Manuscript.
 >
 > **Evidence archive:** result records not in this repository are in the evidence archive supplied with the manuscript; until the article is published it is available from the corresponding author (linqi.zhu@imperial.ac.uk) on request; [`docs/REPRODUCE.md`](docs/REPRODUCE.md#the-evidence-archive) describes it. SHA-256 of its checksum list `SHA256SUMS.txt`:
-> `4d87ac661351e0e67449f63d597b2ba5dac3bb476dfe20b337359c615d489e02`
+> `d840a64431be34db4db62d16bb596179a601a8f277309799ce0179205cf8cbac`
 >
 > **This repository:** the code, our own numerical data and two small segmented rock images (a Bentheimer crop and a Berea block) behind the manuscript; no experimental flow data.
 
